@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Hello 全宇宙最帅的人">
-<meta property="og:type" content="website">
-<meta property="og:title" content="资源">
-<meta property="og:url" content="http://yoursite.com/resources/index.html">
+  <meta name="description" content="数值分析:L，U分解与计算方法例题：$$A&#x3D;\left[\matrix{  2&amp;2&amp;3\  4&amp;7&amp;7\  -2&amp;4&amp;5}\right]\left[\matrix{x_1\x_2\x_3}\right]&#x3D;\left[\matrix{3\1\-7}\right]$$  第一步：分解L和U$$Ax&#x3D;b\quad\Rightarrow\quad(LU)x&#x3D;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="L,U计算">
+<meta property="og:url" content="http://yoursite.com/2020/05/20/L,U%E8%AE%A1%E7%AE%97/index.html">
 <meta property="og:site_name" content="悠悠鱼儿游">
-<meta property="og:description" content="Hello 全宇宙最帅的人">
+<meta property="og:description" content="数值分析:L，U分解与计算方法例题：$$A&#x3D;\left[\matrix{  2&amp;2&amp;3\  4&amp;7&amp;7\  -2&amp;4&amp;5}\right]\left[\matrix{x_1\x_2\x_3}\right]&#x3D;\left[\matrix{3\1\-7}\right]$$  第一步：分解L和U$$Ax&#x3D;b\quad\Rightarrow\quad(LU)x&#x3D;">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-05-19T15:43:36.000Z">
-<meta property="article:modified_time" content="2020-05-19T15:46:13.462Z">
+<meta property="article:published_time" content="2020-05-20T06:20:46.971Z">
+<meta property="article:modified_time" content="2020-05-20T15:41:47.652Z">
 <meta property="article:author" content="Tom猫和小太阳">
 <meta property="article:tag" content="帅">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/resources/">
+<link rel="canonical" href="http://yoursite.com/2020/05/20/L,U%E8%AE%A1%E7%AE%97/">
 
 
 <script id="page-configurations">
@@ -41,13 +41,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>资源 | 悠悠鱼儿游
-</title>
+  <title>L,U计算 | 悠悠鱼儿游</title>
   
 
 
@@ -155,43 +154,100 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
-          <div class="content page posts-expand">
+          <div class="content post posts-expand">
             
 
     
-    
-    
-    <div class="post-block" lang="zh-CN">
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/20/L,U%E8%AE%A1%E7%AE%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Tom猫和小太阳">
+      <meta itemprop="description" content="Hello 全宇宙最帅的人">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="悠悠鱼儿游">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          L,U计算
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">资源
-</h1>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
 
-<div class="post-meta">
+              <time title="创建时间：2020-05-20 14:20:46 / 修改时间：23:41:47" itemprop="dateCreated datePublished" datetime="2020-05-20T14:20:46+08:00">2020-05-20</time>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="数值分析-L，U分解与计算方法"><a href="#数值分析-L，U分解与计算方法" class="headerlink" title="数值分析:L，U分解与计算方法"></a>数值分析:<strong>L，U</strong>分解与计算方法</h1><h2 id="例题："><a href="#例题：" class="headerlink" title="例题："></a>例题：</h2><p>$$<br>A=\left[<br>\matrix{<br>  2&amp;2&amp;3\<br>  4&amp;7&amp;7\<br>  -2&amp;4&amp;5<br>}<br>\right]<br>\left[<br>\matrix{<br>x_1\<br>x_2\<br>x_3<br>}<br>\right]<br>=<br>\left[<br>\matrix{<br>3\<br>1\<br>-7<br>}<br>\right]<br>$$</p>
+<hr>
+<h2 id="第一步：分解L和U"><a href="#第一步：分解L和U" class="headerlink" title="第一步：分解L和U"></a>第一步：分解L和U</h2><p>$$<br>Ax=b\quad\Rightarrow\quad(LU)x=b\quad\Rightarrow L(Ux)=b\<br>\Rightarrow{\matrix{<br>Ly=b\<br>Ux=y}<br>$$</p>
+<hr>
+<h2 id="第二步：解出L和U"><a href="#第二步：解出L和U" class="headerlink" title="第二步：解出L和U"></a>第二步：解出L和U</h2><p>$$<br>\left[<br>\matrix{<br>  2&amp;2&amp;3\<br>  4&amp;7&amp;7\<br>  -2&amp;4&amp;5<br>}<br>\right]<br>\<br>U_{21}=2\times(-2)+4=0\<br>U_{22}=2\times(-2)+7=3\<br>U_{22}=3\times(-2)+7=1\\quad<br>U_{31}=2\times(1)+(-2)=0\<br>U_{32}=2\times(1)+4=6\<br>U_{33}=3\times(1)+5=8\<br>\Downarrow\<br>\left[<br>\matrix{<br>2&amp;2&amp;3\<br>0&amp;3&amp;1\<br>0&amp;6&amp;8<br>}<br>\right]<br>\<br>\underline{U_{32}}=3\times(-2)+6=0\<br>\underline{U_{33}}=1\times(-2)+8=6\<br>\Downarrow\<br>\left[<br>\matrix{<br>2&amp;2&amp;3\<br>0&amp;3&amp;1\<br>0&amp;0&amp;6<br>}<br>\right]=U\<br>————————-\<br>L_{21}=\frac{4}{2}=2\\quad<br>L_{31}=\frac{-2}{2}=-1\<br>L_{32}=\frac{6}{3}=2<br>\\Downarrow \<br>L=<br>\left[<br>\matrix{<br>1&amp;0&amp;0\<br>2&amp;1&amp;0\<br>-1&amp;2&amp;1<br>}<br>\right]<br>$$</p>
+<hr>
+<h2 id="第三步：解出y和x"><a href="#第三步：解出y和x" class="headerlink" title="第三步：解出y和x"></a>第三步：解出y和x</h2><p>$$<br>根据<br>{\matrix{<br>Ly=b\<br>Ux=y}\<br>\begin{align}<br>Ly=<br>\left[<br>\matrix{<br>1&amp;0&amp;0\<br>2&amp;1&amp;0\<br>-1&amp;2&amp;1<br>}<br>\right]<br>\left[<br>\matrix{<br>y_1\<br>y_2\<br>y_3<br>}<br>\right]<br>&amp;=<br>\left[<br>\matrix{<br>3\<br>1\<br>-7<br>}<br>\right]\<br>\Downarrow\</p>
+<p>y_1&amp;=3\<br>2y_1+y_2&amp;=1\<br>-y_1+2y_2+y_3&amp;=-7<br>\<br>\Downarrow\</p>
+<p>y_1&amp;=3\<br>y_2&amp;=-5\<br>y_3&amp;=6\<br>———-&amp;———-<br>\<br>Ux=<br>\left[<br>\matrix{<br>2&amp;2&amp;3\<br>0&amp;3&amp;1\<br>0&amp;0&amp;6<br>}<br>\right]<br>\left[<br>\matrix{<br>x_1\<br>x_2\<br>x_3<br>}\right]<br>&amp;=<br>\left[<br>\matrix{<br>3\<br>-5\<br>6<br>}\right]<br>\\Downarrow\<br>2x_1+2x_2+3x_3&amp;=3\<br>3x_2+x_3&amp;=-5\<br>6x_3&amp;=6<br>\\Downarrow\<br>x_1&amp;=2\<br>x_2&amp;=-2\<br>x_3&amp;=1<br>\\Downarrow\<br>x&amp;=<br>\left[<br>\matrix{<br>2\<br>-2\<br>1<br>}\right]</p>
+<p>\end{align}<br>$$</p>
+<p><u>衣带渐宽终不悔，为伊消得人憔悴。</u></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/05/19/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/05/20/Typora%20test/" rel="next" title="Typora test">
+      Typora test <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          
-      </div>
-      
-      
-      
-    </div>
-    
-
-    
-    
-    
 
 
           </div>
@@ -242,6 +298,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数值分析-L，U分解与计算方法"><span class="nav-number">1.</span> <span class="nav-text">数值分析:L，U分解与计算方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#例题："><span class="nav-number">1.1.</span> <span class="nav-text">例题：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一步：分解L和U"><span class="nav-number">1.2.</span> <span class="nav-text">第一步：分解L和U</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二步：解出L和U"><span class="nav-number">1.3.</span> <span class="nav-text">第二步：解出L和U</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三步：解出y和x"><span class="nav-number">1.4.</span> <span class="nav-text">第三步：解出y和x</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
