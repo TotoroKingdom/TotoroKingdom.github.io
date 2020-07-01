@@ -1,231 +1,74 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/panda_32px_1082113_easyicon.net.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/panda_16px_1082113_easyicon.net.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
-
-  <meta name="description" content="例题： A&#x3D;\left[ \matrix{   2&amp;2&amp;3\\   4&amp;7&amp;7\\   -2&amp;4&amp;5 } \right] \left[ \matrix{ x_1\\ x_2\\ x_3 } \right] &#x3D; \left[ \matrix{ 3\\ 1\\ -7 } \right] 第一步：分解L和U Ax&#x3D;b\quad\Rightarrow\quad(LU)x&#x3D;b\quad\Rightarrow">
-<meta property="og:type" content="article">
-<meta property="og:title" content="数值分析:L，U分解与计算方法">
-<meta property="og:url" content="http://yoursite.com/2020/05/20/L,U%E8%AE%A1%E7%AE%97/index.html">
-<meta property="og:site_name" content="悠悠鱼儿游">
-<meta property="og:description" content="例题： A&#x3D;\left[ \matrix{   2&amp;2&amp;3\\   4&amp;7&amp;7\\   -2&amp;4&amp;5 } \right] \left[ \matrix{ x_1\\ x_2\\ x_3 } \right] &#x3D; \left[ \matrix{ 3\\ 1\\ -7 } \right] 第一步：分解L和U Ax&#x3D;b\quad\Rightarrow\quad(LU)x&#x3D;b\quad\Rightarrow">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-05-20T06:20:46.971Z">
-<meta property="article:modified_time" content="2020-05-21T04:30:33.356Z">
-<meta property="article:author" content="Tom猫和小太阳">
-<meta property="article:tag" content="数学">
-<meta property="article:tag" content="数值分析">
-<meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="http://yoursite.com/2020/05/20/L,U%E8%AE%A1%E7%AE%97/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'zh-CN'
-  };
-</script>
-
-  <title>数值分析:L，U分解与计算方法 | 悠悠鱼儿游</title>
+  <meta charset="utf-8">
   
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">悠悠鱼儿游</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-      <p class="site-subtitle" itemprop="description">翩翩雁儿飞</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
-
-  </li>
-        <li class="menu-item menu-item-photos">
-
-    <a href="/photos/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>相册</a>
-
-  </li>
-  </ul>
-</nav>
-
-
-
-
-</div>
-    </header>
-
+  
+    <meta name="keywords" content="帅">
+  
+  
+    <meta name="description" content="Hello 全宇宙最帅的人">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    数值分析:L，U分解与计算方法 |
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
+    悠悠鱼儿游</title>
+  
+    <link rel="shortcut icon" href="favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
 
+  
+<link rel="stylesheet" href="/css/technology.css">
 
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content post posts-expand">
-            
-
+  
     
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/20/L,U%E8%AE%A1%E7%AE%97/">
+<script src="/js/pace.min.js"></script>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Tom猫和小太阳">
-      <meta itemprop="description" content="Hello 全宇宙最帅的人">
-    </span>
+<meta name="generator" content="Hexo 4.2.1"></head>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="悠悠鱼儿游">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          数值分析:L，U分解与计算方法
-        </h1>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <section class="outer">
+  <article id="post-L,U计算" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      数值分析:L，U分解与计算方法
+    </h1>
+  
 
-              <time title="创建时间：2020-05-20 14:20:46" itemprop="dateCreated datePublished" datetime="2020-05-20T14:20:46+08:00">2020-05-20</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-21 12:30:33" itemprop="dateModified" datetime="2020-05-21T12:30:33+08:00">2020-05-21</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%95%B0%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">数学</span></a>
-                </span>
-            </span>
-
-          
-            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span>
-
-        </div>
       </header>
+    
 
     
+      <div class="article-meta">
+        <a href="/2020/05/20/L,U%E8%AE%A1%E7%AE%97/" class="article-date">
+  <time datetime="2020-05-20T06:20:46.971Z" itemprop="datePublished">2020-05-20</time>
+</a>
+        
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%95%B0%E5%AD%A6/">数学</a>
+  </div>
+
+      </div>
     
-    
-    <div class="post-body" itemprop="articleBody">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+      
 
       
         <h2 id="例题："><a href="#例题：" class="headerlink" title="例题："></a>例题：</h2><script type="math/tex; mode=display">
@@ -399,332 +242,104 @@ x&=
 
 
 
-    </div>
-
-    
-    
-    
-
-      <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># 数学</a>
-              <a href="/tags/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/" rel="tag"># 数值分析</a>
-          </div>
-
-        
-
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2020/05/19/hello-world/" rel="prev" title="hello-world">
-      <i class="fa fa-chevron-left"></i> hello-world
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/05/22/images/" rel="next" title="初等函数图像">
-      初等函数图像 <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
-  </article>
-  
-  
-  
-
-
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#例题："><span class="nav-number">1.</span> <span class="nav-text">例题：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一步：分解L和U"><span class="nav-number">2.</span> <span class="nav-text">第一步：分解L和U</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二步：解出L和U"><span class="nav-number">3.</span> <span class="nav-text">第二步：解出L和U</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三步：解出y和x"><span class="nav-number">4.</span> <span class="nav-text">第三步：解出y和x</span></a></li></ol></div>
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="Tom猫和小太阳"
-      src="/images/avatar.gif">
-  <p class="site-author-name" itemprop="name">Tom猫和小太阳</p>
-  <div class="site-description" itemprop="description">Hello 全宇宙最帅的人</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">10</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">4</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">7</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
-</div>
-
-
-
-      </div>
-
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Tom猫和小太阳</span>
-</div>
-
-<!--
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
-  </div>
--->
-
-
-
-<div class="powered-by">
-  <i class="fa fa-user-md"></i>
-  <span id="busuanzi_container_site_uv">
-    本站总访客数:<span id="busuanzi_value_site_uv"></span>&nbsp;&nbsp;| 
-  </span>
-  <span id="busuanzi_container_site_pv">
-      &nbsp;本站总访问量<span id="busuanzi_value_site_pv"></span>次
-  </span>
-  </div>
-  </div>
-
-
-
-
-<script>
-      var now = new Date(); 
-      function createtime() { 
-          var grt= new Date("19/05/2020 23:00:00");//此处修改你的建站时间或者网站上线时间 
-          now.setTime(now.getTime()+250); 
-          days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
-          hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
-          if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
-          mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
-          seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
-          snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-          document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
-          document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
-      } 
-setInterval("createtime()",250);
-</script>
-        
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
-      </span>
-      <span class="site-uv" title="总访客量">
-        <span id="busuanzi_value_site_uv"></span>
-      </span>
-    </span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
-      </span>
-      <span class="site-pv" title="总访问量">
-        <span id="busuanzi_value_site_pv"></span>
-      </span>
-    </span>
-</div>
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
-  
-  <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-  <script defer src="/lib/three/three.min.js"></script>
-    <script defer src="/lib/three/three-waves.min.js"></script>
-    <script defer src="/lib/three/canvas_lines.min.js"></script>
-    <script defer src="/lib/three/canvas_sphere.min.js"></script>
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-if (document.querySelectorAll('pre.mermaid').length) {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
-    mermaid.initialize({
-      theme    : 'forest',
-      logLevel : 3,
-      flowchart: { curve     : 'linear' },
-      gantt    : { axisFormat: '%m/%d/%Y' },
-      sequence : { actorMargin: 50 }
-    });
-  }, window.mermaid);
-}
-</script>
-
-
-  
-
-  
       
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/05/20/L,U%E8%AE%A1%E7%AE%97/" data-id="ckc2ra81p0007jwuc9wkv0ik5"
+         class="article-share-link">分享</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/" rel="tag">数值分析</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li></ul>
 
-<script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
+    </footer>
 
+  </div>
+
+  
     
+  <nav class="article-nav">
+    
+      <a href="/2020/05/22/images/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            初等函数图像
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/05/19/hello-world/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">hello-world</div>
+      </a>
+    
+  </nav>
+
 
   
 
+  
+    
+  <div class="gitalk" id="gitalk-container"></div>
+  
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+  
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+  
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: 'a64d92bd9ece9588191d',
+      clientSecret: 'f010a5b6807453b8b047bb9f0ebf7100381c16ff',
+      repo: 'https://github.com/TotoroKingdom/BlogTalk.git',
+      owner: 'TotoroKingdom',
+      admin: ['TotoroKingdom'],
+      // id: location.pathname,      // Ensure uniqueness and length less than 50
+      id: md5(location.pathname),
+      distractionFreeMode: false,  // Facebook-like distraction free mode
+      pagerDirection: 'last'
+    })
+
+  gitalk.render('gitalk-container')
+  </script>
+
+  
+
+</article>
+
+
+
+</section>
+    </div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+
+<script src="/js/technology.js"></script>
+
+
+  </div>
 </body>
 </html>
