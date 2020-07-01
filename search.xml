@@ -1,93 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>06-22</title>
-    <url>/2020/06/22/06-22/</url>
+    <title>06-26</title>
+    <url>/2020/06/26/06-26/</url>
+    <content><![CDATA[<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello HTML5</title>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <center>
+        <h1>导航栏</h1>
+        <ol>
+            <li><a href="#one">表格标签</a></li>
+            <li><a href="#two">无序列表</a></li>
+            <li><a href="#three">有序列表</a></li>
+            <li><a href="#four">自定义列表</a></li>
+            <li><a href="#five">表单域</a></li>
+            <li><a href="#six">select下拉表单</a></li>
+            <li><a href="#seven">textarea文本域</a></li>
+        </ol>
+    </center>
+
+    <h1 id="one" align="center">表格标签</h1>
+    <!--
+        align:对齐方式
+        border:是否有边框
+        cellpadding:单元边缘与其内容之间的空白
+        cellspacing:单元格之间的空白
+        width:表格宽度
+    -->
+    <table align="center" border="1" cellpadding="5" cellspacing="0" width="300">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tom</td>
+                <td>boy</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Jerry</td>
+                <td>girl</td>
+                <td>13</td>
+            </tr>
+            <!--
+                跨行合并：rowspan="行数"
+                跨列合并：colspan="列数"
+            -->
+            <tr>
+                <td rowspan="2">跨行合并</td>
+                <td colspan="2">跨列合并</td>
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1 id="two" align="center">无序列表</h1>
+    <ul>
+        <li>喜欢喝可乐QAQ</li>
+        <li>喜欢喝啤酒QAQ</li>
+        <li>
+            <p>
+                大哥喝阔乐
+            </p>
+        </li>
+    </ul>
+
+    <h1 id="three" align="center">有序列表</h1>
+    <ol>
+        <li>Tom跑不快   QAQ</li>
+        <li>Jerry跑得快 QAQ</li>
+    </ol>
+
+    <h1 id="four" align="center">自定义列表</h1>
+    <dl>
+        <dt>悠悠鱼儿游</dt>
+        <dd>翩翩雁儿飞</dd>
+        <dd>天高任鸟飞</dd>
+    </dl>
+
+    <h1 id="five" align="center">表单域</h1>
+    <!--
+        action:url地址；用于指定接收并处理表单的服务器程序的url地址。
+        method:get/post;用于设置表单数据的提交方式。
+        name:名称;用于指定表单的名称，区分同一个页面的多个表单域。
+    -->
+    <form action="demo.php" method="POST" name="name1">
+        <label for="username">用户名：</label>
+        <input type="text" name="username" value="请输入用户名：" maxlength="20" id="username"><br>
+        <label for="pwd">密&nbsp&nbsp&nbsp码：</label>
+        <input type="password" name="password" value="请输入密码" id="pwd"><br>
+        性别:
+        <input type="radio" name="sex" value="男" checked id="man">
+        <label for="man">男</label>
+        <input type="radio" name="sex" value="女" id="women">
+        <label for="women">女</label><br>
+        爱好:
+        <input type="checkbox" name="hobby" checked>吃饭<!--checked:默认勾选当前按钮-->
+        <input type="checkbox" name="hobby" checked>睡觉 
+        <input type="checkbox" name="hobby" checked>打豆豆                                                                <br>
+        <!--
+            type的属性值：
+            button:按钮          checkbox:复选框         file:输入字段和浏览按钮          hidden:隐藏的输入字段     
+            password:密码        radio:单选按钮          image:图像形式的提交按钮         text:单行的输入字段                                                   
+            reset:重置按钮（清除表单数据）      submit:提交按钮（将表单数据发送到服务器）            
+        -->
+        <input type="submit" value="登录"><br>
+        <input type="reset" value="重置"><br>
+        <input type="button" value="发送短信"><br>
+        上传头像：<input type="file" value="上传头像"><br>
+    </form>
+
+    <h1 id="six" align="center">select下拉表单</h1>
+    Where are you from?
+    <select>
+        <option>China</option>
+        <option>America</option> 
+        <option>Japan</option>   
+        <option>England</option>
+        <option selected>Mars</option>  
+    </select>
+
+    <h1 id="seven" align="center">textarea文本域</h1>
+    <form>
+        我的优点：
+        <textarea cols="10" rows="1">帅帅帅</textarea>
+    </form>
+</body>
+
+</html>]]></content>
+  </entry>
+  <entry>
+    <title>2020-6-7</title>
+    <url>/2020/06/07/2020-6-7/</url>
+    <content><![CDATA[<h1 id="悲伤的日子"><a href="#悲伤的日子" class="headerlink" title="悲伤的日子"></a>悲伤的日子</h1><p>今天注定是个悲伤的日子，外面的大雨夹杂着悲伤的空气，悲凉的凉风拍打着窗台。</p>
+<p>公元2020年6月5日</p>
+<p>在弄了一整天的数据库安装后，我终于放弃了。</p>
+<p>怀揣着无比悲凉的心写下这篇博客，记录自己无比痛苦的一天，真是灵魂遭到折磨的一天。</p>
+<p>明天考试，希望有好运。</p>
+<p>可一想起自己即将挂科。</p>
+<p>泪水就止不住的往下涌。</p>
+<p> 。</p>
+<p>。</p>
+<p>。</p>
+<p>。</p>
+<center><font color="blue" size="6" face="STCAIYUN">
+    风潇潇兮易水寒，壮士一去兮不复返。
+</font></center>]]></content>
+  </entry>
+  <entry>
+    <title>06-30</title>
+    <url>/2020/06/30/06-30/</url>
     <content><![CDATA[<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hello world</title>
-<meta name="generator" content="Hexo 4.2.1"></head>
-<!--body最好写一个！！！-->
-
-<h1 id="one"><center>我是老大，我站中间。</center></h1>
-<h2>仲</h2>
-<h3>叔</h3>
-<h4>季</h4>
-<h5>钻石王老五</h5>
-<h6>我是最小的老六，我没有弟弟了。</h6>
-
-<h1 id="seven"><center>锚点链接</center></h1>
+    <title>hello 字体</title>
+    <link rel="stylesheet" href="style.css" <meta name="generator" content="Hexo 4.2.1"></head>
 <body>
-    <center><a href="#one">标题标签</a> </center>
-    <center><a href="#two">段落与换行</a> </center>
-    <center><a href="#three">字体标签</a> </center>
-    <center><a href="#four">div和span</a> </center>
-    <center><a href="#five">图片标签</a> </center>
-    <center><a href="#six">超链接</a> </center>
-    <center><a href="#seven">锚点链接</a></center>
-</body>
+    <h1>导航栏</h1>
+    <ol>
+        <li><a href="#one">字体</a></li>
+    </ol>
 
-<h1 id="two"><center>段落与换行</center></h1>
-<body>
-    <p>你好，世界。这是一个晴朗的上午。</p><p>
-    </p><p>
-        我想换个行。<br>
-        我换好了。<br>
-        我想换个段。
-    </p>
-    <p>我换好了。</p> 
-    <p>为什么我的眼里常含泪水？因为我对这土地爱的深沉！</p>
+    <h1 id="one">字体</h1>
+    <h2>水调歌头·明月几时有</h2>
+    <p>明月几时有？把酒问青天。</p>
+    <p>不知天上宫阙，今夕是何年。</p>
+    <p>我欲乘风归去，又恐琼楼玉宇，高处不胜寒。</p>
+    <p>起舞弄清影，何似在人间。</p>
+    <p>转朱阁，低绮户，照无眠。</p>
+    <p>不应有恨，何事长向别时圆？</p>
+    <p>人有悲欢离合，月有阴晴圆缺，此事古难全。</p>
+    <p>但愿人长久，千里共婵娟。</p>
 </body>
-
-<h1 id="three"><center>字体标签</center></h1>
-<body>
-        <strong>我很粗。</strong><br>
-        <b>我也很粗！</b><br>
-        <em>我喜欢斜着。</em><br>
-        <i>我也是~</i><br>
-        <del>我是删除线。</del><br>
-        <s>你看不见我QAQ</s><br>
-        <ins>我有下划线。</ins><br>
-        <u>me too!</u><br>
-</body>
-
-<h1 id="four"><center>div和span</center></h1>
-<body> 
-    <div>div单独占一整行</div>
-    <span>我是一个span</span>
-    <span>span</span>
-    <span>span</span>
-</body>
-
-<h1 id="five"><center>图片标签</center></h1>
-<body>
-    <center> <img src="/2020/06/22/06-22/blog\source\_posts\06-22\女朋友1号.jpg" alt="This is my girlfriend" title="本地图片" border="10"> </center>   
-     <!--html  alt:图片显示不出来时显示的文字    title:放在图片上显示的文字。   width:宽度   height:高度     border:边框粗细-->
-    <br>
-    <img src="/2020/06/22/06-22/%E5%A5%B3%E6%9C%8B%E5%8F%8B1%E5%8F%B7.jpg" class title="beautiful girl">                                   <!--hexo-->
-    <br>
-    <center> <img src="https://wx2.sinaimg.cn/mw690/005O0Eg8ly1gg4hf5nhkhj31o01o0u0x.jpg" alt="girlfriend" title="新浪图片"></center>
-    <h6><center>QQ图片</center></h6>
-    <center> <img src="http://b385.photo.store.qq.com/psb?/V10JJMpe0HJpcz/rwR4H68.5VT16CH6*imnmGBIRBd00hMLWyC.mkvyh04!/b/dIEBAAAAAAAA&bo=jgUgAwAAAAARB5g!&rf=viewer_4" title="QQ图片"></center>
-</body>
-
-<h1 id="six"><center>超链接</center></h1>
-<body>
-    <center><a href="http://www.baidu.com" target="_blank">百度一下</a></center>
-    <center><a href="http://634581304.qzone.qq.com" target="_self">QQ空间</a></center>
-    <!--_blank：打开一个新的页面        _self：在当前页面打开-->
-    <center>
-        <a href="https://weibo.com/p/1005055319635720/photos?from=page_100505&mod=TAB#place" target="_blank">
-            <img src="https://wx3.sinaimg.cn/mw690/005O0Eg8ly1gflu8k3f00j30u0140k1b.jpg">
-        </a>
-    </center>
-    <!--内链接-->
-</body>
-
-<center>&copy;Tom猫和小太阳</center>
 </html>]]></content>
   </entry>
   <entry>
@@ -220,22 +321,117 @@
 </html>]]></content>
   </entry>
   <entry>
-    <title>2020-6-7</title>
-    <url>/2020/06/07/2020-6-7/</url>
-    <content><![CDATA[<h1 id="悲伤的日子"><a href="#悲伤的日子" class="headerlink" title="悲伤的日子"></a>悲伤的日子</h1><p>今天注定是个悲伤的日子，外面的大雨夹杂着悲伤的空气，悲凉的凉风拍打着窗台。</p>
-<p>公元2020年6月5日</p>
-<p>在弄了一整天的数据库安装后，我终于放弃了。</p>
-<p>怀揣着无比悲凉的心写下这篇博客，记录自己无比痛苦的一天，真是灵魂遭到折磨的一天。</p>
-<p>明天考试，希望有好运。</p>
-<p>可一想起自己即将挂科。</p>
-<p>泪水就止不住的往下涌。</p>
-<p> 。</p>
-<p>。</p>
-<p>。</p>
-<p>。</p>
-<center><font color="blue" size="6" face="STCAIYUN">
-    风潇潇兮易水寒，壮士一去兮不复返。
-</font></center>]]></content>
+    <title>SSM</title>
+    <url>/2020/06/14/SSM/</url>
+    <content><![CDATA[<h1 id="ideaMaven设置"><a href="#ideaMaven设置" class="headerlink" title="ideaMaven设置"></a>ideaMaven设置</h1><img src="/2020/06/14/SSM/ideaMaven.jpg" class title="ideaMaven配置">
+<hr>
+<h1 id="MVC注解"><a href="#MVC注解" class="headerlink" title="MVC注解"></a>MVC注解</h1><img src="/2020/06/14/SSM/mvc%E6%B3%A8%E8%A7%A3.jpg" class title="mvc注解">
+<hr>
+<h1 id="SpringMVC"><a href="#SpringMVC" class="headerlink" title="SpringMVC"></a>SpringMVC</h1><img src="/2020/06/14/SSM/spring_mvc%E5%9B%BE.jpg" class title="mvc图">
+<hr>
+<center><font color="OliveDrab" size="6" face="STCAIYUN">
+    此情可待成追忆，只是当时已惘然。
+</font></center>
+
+
+]]></content>
+      <categories>
+        <category>SSM</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
+        <tag>函数</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>06-22</title>
+    <url>/2020/06/22/06-22/</url>
+    <content><![CDATA[<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello world</title>
+<meta name="generator" content="Hexo 4.2.1"></head>
+<!--body最好写一个！！！-->
+
+<h1 id="one"><center>我是老大，我站中间。</center></h1>
+<h2>仲</h2>
+<h3>叔</h3>
+<h4>季</h4>
+<h5>钻石王老五</h5>
+<h6>我是最小的老六，我没有弟弟了。</h6>
+
+<h1 id="seven"><center>锚点链接</center></h1>
+<body>
+    <center><a href="#one">标题标签</a> </center>
+    <center><a href="#two">段落与换行</a> </center>
+    <center><a href="#three">字体标签</a> </center>
+    <center><a href="#four">div和span</a> </center>
+    <center><a href="#five">图片标签</a> </center>
+    <center><a href="#six">超链接</a> </center>
+    <center><a href="#seven">锚点链接</a></center>
+</body>
+
+<h1 id="two"><center>段落与换行</center></h1>
+<body>
+    <p>你好，世界。这是一个晴朗的上午。</p><p>
+    </p><p>
+        我想换个行。<br>
+        我换好了。<br>
+        我想换个段。
+    </p>
+    <p>我换好了。</p> 
+    <p>为什么我的眼里常含泪水？因为我对这土地爱的深沉！</p>
+</body>
+
+<h1 id="three"><center>字体标签</center></h1>
+<body>
+        <strong>我很粗。</strong><br>
+        <b>我也很粗！</b><br>
+        <em>我喜欢斜着。</em><br>
+        <i>我也是~</i><br>
+        <del>我是删除线。</del><br>
+        <s>你看不见我QAQ</s><br>
+        <ins>我有下划线。</ins><br>
+        <u>me too!</u><br>
+</body>
+
+<h1 id="four"><center>div和span</center></h1>
+<body> 
+    <div>div单独占一整行</div>
+    <span>我是一个span</span>
+    <span>span</span>
+    <span>span</span>
+</body>
+
+<h1 id="five"><center>图片标签</center></h1>
+<body>
+    <center> <img src="/2020/06/22/06-22/blog\source\_posts\06-22\女朋友1号.jpg" alt="This is my girlfriend" title="本地图片" border="10"> </center>   
+     <!--html  alt:图片显示不出来时显示的文字    title:放在图片上显示的文字。   width:宽度   height:高度     border:边框粗细-->
+    <br>
+    <img src="/2020/06/22/06-22/%E5%A5%B3%E6%9C%8B%E5%8F%8B1%E5%8F%B7.jpg" class title="beautiful girl">                                   <!--hexo-->
+    <br>
+    <center> <img src="https://wx2.sinaimg.cn/mw690/005O0Eg8ly1gg4hf5nhkhj31o01o0u0x.jpg" alt="girlfriend" title="新浪图片"></center>
+    <h6><center>QQ图片</center></h6>
+    <center> <img src="http://b385.photo.store.qq.com/psb?/V10JJMpe0HJpcz/rwR4H68.5VT16CH6*imnmGBIRBd00hMLWyC.mkvyh04!/b/dIEBAAAAAAAA&bo=jgUgAwAAAAARB5g!&rf=viewer_4" title="QQ图片"></center>
+</body>
+
+<h1 id="six"><center>超链接</center></h1>
+<body>
+    <center><a href="http://www.baidu.com" target="_blank">百度一下</a></center>
+    <center><a href="http://634581304.qzone.qq.com" target="_self">QQ空间</a></center>
+    <!--_blank：打开一个新的页面        _self：在当前页面打开-->
+    <center>
+        <a href="https://weibo.com/p/1005055319635720/photos?from=page_100505&mod=TAB#place" target="_blank">
+            <img src="https://wx3.sinaimg.cn/mw690/005O0Eg8ly1gflu8k3f00j30u0140k1b.jpg">
+        </a>
+    </center>
+    <!--内链接-->
+</body>
+
+<center>&copy;Tom猫和小太阳</center>
+</html>]]></content>
   </entry>
   <entry>
     <title>English grammar</title>
@@ -402,33 +598,28 @@
       </tags>
   </entry>
   <entry>
-    <title>06-30</title>
-    <url>/2020/06/30/06-30/</url>
-    <content><![CDATA[<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hello 字体</title>
-    <link rel="stylesheet" href="style.css" <meta name="generator" content="Hexo 4.2.1"></head>
-<body>
-    <h1>导航栏</h1>
-    <ol>
-        <li><a href="#one">字体</a></li>
-    </ol>
+    <title>初等函数图像</title>
+    <url>/2020/05/22/images/</url>
+    <content><![CDATA[<h1 id="三角函数"><a href="#三角函数" class="headerlink" title="三角函数"></a>三角函数</h1><h2 id="正弦和余弦"><a href="#正弦和余弦" class="headerlink" title="正弦和余弦"></a>正弦和余弦</h2><img src="/2020/05/22/images/sinx&cosx.jpg" class title="正弦和余弦">
+<hr>
+<h2 id="正切和余切"><a href="#正切和余切" class="headerlink" title="正切和余切"></a>正切和余切</h2><img src="/2020/05/22/images/tanx&cotx.jpg" class title="正切和余切">
+<hr>
+<h2 id="正割和余割"><a href="#正割和余割" class="headerlink" title="正割和余割"></a>正割和余割</h2><img src="/2020/05/22/images/secx&cscx.jpg" class title="正割和余割">
+<hr>
+<h1 id="反三角函数"><a href="#反三角函数" class="headerlink" title="反三角函数"></a>反三角函数</h1><img src="/2020/05/22/images/arcsinx&arccosx&arctanx.jpg" class title="反三角函数">
+<hr>
+<center><font color="OliveDrab" size="6" face="STCAIYUN">
+    曾经沧海难为水，除却巫山不是云。
+</font></center>
 
-    <h1 id="one">字体</h1>
-    <h2>水调歌头·明月几时有</h2>
-    <p>明月几时有？把酒问青天。</p>
-    <p>不知天上宫阙，今夕是何年。</p>
-    <p>我欲乘风归去，又恐琼楼玉宇，高处不胜寒。</p>
-    <p>起舞弄清影，何似在人间。</p>
-    <p>转朱阁，低绮户，照无眠。</p>
-    <p>不应有恨，何事长向别时圆？</p>
-    <p>人有悲欢离合，月有阴晴圆缺，此事古难全。</p>
-    <p>但愿人长久，千里共婵娟。</p>
-</body>
-</html>]]></content>
+]]></content>
+      <categories>
+        <category>数学</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
+        <tag>函数</tag>
+      </tags>
   </entry>
   <entry>
     <title>数值分析:L，U分解与计算方法</title>
@@ -613,195 +804,21 @@ x&=
       </tags>
   </entry>
   <entry>
-    <title>SSM</title>
-    <url>/2020/06/14/SSM/</url>
-    <content><![CDATA[<h1 id="ideaMaven设置"><a href="#ideaMaven设置" class="headerlink" title="ideaMaven设置"></a>ideaMaven设置</h1><img src="/2020/06/14/SSM/ideaMaven.jpg" class title="ideaMaven配置">
-<hr>
-<h1 id="MVC注解"><a href="#MVC注解" class="headerlink" title="MVC注解"></a>MVC注解</h1><img src="/2020/06/14/SSM/mvc%E6%B3%A8%E8%A7%A3.jpg" class title="mvc注解">
-<hr>
-<h1 id="SpringMVC"><a href="#SpringMVC" class="headerlink" title="SpringMVC"></a>SpringMVC</h1><img src="/2020/06/14/SSM/spring_mvc%E5%9B%BE.jpg" class title="mvc图">
-<hr>
-<center><font color="OliveDrab" size="6" face="STCAIYUN">
-    此情可待成追忆，只是当时已惘然。
-</font></center>
-
-
-]]></content>
-      <categories>
-        <category>SSM</category>
-      </categories>
-      <tags>
-        <tag>数学</tag>
-        <tag>函数</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>初等函数图像</title>
-    <url>/2020/05/22/images/</url>
-    <content><![CDATA[<h1 id="三角函数"><a href="#三角函数" class="headerlink" title="三角函数"></a>三角函数</h1><h2 id="正弦和余弦"><a href="#正弦和余弦" class="headerlink" title="正弦和余弦"></a>正弦和余弦</h2><img src="/2020/05/22/images/sinx&cosx.jpg" class title="正弦和余弦">
-<hr>
-<h2 id="正切和余切"><a href="#正切和余切" class="headerlink" title="正切和余切"></a>正切和余切</h2><img src="/2020/05/22/images/tanx&cotx.jpg" class title="正切和余切">
-<hr>
-<h2 id="正割和余割"><a href="#正割和余割" class="headerlink" title="正割和余割"></a>正割和余割</h2><img src="/2020/05/22/images/secx&cscx.jpg" class title="正割和余割">
-<hr>
-<h1 id="反三角函数"><a href="#反三角函数" class="headerlink" title="反三角函数"></a>反三角函数</h1><img src="/2020/05/22/images/arcsinx&arccosx&arctanx.jpg" class title="反三角函数">
-<hr>
-<center><font color="OliveDrab" size="6" face="STCAIYUN">
-    曾经沧海难为水，除却巫山不是云。
-</font></center>
-
-]]></content>
-      <categories>
-        <category>数学</category>
-      </categories>
-      <tags>
-        <tag>数学</tag>
-        <tag>函数</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>06-26</title>
-    <url>/2020/06/26/06-26/</url>
-    <content><![CDATA[<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello HTML5</title>
-<meta name="generator" content="Hexo 4.2.1"></head>
-
-<body>
-    <center>
-        <h1>导航栏</h1>
-        <ol>
-            <li><a href="#one">表格标签</a></li>
-            <li><a href="#two">无序列表</a></li>
-            <li><a href="#three">有序列表</a></li>
-            <li><a href="#four">自定义列表</a></li>
-            <li><a href="#five">表单域</a></li>
-            <li><a href="#six">select下拉表单</a></li>
-            <li><a href="#seven">textarea文本域</a></li>
-        </ol>
-    </center>
-
-    <h1 id="one" align="center">表格标签</h1>
-    <!--
-        align:对齐方式
-        border:是否有边框
-        cellpadding:单元边缘与其内容之间的空白
-        cellspacing:单元格之间的空白
-        width:表格宽度
-    -->
-    <table align="center" border="1" cellpadding="5" cellspacing="0" width="300">
-        <thead>
-            <tr>
-                <th>姓名</th>
-                <th>性别</th>
-                <th>年龄</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Tom</td>
-                <td>boy</td>
-                <td>12</td>
-            </tr>
-            <tr>
-                <td>Jerry</td>
-                <td>girl</td>
-                <td>13</td>
-            </tr>
-            <!--
-                跨行合并：rowspan="行数"
-                跨列合并：colspan="列数"
-            -->
-            <tr>
-                <td rowspan="2">跨行合并</td>
-                <td colspan="2">跨列合并</td>
-                
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>2</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h1 id="two" align="center">无序列表</h1>
-    <ul>
-        <li>喜欢喝可乐QAQ</li>
-        <li>喜欢喝啤酒QAQ</li>
-        <li>
-            <p>
-                大哥喝阔乐
-            </p>
-        </li>
-    </ul>
-
-    <h1 id="three" align="center">有序列表</h1>
-    <ol>
-        <li>Tom跑不快   QAQ</li>
-        <li>Jerry跑得快 QAQ</li>
-    </ol>
-
-    <h1 id="four" align="center">自定义列表</h1>
-    <dl>
-        <dt>悠悠鱼儿游</dt>
-        <dd>翩翩雁儿飞</dd>
-        <dd>天高任鸟飞</dd>
-    </dl>
-
-    <h1 id="five" align="center">表单域</h1>
-    <!--
-        action:url地址；用于指定接收并处理表单的服务器程序的url地址。
-        method:get/post;用于设置表单数据的提交方式。
-        name:名称;用于指定表单的名称，区分同一个页面的多个表单域。
-    -->
-    <form action="demo.php" method="POST" name="name1">
-        <label for="username">用户名：</label>
-        <input type="text" name="username" value="请输入用户名：" maxlength="20" id="username"><br>
-        <label for="pwd">密&nbsp&nbsp&nbsp码：</label>
-        <input type="password" name="password" value="请输入密码" id="pwd"><br>
-        性别:
-        <input type="radio" name="sex" value="男" checked id="man">
-        <label for="man">男</label>
-        <input type="radio" name="sex" value="女" id="women">
-        <label for="women">女</label><br>
-        爱好:
-        <input type="checkbox" name="hobby" checked>吃饭<!--checked:默认勾选当前按钮-->
-        <input type="checkbox" name="hobby" checked>睡觉 
-        <input type="checkbox" name="hobby" checked>打豆豆                                                                <br>
-        <!--
-            type的属性值：
-            button:按钮          checkbox:复选框         file:输入字段和浏览按钮          hidden:隐藏的输入字段     
-            password:密码        radio:单选按钮          image:图像形式的提交按钮         text:单行的输入字段                                                   
-            reset:重置按钮（清除表单数据）      submit:提交按钮（将表单数据发送到服务器）            
-        -->
-        <input type="submit" value="登录"><br>
-        <input type="reset" value="重置"><br>
-        <input type="button" value="发送短信"><br>
-        上传头像：<input type="file" value="上传头像"><br>
-    </form>
-
-    <h1 id="six" align="center">select下拉表单</h1>
-    Where are you from?
-    <select>
-        <option>China</option>
-        <option>America</option> 
-        <option>Japan</option>   
-        <option>England</option>
-        <option selected>Mars</option>  
-    </select>
-
-    <h1 id="seven" align="center">textarea文本域</h1>
-    <form>
-        我的优点：
-        <textarea cols="10" rows="1">帅帅帅</textarea>
-    </form>
-</body>
-
-</html>]]></content>
+    <title>style</title>
+    <url>/2020/06/30/style/</url>
+    <content><![CDATA[*{
+    text-align: center;
+}
+h2{
+    font-family: '宋体';
+}
+p{
+    font-family: 'Microsoft YaHei';
+    font-size: 20px;
+    font-weight: 100;
+    font-style: italic;
+    color: cadetblue;
+}]]></content>
   </entry>
   <entry>
     <title>hello-world</title>
@@ -845,23 +862,6 @@ gitalk.render('gitalk-container')
 	</--></--></p>
 </body>
 </html>]]></content>
-  </entry>
-  <entry>
-    <title>style</title>
-    <url>/2020/06/30/style/</url>
-    <content><![CDATA[*{
-    text-align: center;
-}
-h2{
-    font-family: '宋体';
-}
-p{
-    font-family: 'Microsoft YaHei';
-    font-size: 20px;
-    font-weight: 100;
-    font-style: italic;
-    color: cadetblue;
-}]]></content>
   </entry>
   <entry>
     <title>MySQL环境变量配置</title>
