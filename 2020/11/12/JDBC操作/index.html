@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  
+    <meta name="keywords" content="帅">
+  
+  
+    <meta name="description" content="Hello 全宇宙最帅的人">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    JDBC操作 |
+    
+    悠悠鱼儿游</title>
+  
+    <link rel="shortcut icon" href="favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/technology.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <section class="outer">
+  <article id="post-JDBC操作" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JDBC操作
+    </h1>
+  
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2020/11/12/JDBC%E6%93%8D%E4%BD%9C/" class="article-date">
+  <time datetime="2020-11-12T14:38:18.497Z" itemprop="datePublished">2020-11-12</time>
+</a>
+        
+      </div>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+      
+
+      
+        <h1 id="JDBC操作"><a href="#JDBC操作" class="headerlink" title="JDBC操作"></a>JDBC操作</h1><h2 id="JDBC编程步骤"><a href="#JDBC编程步骤" class="headerlink" title="JDBC编程步骤"></a>JDBC编程步骤</h2><p>1、加载驱动</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Class.forName(driverClass)</span><br><span class="line"><span class="comment">//加载MySql驱动</span></span><br><span class="line">Class.forName(<span class="string">"com.mysql.jdbc.Driver"</span>)</span><br></pre></td></tr></table></figure>
+<p>2、获得数据库连接：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DriverManager.getConnection(<span class="string">"jdbc:mysql://127.0.0.1:3306/imooc"</span>, <span class="string">"root"</span>, <span class="string">"root"</span>);</span><br></pre></td></tr></table></figure>
+<p>3、创建Statement\PreparedStatement对象：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conn.createStatement();</span><br><span class="line">conn.prepareStatement(sql);</span><br></pre></td></tr></table></figure>
+<h5 id="完整实例"><a href="#完整实例" class="headerlink" title="完整实例"></a>完整实例</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.sql.Connection;</span><br><span class="line"><span class="keyword">import</span> java.sql.DriverManager;</span><br><span class="line"><span class="keyword">import</span> java.sql.ResultSet;</span><br><span class="line"><span class="keyword">import</span> java.sql.Statement;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DbUtil</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String URL = <span class="string">"jdbc:mysql://localhost:3306/imooc"</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String USER = <span class="string">"liulx"</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String PASSWORD = <span class="string">"123456"</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        <span class="comment">//1.加载驱动程序</span></span><br><span class="line">        Class.forName(<span class="string">"com.mysql.jdbc.Driver"</span>);</span><br><span class="line">        <span class="comment">//2. 获得数据库连接</span></span><br><span class="line">        Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);</span><br><span class="line">        <span class="comment">//3.操作数据库，实现增删改查</span></span><br><span class="line">        Statement stmt = conn.createStatement();</span><br><span class="line">        ResultSet rs = stmt.executeQuery(<span class="string">"SELECT user_name, age FROM imooc_goddess"</span>);</span><br><span class="line">        <span class="comment">//如果有数据，rs.next()返回true</span></span><br><span class="line">        <span class="keyword">while</span>(rs.next())&#123;</span><br><span class="line">            System.out.println(rs.getString(<span class="string">"user_name"</span>)+<span class="string">" 年龄："</span>+rs.getInt(<span class="string">"age"</span>));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="增删改查"><a href="#增删改查" class="headerlink" title="增删改查"></a>增删改查</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DbUtil</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String URL = <span class="string">"jdbc:mysql://localhost:3306/imooc"</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String USER = <span class="string">"liulx"</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String PASSWORD = <span class="string">"123456"</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Connection conn = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">static</span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">//1.加载驱动程序</span></span><br><span class="line">            Class.forName(<span class="string">"com.mysql.jdbc.Driver"</span>);</span><br><span class="line">            <span class="comment">//2. 获得数据库连接</span></span><br><span class="line">            conn = DriverManager.getConnection(URL, USER, PASSWORD);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Connection <span class="title">getConnection</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> conn;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//模型</span></span><br><span class="line"><span class="keyword">package</span> liulx.model;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Date;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Goddess</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> Integer id;</span><br><span class="line">    <span class="keyword">private</span> String user_name;</span><br><span class="line">    <span class="keyword">private</span> Integer sex;</span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line">    <span class="keyword">private</span> Date birthday; <span class="comment">//注意用的是java.util.Date</span></span><br><span class="line">    <span class="keyword">private</span> String email;</span><br><span class="line">    <span class="keyword">private</span> String mobile;</span><br><span class="line">    <span class="keyword">private</span> String create_user;</span><br><span class="line">    <span class="keyword">private</span> String update_user;</span><br><span class="line">    <span class="keyword">private</span> Date create_date;</span><br><span class="line">    <span class="keyword">private</span> Date update_date;</span><br><span class="line">    <span class="keyword">private</span> Integer isDel;</span><br><span class="line">    <span class="comment">//getter setter方法。。。</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//---------dao层--------------</span></span><br><span class="line"><span class="keyword">package</span> liulx.dao;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> liulx.db.DbUtil;</span><br><span class="line"><span class="keyword">import</span> liulx.model.Goddess;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.sql.Connection;</span><br><span class="line"><span class="keyword">import</span> java.sql.ResultSet;</span><br><span class="line"><span class="keyword">import</span> java.sql.SQLException;</span><br><span class="line"><span class="keyword">import</span> java.sql.Statement;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">GoddessDao</span> </span>&#123;</span><br><span class="line">    <span class="comment">//增加</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addGoddess</span><span class="params">(Goddess g)</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">        <span class="comment">//获取连接</span></span><br><span class="line">        Connection conn = DbUtil.getConnection();</span><br><span class="line">        <span class="comment">//sql</span></span><br><span class="line">        String sql = <span class="string">"INSERT INTO imooc_goddess(user_name, sex, age, birthday, email, mobile,"</span>+</span><br><span class="line">            <span class="string">"create_user, create_date, update_user, update_date, isdel)"</span></span><br><span class="line">                +<span class="string">"values("</span>+<span class="string">"?,?,?,?,?,?,?,CURRENT_DATE(),?,CURRENT_DATE(),?)"</span>;</span><br><span class="line">        <span class="comment">//预编译</span></span><br><span class="line">        PreparedStatement ptmt = conn.prepareStatement(sql); <span class="comment">//预编译SQL，减少sql执行</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//传参</span></span><br><span class="line">        ptmt.setString(<span class="number">1</span>, g.getUser_name());</span><br><span class="line">        ptmt.setInt(<span class="number">2</span>, g.getSex());</span><br><span class="line">        ptmt.setInt(<span class="number">3</span>, g.getAge());</span><br><span class="line">        ptmt.setDate(<span class="number">4</span>, <span class="keyword">new</span> Date(g.getBirthday().getTime()));</span><br><span class="line">        ptmt.setString(<span class="number">5</span>, g.getEmail());</span><br><span class="line">        ptmt.setString(<span class="number">6</span>, g.getMobile());</span><br><span class="line">        ptmt.setString(<span class="number">7</span>, g.getCreate_user());</span><br><span class="line">        ptmt.setString(<span class="number">8</span>, g.getUpdate_user());</span><br><span class="line">        ptmt.setInt(<span class="number">9</span>, g.getIsDel());</span><br><span class="line"></span><br><span class="line">        <span class="comment">//执行</span></span><br><span class="line">        ptmt.execute();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">updateGoddess</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="comment">//获取连接</span></span><br><span class="line">        Connection conn = DbUtil.getConnection();</span><br><span class="line">        <span class="comment">//sql, 每行加空格</span></span><br><span class="line">        String sql = <span class="string">"UPDATE imooc_goddess"</span> +</span><br><span class="line">                <span class="string">" set user_name=?, sex=?, age=?, birthday=?, email=?, mobile=?,"</span>+</span><br><span class="line">                <span class="string">" update_user=?, update_date=CURRENT_DATE(), isdel=? "</span>+</span><br><span class="line">                <span class="string">" where id=?"</span>;</span><br><span class="line">        <span class="comment">//预编译</span></span><br><span class="line">        PreparedStatement ptmt = conn.prepareStatement(sql); <span class="comment">//预编译SQL，减少sql执行</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//传参</span></span><br><span class="line">        ptmt.setString(<span class="number">1</span>, g.getUser_name());</span><br><span class="line">        ptmt.setInt(<span class="number">2</span>, g.getSex());</span><br><span class="line">        ptmt.setInt(<span class="number">3</span>, g.getAge());</span><br><span class="line">        ptmt.setDate(<span class="number">4</span>, <span class="keyword">new</span> Date(g.getBirthday().getTime()));</span><br><span class="line">        ptmt.setString(<span class="number">5</span>, g.getEmail());</span><br><span class="line">        ptmt.setString(<span class="number">6</span>, g.getMobile());</span><br><span class="line">        ptmt.setString(<span class="number">7</span>, g.getUpdate_user());</span><br><span class="line">        ptmt.setInt(<span class="number">8</span>, g.getIsDel());</span><br><span class="line">        ptmt.setInt(<span class="number">9</span>, g.getId());</span><br><span class="line"></span><br><span class="line">        <span class="comment">//执行</span></span><br><span class="line">        ptmt.execute();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">delGoddess</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="comment">//获取连接</span></span><br><span class="line">        Connection conn = DbUtil.getConnection();</span><br><span class="line">        <span class="comment">//sql, 每行加空格</span></span><br><span class="line">        String sql = <span class="string">"delete from imooc_goddess where id=?"</span>;</span><br><span class="line">        <span class="comment">//预编译SQL，减少sql执行</span></span><br><span class="line">        PreparedStatement ptmt = conn.prepareStatement(sql);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//传参</span></span><br><span class="line">        ptmt.setInt(<span class="number">1</span>, id);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//执行</span></span><br><span class="line">        ptmt.execute();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Goddess&gt; <span class="title">query</span><span class="params">()</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">        Connection conn = DbUtil.getConnection();</span><br><span class="line">        Statement stmt = conn.createStatement();</span><br><span class="line">        ResultSet rs = stmt.executeQuery(<span class="string">"SELECT user_name, age FROM imooc_goddess"</span>);</span><br><span class="line"></span><br><span class="line">        List&lt;Goddess&gt; gs = <span class="keyword">new</span> ArrayList&lt;Goddess&gt;();</span><br><span class="line">        Goddess g = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">while</span>(rs.next())&#123;</span><br><span class="line">            g = <span class="keyword">new</span> Goddess();</span><br><span class="line">            g.setUser_name(rs.getString(<span class="string">"user_name"</span>));</span><br><span class="line">            g.setAge(rs.getInt(<span class="string">"age"</span>));</span><br><span class="line"></span><br><span class="line">            gs.add(g);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> gs;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Goddess <span class="title">get</span><span class="params">()</span></span>&#123;</span><br><span class="line">        Goddess g = <span class="keyword">null</span>;</span><br><span class="line">        <span class="comment">//获取连接</span></span><br><span class="line">        Connection conn = DbUtil.getConnection();</span><br><span class="line">        <span class="comment">//sql, 每行加空格</span></span><br><span class="line">        String sql = <span class="string">"select * from  imooc_goddess where id=?"</span>;</span><br><span class="line">        <span class="comment">//预编译SQL，减少sql执行</span></span><br><span class="line">        PreparedStatement ptmt = conn.prepareStatement(sql);</span><br><span class="line">        <span class="comment">//传参</span></span><br><span class="line">        ptmt.setInt(<span class="number">1</span>, id);</span><br><span class="line">        <span class="comment">//执行</span></span><br><span class="line">        ResultSet rs = ptmt.executeQuery();</span><br><span class="line">        <span class="keyword">while</span>(rs.next())&#123;</span><br><span class="line">            g = <span class="keyword">new</span> Goddess();</span><br><span class="line">            g.setId(rs.getInt(<span class="string">"id"</span>));</span><br><span class="line">            g.setUser_name(rs.getString(<span class="string">"user_name"</span>));</span><br><span class="line">            g.setAge(rs.getInt(<span class="string">"age"</span>));</span><br><span class="line">            g.setSex(rs.getInt(<span class="string">"sex"</span>));</span><br><span class="line">            g.setBirthday(rs.getDate(<span class="string">"birthday"</span>));</span><br><span class="line">            g.setEmail(rs.getString(<span class="string">"email"</span>));</span><br><span class="line">            g.setMobile(rs.getString(<span class="string">"mobile"</span>));</span><br><span class="line">            g.setCreate_date(rs.getDate(<span class="string">"create_date"</span>));</span><br><span class="line">            g.setCreate_user(rs.getString(<span class="string">"create_user"</span>));</span><br><span class="line">            g.setUpdate_date(rs.getDate(<span class="string">"update_date"</span>));</span><br><span class="line">            g.setUpdate_user(rs.getString(<span class="string">"update_user"</span>));</span><br><span class="line">            g.setIsDel(rs.getInt(<span class="string">"isdel"</span>));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> g;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/11/12/JDBC%E6%93%8D%E4%BD%9C/" data-id="ckjkue6o0000q6ouc71015wh6"
+         class="article-share-link">分享</a>
+      
+    </footer>
+
+  </div>
+
+  
+    
+  <nav class="article-nav">
+    
+      <a href="/2020/11/15/CRUD%E6%B5%8B%E8%AF%95/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            CRUD测试
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/11/11/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">项目管理系统</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+    
+  
+
+</article>
+
+
+
+</section>
+    </div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+
+<script src="/js/technology.js"></script>
+
+
+  </div>
+</body>
+</html>

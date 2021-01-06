@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  
+    <meta name="keywords" content="帅">
+  
+  
+    <meta name="description" content="Hello 全宇宙最帅的人">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    项目管理系统 |
+    
+    悠悠鱼儿游</title>
+  
+    <link rel="shortcut icon" href="favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/technology.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <section class="outer">
+  <article id="post-项目管理系统" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      项目管理系统
+    </h1>
+  
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2020/11/11/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" class="article-date">
+  <time datetime="2020-11-11T01:58:59.315Z" itemprop="datePublished">2020-11-11</time>
+</a>
+        
+      </div>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+      
+
+      
+        <h1 id="项目管理系统"><a href="#项目管理系统" class="headerlink" title="项目管理系统"></a>项目管理系统</h1><p>1-添加Thymeleaf   jar包  √</p>
+<p>模板引擎Thymeleaf、JSP等的作用：将数据库的数据渲染的web页面。</p>
+<p>controller    控制层。控制html页面跳转</p>
+<p>dao    数据接口。处理数据，提供增删改查操作。</p>
+<p>pojo    数据。</p>
+<h5 id="2-dashboard页面"><a href="#2-dashboard页面" class="headerlink" title="2-dashboard页面"></a>2-dashboard页面</h5><p>员工管理</p>
+<p>个人周报</p>
+<p>部门周报</p>
+<p>3-controller调用service层</p>
+<h1 id="4—导师需求：数据库采用SQLlite"><a href="#4—导师需求：数据库采用SQLlite" class="headerlink" title="4—导师需求：数据库采用SQLlite"></a>4—导师需求：数据库采用SQLlite</h1><h2 id="5-前端框架：BootStrap-Layui，semantic-ui"><a href="#5-前端框架：BootStrap-Layui，semantic-ui" class="headerlink" title="5-前端框架：BootStrap,Layui，semantic-ui"></a>5-前端框架：BootStrap,Layui，semantic-ui</h2><p>栅格系统</p>
+<p>导航栏</p>
+<p>侧边栏</p>
+<p>表单</p>
+<h2 id="6-项目开发流程"><a href="#6-项目开发流程" class="headerlink" title="6-项目开发流程"></a>6-项目开发流程</h2><p>1：设计好前端。</p>
+<p>2：设计数据库。（重点）</p>
+<p>3：前端能独立运行</p>
+<p>4：设计好数据库接口</p>
+<p>5：前后端联结调试</p>
+<h2 id="7-编程规范"><a href="#7-编程规范" class="headerlink" title="7-编程规范"></a>7-编程规范</h2><p>1.工程启动类(ApplicationServer.java)置于com.springboot.build包下</p>
+<p>　　　　2.实体类(domain)置于com.springboot.domain</p>
+<p>　　　　3.数据访问层(Dao)置于com.springboot.repository</p>
+<p>　　　　4.数据服务层(Service)置于com,springboot.service,数据服务的实现接口(serviceImpl)至于com.springboot.service.impl</p>
+<p>　　　　5.前端控制器(Controller)置于com.springboot.controller</p>
+<p>　　　　6.工具类(utils)置于com.springboot.utils</p>
+<p>　　　　7.常量接口类(constant)置于com.springboot.constant</p>
+<p>　　　　8.配置信息类(config)置于com.springboot.config</p>
+<p>　　　　9.数据传输类(vo)置于com.springboot.vo</p>
+<p>8—SrpingBoot与数据库访问</p>
+<p>JDBC、MyBatis、Spring Data JPA</p>
+<h4 id="9—数据库连接配置"><a href="#9—数据库连接配置" class="headerlink" title="9—数据库连接配置"></a>9—数据库连接配置</h4><p>在application键入</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">spring:</span><br><span class="line">  datasource:</span><br><span class="line">    username: root</span><br><span class="line">    password: root</span><br><span class="line">    url: jdbc:mysql:<span class="comment">//localhost:3306/pro_management?characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC&amp;rewriteBatchedStatements=true</span></span><br><span class="line">    driver-class-name: com.mysql.cj.jdbc.Driver</span><br></pre></td></tr></table></figure>
+<p>注意点：</p>
+<p>1—pom.xml里mysql-connector-java-jar包版本与数据库版本一致</p>
+<p>2—mysql8版本以上com.mysql.<strong>cj</strong>.jdbc.Driver添加cj。</p>
+<h1 id="10—周末任务"><a href="#10—周末任务" class="headerlink" title="10—周末任务"></a>10—周末任务</h1><p>1—实现周报统计的功能，完成数据的增删改查工作</p>
+<p>2—优化前端页面</p>
+<p>3—添加Security，控制访问权限。</p>
+<h1 id="11-什么是Druid？"><a href="#11-什么是Druid？" class="headerlink" title="11.什么是Druid？"></a>11<strong>.什么是Druid？</strong></h1><p>Druid是一个高效的数据查询系统，主要解决的是对于大量的基于时序的数据进行聚合查询。数据可以实时摄入，进入到Druid后立即可查，同时数据是几乎是不可变。通常是基于时序的事实事件，事实发生后进入Druid，外部系统就可以对该事实进行查询。 </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/11/11/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" data-id="ckjkue6oz002c6oucfmggcwos"
+         class="article-share-link">分享</a>
+      
+    </footer>
+
+  </div>
+
+  
+    
+  <nav class="article-nav">
+    
+      <a href="/2020/11/12/JDBC%E6%93%8D%E4%BD%9C/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            JDBC操作
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/11/11/SSM%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">SSM项目搭建</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+    
+  
+
+</article>
+
+
+
+</section>
+    </div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+
+<script src="/js/technology.js"></script>
+
+
+  </div>
+</body>
+</html>

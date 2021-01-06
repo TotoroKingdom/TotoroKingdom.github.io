@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  
+    <meta name="keywords" content="帅">
+  
+  
+    <meta name="description" content="Hello 全宇宙最帅的人">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    shiro |
+    
+    悠悠鱼儿游</title>
+  
+    <link rel="shortcut icon" href="favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/technology.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <section class="outer">
+  <article id="post-shiro" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      shiro
+    </h1>
+  
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2020/12/21/shiro/" class="article-date">
+  <time datetime="2020-12-21T01:15:35.969Z" itemprop="datePublished">2020-12-21</time>
+</a>
+        
+      </div>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+      
+
+      
+        <h1 id="shiro"><a href="#shiro" class="headerlink" title="shiro"></a>shiro</h1><h2 id="Subject"><a href="#Subject" class="headerlink" title="Subject"></a>Subject</h2><p>​    通过安全管理器进行 认证 和授权</p>
+<p>SecurityManager 安全管理器</p>
+<p>​    SecurityManager是shiro框架的核心</p>
+<h2 id="Authenticator-认证器"><a href="#Authenticator-认证器" class="headerlink" title="Authenticator 认证器"></a>Authenticator 认证器</h2><p>​    对主体进行认证</p>
+<h2 id="Authorizer-授权器"><a href="#Authorizer-授权器" class="headerlink" title="Authorizer 授权器"></a>Authorizer 授权器</h2><p>​    用户通过认证器认证通过，在访问时判断用户是否有相应的权限。</p>
+<h2 id="Realm-接口"><a href="#Realm-接口" class="headerlink" title="Realm 接口"></a>Realm 接口</h2><p>​    SecurityManager 进行安全认证需要通过 Realm 获取用户权限数据。</p>
+<p>​    Realm 从配置文件或者数据库读取用户的权限信息</p>
+<p>​    多种实现：1：将用户权限信息放到配置文件</p>
+<p>​                        2：将用户权限信息放到数据库</p>
+<h2 id="SessionManager-会话管理器"><a href="#SessionManager-会话管理器" class="headerlink" title="SessionManager 会话管理器"></a>SessionManager 会话管理器</h2><h2 id="SessionDAO"><a href="#SessionDAO" class="headerlink" title="SessionDAO"></a>SessionDAO</h2><p>​    对session会话操作的一套接口，将会话信息存储到redis数据库。</p>
+<h2 id="CacheManager-缓存管理器"><a href="#CacheManager-缓存管理器" class="headerlink" title="CacheManager 缓存管理器"></a>CacheManager 缓存管理器</h2><p>​    将用户权限数据缓存，提高性能。</p>
+<h2 id="Cryptography"><a href="#Cryptography" class="headerlink" title="Cryptography"></a>Cryptography</h2><p>​    密码管理器，shiro提供一套加密/解密的组件。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;shiro内置过滤器</span><br><span class="line">&#x2F;*</span><br><span class="line">anon: 无需认证就可访问</span><br><span class="line">aughc: 必须认证才能访问</span><br><span class="line">user： 必须拥有 记住我 功能才能用</span><br><span class="line">perms: 拥有对某个资源的权限才能访问</span><br><span class="line">role: 拥有某个角色权限才能访问</span><br><span class="line"> *&#x2F;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/12/21/shiro/" data-id="ckjkue6oj001m6oucf9pcb7av"
+         class="article-share-link">分享</a>
+      
+    </footer>
+
+  </div>
+
+  
+    
+  <nav class="article-nav">
+    
+      <a href="/2020/12/23/axios-vue/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            axios-vue
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/12/11/mysql%E8%AF%AD%E5%8F%A5/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">mysql语句</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+    
+  
+
+</article>
+
+
+
+</section>
+    </div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+
+<script src="/js/technology.js"></script>
+
+
+  </div>
+</body>
+</html>

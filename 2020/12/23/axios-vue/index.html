@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  
+    <meta name="keywords" content="帅">
+  
+  
+    <meta name="description" content="Hello 全宇宙最帅的人">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    axios-vue |
+    
+    悠悠鱼儿游</title>
+  
+    <link rel="shortcut icon" href="favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/technology.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <section class="outer">
+  <article id="post-axios-vue" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      axios-vue
+    </h1>
+  
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2020/12/23/axios-vue/" class="article-date">
+  <time datetime="2020-12-23T14:20:22.778Z" itemprop="datePublished">2020-12-23</time>
+</a>
+        
+      </div>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+      
+
+      
+        <h1 id="axios-vue"><a href="#axios-vue" class="headerlink" title="axios-vue"></a>axios-vue</h1><h2 id="1—跨域问题"><a href="#1—跨域问题" class="headerlink" title="1—跨域问题"></a>1—跨域问题</h2><p>在controller中添加注解@CrossOrigin</p>
+<h2 id="2—axios在vue中的模块封装"><a href="#2—axios在vue中的模块封装" class="headerlink" title="2—axios在vue中的模块封装"></a>2—axios在vue中的模块封装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;封装位置  文件位置: .&#x2F;network&#x2F;request&#x2F;request</span><br><span class="line">import axios from &quot;axios&quot;;</span><br><span class="line"></span><br><span class="line">export function request(config,success,fail) &#123;</span><br><span class="line">    axios(&#123;</span><br><span class="line">        url:config</span><br><span class="line">    &#125;).then(res&#x3D;&gt;&#123;</span><br><span class="line">        success(res);</span><br><span class="line">    &#125;).catch(err&#x3D;&gt;&#123;</span><br><span class="line">        fail(err);</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;调用者位置</span><br><span class="line">import &#123;request&#125; from &quot;.&#x2F;network&#x2F;request&#x2F;request&quot;;</span><br><span class="line">request(&#39;http:&#x2F;&#x2F;localhost:8080&#x2F;userList&#39;,res&#x3D;&gt;&#123;</span><br><span class="line">  console.log(res);</span><br><span class="line">&#125;,err&#x3D;&gt;&#123;</span><br><span class="line">  console.log(err);</span><br><span class="line">    &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;封装位置</span><br><span class="line">import axios from &quot;axios&quot;;</span><br><span class="line"></span><br><span class="line">export function request(config) &#123;</span><br><span class="line">    axios.defaults.baseURL&#x3D;&quot;http:&#x2F;&#x2F;localhost:8080&quot;</span><br><span class="line">    axios(</span><br><span class="line">        config.url</span><br><span class="line">    ).then(</span><br><span class="line">        res&#x3D;&gt;&#123;</span><br><span class="line">            config.success(res)</span><br><span class="line">        &#125;</span><br><span class="line">    ).catch(err&#x3D;&gt;&#123;</span><br><span class="line">        config.fail(err);</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;调用者位置</span><br><span class="line">import &#123;request&#125; from &quot;.&#x2F;network&#x2F;request&#x2F;request&quot;;</span><br><span class="line">request(&#123;</span><br><span class="line">  url:&#39;userList&#39;,</span><br><span class="line">  success:res&#x3D;&gt;&#123;</span><br><span class="line">    console.log(res);</span><br><span class="line">  &#125;,</span><br><span class="line">  fail:err&#x3D;&gt;&#123;</span><br><span class="line">    config.log(res);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/12/23/axios-vue/" data-id="ckjkue6o800116ouc8y2y3qhf"
+         class="article-share-link">分享</a>
+      
+    </footer>
+
+  </div>
+
+  
+    
+  <nav class="article-nav">
+    
+      <a href="/2020/12/24/swagger/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            swagger
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/12/21/shiro/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">shiro</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+    
+  
+
+</article>
+
+
+
+</section>
+    </div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+
+<script src="/js/technology.js"></script>
+
+
+  </div>
+</body>
+</html>

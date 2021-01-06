@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  
+    <meta name="keywords" content="帅">
+  
+  
+    <meta name="description" content="Hello 全宇宙最帅的人">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    vue |
+    
+    悠悠鱼儿游</title>
+  
+    <link rel="shortcut icon" href="favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/technology.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <section class="outer">
+  <article id="post-vue" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      vue
+    </h1>
+  
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2020/11/18/vue/" class="article-date">
+  <time datetime="2020-11-18T14:28:14.252Z" itemprop="datePublished">2020-11-18</time>
+</a>
+        
+      </div>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+      
+
+      
+        <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vue</title>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+
+    <div id="app">
+        <h3 v-html="content"></h3>
+        <h3 v-text="content"></h3>
+        <input type="button" value="v-on指令" v-on:click="dolt">
+        <!--点击-->
+        <input type="button" value="v-on指令" @click="dolt">
+        <h2 v-text="msg" @click="changemsg"></h2>
+        <div class="input=num">
+            <button @click="sub">-</button>
+            <span v-text="num"></span>
+            <button @click="add">+</button>
+        </div>
+        <img src="/2020/11/18/vue/blog\source\_posts\vue\106.jpg" v-show="false">
+        <!--图片的隐藏与显示-->
+        <input type="button" value="隐藏与显示" @click="changeIsShow"><br>
+        <img src="/2020/11/18/vue/blog\source\_posts\vue\108.jpg" v-show="isShow">
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#app', //挂载点，对应div里的id
+            data: {
+                msg: 'Hello are you ok!',
+                content: "<a href='http://www.baidu.com' target="_blank" rel="noopener">刘润欣喝咖啡</a>",
+                num: 1,
+                isShow: true,
+            },
+            methods: {
+                add: function() {
+                    //console.log('add');
+                    if (this.num < 10) {
+                        this.num += 1;
+                    } else {
+                        alert('你的钱够多了')
+                    }
+                },
+                sub: function() {
+                    //console.log('sub')
+                    if (this.num > 0) {
+                        this.num -= 1;
+                    } else {
+                        alert('不能再少了')
+                    }
+                },
+                dolt: function() {
+                    alert("刘润欣喝瑞星咖啡");
+                },
+                changemsg: function() {
+                    this.msg += "我OK"
+                },
+                changeIsShow: function() {
+                    this.isShow = !this.isShow;
+                }
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/11/18/vue/" data-id="ckjkue6oj001k6ouc6gwabh4r"
+         class="article-share-link">分享</a>
+      
+    </footer>
+
+  </div>
+
+  
+    
+  <nav class="article-nav">
+    
+      <a href="/2020/11/19/07-01/style/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            07-01/style
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/11/18/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">前端学习</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+    
+  
+
+</article>
+
+
+
+</section>
+    </div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+
+<script src="/js/technology.js"></script>
+
+
+  </div>
+</body>
+</html>

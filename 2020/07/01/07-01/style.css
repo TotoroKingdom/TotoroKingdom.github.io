@@ -1,0 +1,67 @@
+/*
+*{
+    text-align: center;
+}
+*/
+
+h2 {
+    font-family: '宋体';
+}
+
+
+/*
+p{
+    font-family: 'Microsoft YaHei';
+    font-size: 20px;
+    font-weight: 100;
+    font-style: italic;
+    color: cadetblue;
+}
+*/
+
+ol li {
+    color: plum;
+}
+
+.grey>p {
+    color: grey;
+}
+
+div,
+p,
+.gold li {
+    color: hotpink;
+}
+
+
+/*未曾访问的链接*/
+
+a:link {
+    color: gold;
+}
+
+
+/*访问过的链接*/
+
+a:visited {
+    color: green;
+}
+
+
+/*鼠标经过的链接*/
+
+a:hover {
+    color: skyblue;
+}
+
+
+/*鼠标正在点击的链接*/
+
+a:active {
+    color: tomato;
+}
+
+input:focus {
+    color: black;
+    background-color: cornsilk;
+}
