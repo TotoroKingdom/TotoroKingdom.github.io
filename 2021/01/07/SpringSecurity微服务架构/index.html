@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  
+    <meta name="keywords" content="帅">
+  
+  
+    <meta name="description" content="Hello 全宇宙最帅的人">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    SpringSecurity微服务架构 |
+    
+    悠悠鱼儿游</title>
+  
+    <link rel="shortcut icon" href="favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/technology.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <section class="outer">
+  <article id="post-SpringSecurity微服务架构" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      SpringSecurity微服务架构
+    </h1>
+  
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2021/01/07/SpringSecurity%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/" class="article-date">
+  <time datetime="2021-01-07T03:14:54.285Z" itemprop="datePublished">2021-01-07</time>
+</a>
+        
+      </div>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+      
+
+      
+        <h1 id="SpringSecurity微服务架构"><a href="#SpringSecurity微服务架构" class="headerlink" title="SpringSecurity微服务架构"></a>SpringSecurity微服务架构</h1><h2 id="数据模型"><a href="#数据模型" class="headerlink" title="数据模型"></a>数据模型</h2><p>auth_table</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">1</th>
+<th>我的主页</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">2</td>
+<td>项目管理</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>auth_role_table</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>aid</th>
+<th>rid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>11</td>
+</tr>
+<tr>
+<td>2</td>
+<td>11</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>role_table</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>11</th>
+<th>管理员</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>12</td>
+<td>超级管理员</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>user_role_table</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>uid</th>
+<th>rid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21</td>
+<td>11</td>
+</tr>
+<tr>
+<td>22</td>
+<td>11</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>user_table</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>21</th>
+<th>admin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>22</td>
+<td>peng</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><p>maven,springboot,mybatisplus,springcloud(grateway,nacos),redis,jwt</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2021/01/07/SpringSecurity%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/" data-id="ckkaunutr000u8wuc2zzp5ze3"
+         class="article-share-link">分享</a>
+      
+    </footer>
+
+  </div>
+
+  
+    
+  <nav class="article-nav">
+    
+      <a href="/2021/01/07/%E6%9D%83%E9%99%90%E6%80%9D%E8%B7%AF/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            权限思路
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2021/01/06/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">权限管理需求分析</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+    
+  
+
+</article>
+
+
+
+</section>
+    </div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+
+<script src="/js/technology.js"></script>
+
+
+  </div>
+</body>
+</html>
