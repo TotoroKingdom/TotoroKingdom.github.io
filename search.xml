@@ -1,6 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>06-22</title>
+    <url>/2020/06/22/06-22/</url>
+    <content><![CDATA[<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello world</title>
+<meta name="generator" content="Hexo 4.2.1"></head>
+<!--body最好写一个！！！-->
+
+<h1 id="one"><center>我是老大，我站中间。</center></h1>
+<h2>仲</h2>
+<h3>叔</h3>
+<h4>季</h4>
+<h5>钻石王老五</h5>
+<h6>我是最小的老六，我没有弟弟了。</h6>
+
+<h1 id="seven"><center>锚点链接</center></h1>
+<body>
+    <center><a href="#one">标题标签</a> </center>
+    <center><a href="#two">段落与换行</a> </center>
+    <center><a href="#three">字体标签</a> </center>
+    <center><a href="#four">div和span</a> </center>
+    <center><a href="#five">图片标签</a> </center>
+    <center><a href="#six">超链接</a> </center>
+    <center><a href="#seven">锚点链接</a></center>
+</body>
+
+<h1 id="two"><center>段落与换行</center></h1>
+<body>
+    <p>你好，世界。这是一个晴朗的上午。</p><p>
+    </p><p>
+        我想换个行。<br>
+        我换好了。<br>
+        我想换个段。
+    </p>
+    <p>我换好了。</p> 
+    <p>为什么我的眼里常含泪水？因为我对这土地爱的深沉！</p>
+</body>
+
+<h1 id="three"><center>字体标签</center></h1>
+<body>
+        <strong>我很粗。</strong><br>
+        <b>我也很粗！</b><br>
+        <em>我喜欢斜着。</em><br>
+        <i>我也是~</i><br>
+        <del>我是删除线。</del><br>
+        <s>你看不见我QAQ</s><br>
+        <ins>我有下划线。</ins><br>
+        <u>me too!</u><br>
+</body>
+
+<h1 id="four"><center>div和span</center></h1>
+<body> 
+    <div>div单独占一整行</div>
+    <span>我是一个span</span>
+    <span>span</span>
+    <span>span</span>
+</body>
+
+<h1 id="five"><center>图片标签</center></h1>
+<body>
+    <center> <img src="/2020/06/22/06-22/blog\source\_posts\06-22\女朋友1号.jpg" alt="This is my girlfriend" title="本地图片" border="10"> </center>   
+     <!--html  alt:图片显示不出来时显示的文字    title:放在图片上显示的文字。   width:宽度   height:高度     border:边框粗细-->
+    <br>
+    <img src="/2020/06/22/06-22/%E5%A5%B3%E6%9C%8B%E5%8F%8B1%E5%8F%B7.jpg" class title="beautiful girl">                                   <!--hexo-->
+    <br>
+    <center> <img src="https://wx2.sinaimg.cn/mw690/005O0Eg8ly1gg4hf5nhkhj31o01o0u0x.jpg" alt="girlfriend" title="新浪图片"></center>
+    <h6><center>QQ图片</center></h6>
+    <center> <img src="http://b385.photo.store.qq.com/psb?/V10JJMpe0HJpcz/rwR4H68.5VT16CH6*imnmGBIRBd00hMLWyC.mkvyh04!/b/dIEBAAAAAAAA&bo=jgUgAwAAAAARB5g!&rf=viewer_4" title="QQ图片"></center>
+</body>
+
+<h1 id="six"><center>超链接</center></h1>
+<body>
+    <center><a href="http://www.baidu.com" target="_blank">百度一下</a></center>
+    <center><a href="http://634581304.qzone.qq.com" target="_self">QQ空间</a></center>
+    <!--_blank：打开一个新的页面        _self：在当前页面打开-->
+    <center>
+        <a href="https://weibo.com/p/1005055319635720/photos?from=page_100505&mod=TAB#place" target="_blank">
+            <img src="https://wx3.sinaimg.cn/mw690/005O0Eg8ly1gflu8k3f00j30u0140k1b.jpg">
+        </a>
+    </center>
+    <!--内链接-->
+</body>
+
+<center>&copy;Tom猫和小太阳</center>
+</html>]]></content>
+  </entry>
+  <entry>
+    <title>06-29</title>
+    <url>/2020/06/29/06-29/</url>
+    <content><![CDATA[<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello CSS</title>
+    <style>
+        h1{
+            color:royalblue;
+            font-size: 30px;
+        }
+        h2{
+            color: lightseagreen;
+        }
+        /*P{
+            color: red;
+            font-size: 20px;
+        }*/
+        div{
+            color: green;
+            font-size: 20px;            
+        }
+        .blue{
+            color: blue;
+            font-size: 20px;
+        }
+        .yellow{
+            color: yellow;
+            font-size: 20px;
+        }
+        .color-teal{
+            color: teal;
+            font-size: 20px;
+        }
+        .blueviolet{
+            color: blueviolet;
+            font-size: 20px;
+        }
+        .goldenrod{
+            color: goldenrod;
+            font-size: 20px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            font-size: 30px;
+        }
+        .reddiv{
+            color: white;
+            background-color: red;
+        }
+        .greendiv{
+            color: white;
+            background-color: green;
+        }
+        .bluediv{
+            color: white;
+            background-color: blue;
+        }
+        #pink {
+            color: pink;
+        }
+        /**{
+            color: goldenrod;
+            text-align: center;
+        }*/
+    </style>
+<meta name="generator" content="Hexo 4.2.1"></head>
+<body>
+    <h1>导航栏</h1>
+    <ol>
+        <li><a href="#one">标签选择器</a></li>
+        <li><a href="#two">class选择器</a></li>
+        <li><a href="#three">id选择器</a></li>
+        <li><a href="#four">通配符选择器</a></li>
+    </ol>
+    <h2 id="one">标签选择器</h2>
+    <h1>将进酒</h1>
+    <p>
+        君不见，黄河之水天上来，奔流到海不复回。
+    </p>
+    <div>
+        君不见，高堂明镜悲白发，朝如青丝暮成雪。
+    </div>
+    <ul>
+        <li class="blue">人生得意须尽欢，莫使金樽空对月。</li>
+        <li class="yellow">天生我材必有用，千金散尽还复来。</li>
+        <li class="color-teal">烹羊宰牛且为乐，会须一饮三百杯。</li>
+    </ul>
+    <h2 id="two">类选择器</h2>
+    <ol class="blueviolet">
+        <li>岑夫子</li>
+        <li>丹丘生</li>
+        <li>将进酒</li>
+        <li>杯莫停</li>
+    </ol>
+    <dl class="goldenrod">
+        <dt>与君歌一曲，请君为我倾耳听。</dt>
+        <dd>钟鼓馔玉不足贵，但愿长醉不复醒。</dd>
+        <dd>古来圣贤皆寂寞，惟有饮者留其名。</dd>
+        <dd>陈王昔时宴平乐，斗酒十千恣欢谑。</dd>
+        <dd>主人何为言少钱，径须沽取对君酌。</dd>
+        <dd>五花马，千金裘，呼儿将出换美酒，与尔同销万古愁。</dd>
+    </dl>
+
+    <div class="box reddiv">
+        跳跳
+    </div>
+    <div class="box greendiv">
+        逗逗
+    </div>
+    <div class="box bluediv">
+        蹦蹦
+    </div>
+    <h2 id="three">id选择器</h2>
+    <!--id只能用一次,经常和javascript搭配使用-->
+    <div id="pink" class="box">
+        达达
+    </div>
+    <h2 id="four">通配符选择器</h2>
+    <div>
+        草木凋零，美人迟暮。
+    </div>
+</body>
+</html>]]></content>
+  </entry>
+  <entry>
     <title>06-26</title>
     <url>/2020/06/26/06-26/</url>
     <content><![CDATA[<!DOCTYPE html>
@@ -147,117 +366,6 @@
 </html>]]></content>
   </entry>
   <entry>
-    <title>06-22</title>
-    <url>/2020/06/22/06-22/</url>
-    <content><![CDATA[<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hello world</title>
-<meta name="generator" content="Hexo 4.2.1"></head>
-<!--body最好写一个！！！-->
-
-<h1 id="one"><center>我是老大，我站中间。</center></h1>
-<h2>仲</h2>
-<h3>叔</h3>
-<h4>季</h4>
-<h5>钻石王老五</h5>
-<h6>我是最小的老六，我没有弟弟了。</h6>
-
-<h1 id="seven"><center>锚点链接</center></h1>
-<body>
-    <center><a href="#one">标题标签</a> </center>
-    <center><a href="#two">段落与换行</a> </center>
-    <center><a href="#three">字体标签</a> </center>
-    <center><a href="#four">div和span</a> </center>
-    <center><a href="#five">图片标签</a> </center>
-    <center><a href="#six">超链接</a> </center>
-    <center><a href="#seven">锚点链接</a></center>
-</body>
-
-<h1 id="two"><center>段落与换行</center></h1>
-<body>
-    <p>你好，世界。这是一个晴朗的上午。</p><p>
-    </p><p>
-        我想换个行。<br>
-        我换好了。<br>
-        我想换个段。
-    </p>
-    <p>我换好了。</p> 
-    <p>为什么我的眼里常含泪水？因为我对这土地爱的深沉！</p>
-</body>
-
-<h1 id="three"><center>字体标签</center></h1>
-<body>
-        <strong>我很粗。</strong><br>
-        <b>我也很粗！</b><br>
-        <em>我喜欢斜着。</em><br>
-        <i>我也是~</i><br>
-        <del>我是删除线。</del><br>
-        <s>你看不见我QAQ</s><br>
-        <ins>我有下划线。</ins><br>
-        <u>me too!</u><br>
-</body>
-
-<h1 id="four"><center>div和span</center></h1>
-<body> 
-    <div>div单独占一整行</div>
-    <span>我是一个span</span>
-    <span>span</span>
-    <span>span</span>
-</body>
-
-<h1 id="five"><center>图片标签</center></h1>
-<body>
-    <center> <img src="/2020/06/22/06-22/blog\source\_posts\06-22\女朋友1号.jpg" alt="This is my girlfriend" title="本地图片" border="10"> </center>   
-     <!--html  alt:图片显示不出来时显示的文字    title:放在图片上显示的文字。   width:宽度   height:高度     border:边框粗细-->
-    <br>
-    <img src="/2020/06/22/06-22/%E5%A5%B3%E6%9C%8B%E5%8F%8B1%E5%8F%B7.jpg" class title="beautiful girl">                                   <!--hexo-->
-    <br>
-    <center> <img src="https://wx2.sinaimg.cn/mw690/005O0Eg8ly1gg4hf5nhkhj31o01o0u0x.jpg" alt="girlfriend" title="新浪图片"></center>
-    <h6><center>QQ图片</center></h6>
-    <center> <img src="http://b385.photo.store.qq.com/psb?/V10JJMpe0HJpcz/rwR4H68.5VT16CH6*imnmGBIRBd00hMLWyC.mkvyh04!/b/dIEBAAAAAAAA&bo=jgUgAwAAAAARB5g!&rf=viewer_4" title="QQ图片"></center>
-</body>
-
-<h1 id="six"><center>超链接</center></h1>
-<body>
-    <center><a href="http://www.baidu.com" target="_blank">百度一下</a></center>
-    <center><a href="http://634581304.qzone.qq.com" target="_self">QQ空间</a></center>
-    <!--_blank：打开一个新的页面        _self：在当前页面打开-->
-    <center>
-        <a href="https://weibo.com/p/1005055319635720/photos?from=page_100505&mod=TAB#place" target="_blank">
-            <img src="https://wx3.sinaimg.cn/mw690/005O0Eg8ly1gflu8k3f00j30u0140k1b.jpg">
-        </a>
-    </center>
-    <!--内链接-->
-</body>
-
-<center>&copy;Tom猫和小太阳</center>
-</html>]]></content>
-  </entry>
-  <entry>
-    <title>07-02</title>
-    <url>/2020/07/02/07-02/</url>
-    <content><![CDATA[<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello JavaScript</title>
-    <script src="test.js">
-        //alert('Hello JavaScript');
-    </script>
-<meta name="generator" content="Hexo 4.2.1"></head>
-
-<body>
-    <!-- <input type="button" value="点击一下" onclick="alert('点不动')"> -->
-</body>
-
-</html>]]></content>
-  </entry>
-  <entry>
     <title>06-30</title>
     <url>/2020/06/30/06-30/</url>
     <content><![CDATA[<!DOCTYPE html>
@@ -287,32 +395,25 @@
 </html>]]></content>
   </entry>
   <entry>
-    <title>2020-11-05</title>
-    <url>/2020/11/05/2020-11-05/</url>
-    <content><![CDATA[<h3 id="1-关闭Navicat程序。"><a href="#1-关闭Navicat程序。" class="headerlink" title="1:关闭Navicat程序。"></a>1:关闭Navicat程序。</h3><h3 id="2-键盘按键win-R，输入regedit调出Windows系统注册表。"><a href="#2-键盘按键win-R，输入regedit调出Windows系统注册表。" class="headerlink" title="2:键盘按键win+R，输入regedit调出Windows系统注册表。"></a>2:键盘按键win+R，输入regedit调出Windows系统注册表。</h3><h3 id="3-删除HKEY-CURRENT-USER-SOFTWARE-PremiumSoft-Data："><a href="#3-删除HKEY-CURRENT-USER-SOFTWARE-PremiumSoft-Data：" class="headerlink" title="3:删除HKEY_CURRENT_USER\SOFTWARE\PremiumSoft\Data："></a>3:删除HKEY_CURRENT_USER\SOFTWARE\PremiumSoft\Data：</h3><img src="/2020/11/05/2020-11-05/2020-11-05-1.png" class title="aa">
-<h3 id="4-展开HKEY-CURRENT-USER-SOFTWARE-Classes-CLSID，然后展开每一个子文件夹查看，如果里面只包含一个名为Info的文件夹，就删掉它："><a href="#4-展开HKEY-CURRENT-USER-SOFTWARE-Classes-CLSID，然后展开每一个子文件夹查看，如果里面只包含一个名为Info的文件夹，就删掉它：" class="headerlink" title="4:展开HKEY_CURRENT_USER\SOFTWARE\Classes\CLSID，然后展开每一个子文件夹查看，如果里面只包含一个名为Info的文件夹，就删掉它："></a>4:展开HKEY_CURRENT_USER\SOFTWARE\Classes\CLSID，然后展开每一个子文件夹查看，如果里面只包含一个名为Info的文件夹，就删掉它：</h3><img src="/2020/11/05/2020-11-05/2020-11-05-2.png" class title="bb">
-]]></content>
-      <tags>
-        <tag>navicat</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2020-6-7</title>
-    <url>/2020/06/07/2020-6-7/</url>
-    <content><![CDATA[<h1 id="悲伤的日子"><a href="#悲伤的日子" class="headerlink" title="悲伤的日子"></a>悲伤的日子</h1><p>今天注定是个悲伤的日子，外面的大雨夹杂着悲伤的空气，悲凉的凉风拍打着窗台。</p>
-<p>公元2020年6月5日</p>
-<p>在弄了一整天的数据库安装后，我终于放弃了。</p>
-<p>怀揣着无比悲凉的心写下这篇博客，记录自己无比痛苦的一天，真是灵魂遭到折磨的一天。</p>
-<p>明天考试，希望有好运。</p>
-<p>可一想起自己即将挂科。</p>
-<p>泪水就止不住的往下涌。</p>
-<p> 。</p>
-<p>。</p>
-<p>。</p>
-<p>。</p>
-<center><font color="blue" size="6" face="STCAIYUN">
-    风潇潇兮易水寒，壮士一去兮不复返。
-</font></center>]]></content>
+    <title>07-02</title>
+    <url>/2020/07/02/07-02/</url>
+    <content><![CDATA[<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello JavaScript</title>
+    <script src="test.js">
+        //alert('Hello JavaScript');
+    </script>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <!-- <input type="button" value="点击一下" onclick="alert('点不动')"> -->
+</body>
+
+</html>]]></content>
   </entry>
   <entry>
     <title>07-01</title>
@@ -387,133 +488,58 @@
 </html>]]></content>
   </entry>
   <entry>
-    <title>06-29</title>
-    <url>/2020/06/29/06-29/</url>
-    <content><![CDATA[<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello CSS</title>
-    <style>
-        h1{
-            color:royalblue;
-            font-size: 30px;
-        }
-        h2{
-            color: lightseagreen;
-        }
-        /*P{
-            color: red;
-            font-size: 20px;
-        }*/
-        div{
-            color: green;
-            font-size: 20px;            
-        }
-        .blue{
-            color: blue;
-            font-size: 20px;
-        }
-        .yellow{
-            color: yellow;
-            font-size: 20px;
-        }
-        .color-teal{
-            color: teal;
-            font-size: 20px;
-        }
-        .blueviolet{
-            color: blueviolet;
-            font-size: 20px;
-        }
-        .goldenrod{
-            color: goldenrod;
-            font-size: 20px;
-        }
-        .box {
-            width: 100px;
-            height: 100px;
-            font-size: 30px;
-        }
-        .reddiv{
-            color: white;
-            background-color: red;
-        }
-        .greendiv{
-            color: white;
-            background-color: green;
-        }
-        .bluediv{
-            color: white;
-            background-color: blue;
-        }
-        #pink {
-            color: pink;
-        }
-        /**{
-            color: goldenrod;
-            text-align: center;
-        }*/
-    </style>
-<meta name="generator" content="Hexo 4.2.1"></head>
-<body>
-    <h1>导航栏</h1>
-    <ol>
-        <li><a href="#one">标签选择器</a></li>
-        <li><a href="#two">class选择器</a></li>
-        <li><a href="#three">id选择器</a></li>
-        <li><a href="#four">通配符选择器</a></li>
-    </ol>
-    <h2 id="one">标签选择器</h2>
-    <h1>将进酒</h1>
-    <p>
-        君不见，黄河之水天上来，奔流到海不复回。
-    </p>
-    <div>
-        君不见，高堂明镜悲白发，朝如青丝暮成雪。
-    </div>
-    <ul>
-        <li class="blue">人生得意须尽欢，莫使金樽空对月。</li>
-        <li class="yellow">天生我材必有用，千金散尽还复来。</li>
-        <li class="color-teal">烹羊宰牛且为乐，会须一饮三百杯。</li>
-    </ul>
-    <h2 id="two">类选择器</h2>
-    <ol class="blueviolet">
-        <li>岑夫子</li>
-        <li>丹丘生</li>
-        <li>将进酒</li>
-        <li>杯莫停</li>
-    </ol>
-    <dl class="goldenrod">
-        <dt>与君歌一曲，请君为我倾耳听。</dt>
-        <dd>钟鼓馔玉不足贵，但愿长醉不复醒。</dd>
-        <dd>古来圣贤皆寂寞，惟有饮者留其名。</dd>
-        <dd>陈王昔时宴平乐，斗酒十千恣欢谑。</dd>
-        <dd>主人何为言少钱，径须沽取对君酌。</dd>
-        <dd>五花马，千金裘，呼儿将出换美酒，与尔同销万古愁。</dd>
-    </dl>
-
-    <div class="box reddiv">
-        跳跳
-    </div>
-    <div class="box greendiv">
-        逗逗
-    </div>
-    <div class="box bluediv">
-        蹦蹦
-    </div>
-    <h2 id="three">id选择器</h2>
-    <!--id只能用一次,经常和javascript搭配使用-->
-    <div id="pink" class="box">
-        达达
-    </div>
-    <h2 id="four">通配符选择器</h2>
-    <div>
-        草木凋零，美人迟暮。
-    </div>
-</body>
-</html>]]></content>
+    <title>2020-11-05</title>
+    <url>/2020/11/05/2020-11-05/</url>
+    <content><![CDATA[<h3 id="1-关闭Navicat程序。"><a href="#1-关闭Navicat程序。" class="headerlink" title="1:关闭Navicat程序。"></a>1:关闭Navicat程序。</h3><h3 id="2-键盘按键win-R，输入regedit调出Windows系统注册表。"><a href="#2-键盘按键win-R，输入regedit调出Windows系统注册表。" class="headerlink" title="2:键盘按键win+R，输入regedit调出Windows系统注册表。"></a>2:键盘按键win+R，输入regedit调出Windows系统注册表。</h3><h3 id="3-删除HKEY-CURRENT-USER-SOFTWARE-PremiumSoft-Data："><a href="#3-删除HKEY-CURRENT-USER-SOFTWARE-PremiumSoft-Data：" class="headerlink" title="3:删除HKEY_CURRENT_USER\SOFTWARE\PremiumSoft\Data："></a>3:删除HKEY_CURRENT_USER\SOFTWARE\PremiumSoft\Data：</h3><img src="/2020/11/05/2020-11-05/2020-11-05-1.png" class title="aa">
+<h3 id="4-展开HKEY-CURRENT-USER-SOFTWARE-Classes-CLSID，然后展开每一个子文件夹查看，如果里面只包含一个名为Info的文件夹，就删掉它："><a href="#4-展开HKEY-CURRENT-USER-SOFTWARE-Classes-CLSID，然后展开每一个子文件夹查看，如果里面只包含一个名为Info的文件夹，就删掉它：" class="headerlink" title="4:展开HKEY_CURRENT_USER\SOFTWARE\Classes\CLSID，然后展开每一个子文件夹查看，如果里面只包含一个名为Info的文件夹，就删掉它："></a>4:展开HKEY_CURRENT_USER\SOFTWARE\Classes\CLSID，然后展开每一个子文件夹查看，如果里面只包含一个名为Info的文件夹，就删掉它：</h3><img src="/2020/11/05/2020-11-05/2020-11-05-2.png" class title="bb">
+]]></content>
+      <tags>
+        <tag>navicat</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2020-6-7</title>
+    <url>/2020/06/07/2020-6-7/</url>
+    <content><![CDATA[<h1 id="悲伤的日子"><a href="#悲伤的日子" class="headerlink" title="悲伤的日子"></a>悲伤的日子</h1><p>今天注定是个悲伤的日子，外面的大雨夹杂着悲伤的空气，悲凉的凉风拍打着窗台。</p>
+<p>公元2020年6月5日</p>
+<p>在弄了一整天的数据库安装后，我终于放弃了。</p>
+<p>怀揣着无比悲凉的心写下这篇博客，记录自己无比痛苦的一天，真是灵魂遭到折磨的一天。</p>
+<p>明天考试，希望有好运。</p>
+<p>可一想起自己即将挂科。</p>
+<p>泪水就止不住的往下涌。</p>
+<p> 。</p>
+<p>。</p>
+<p>。</p>
+<p>。</p>
+<center><font color="blue" size="6" face="STCAIYUN">
+    风潇潇兮易水寒，壮士一去兮不复返。
+</font></center>]]></content>
+  </entry>
+  <entry>
+    <title>2021-01-22随便感想</title>
+    <url>/2021/01/22/2021-01-22%E9%9A%8F%E4%BE%BF%E6%84%9F%E6%83%B3/</url>
+    <content><![CDATA[<p>2020-01-22随便感想</p>
+<p>中国有1.5亿学生，将近1000万老师。大概15个学生拥有一个老师。</p>
+<p>然而这么多的老师的水平参差不齐，城市与农村、东部与西部之间的教育水平差距特大。如果我们将前1%100之一的优秀教师集中起来出网课，给所有学生一起上课，这样可以缩小我国的教育水平差距。</p>
+<p>创建一个免费的学习网站，让各行各业优秀的人在上面传授他们的知识，这样就不需要那么多的老师，可以让更多的人去做其他的事情，也可以让更多的人享受到更为优质的教育。我们只需要拿出我们教育经费的一小部分来给这些优秀的老师发工资，同时我们可以鼓励大家分享自己的知识，创作学习视频。这样可以让全民终身免费的学习，让人们不在苦于学历而没有机会学习。</p>
+<p>重点在于打造一个学习社区，让大家愿意分享自己所学的知识，同时，让他们分享知识的同时，能够获取利益，可以是金钱的利益，也可以其他形式的利益。</p>
+<p>这个网站有三点意义。</p>
+<p>1—促进教育公平</p>
+<p>2—降低教育成本</p>
+<p>3—让人们获得更优质的教育</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>2021-01-24</title>
+    <url>/2021/01/24/2021-01-24/</url>
+    <content><![CDATA[<p>回想高中刚毕业那一瞬间，我当时都不知道自己想要的是什么，我没有梦想，我有点像一副空躯壳。正如我当时写信给远方的陌生人，讲述自己求职失败的经历和高考后的失落。</p>
+<p>从某种意义上来说，确实是高考改变了我的人生轨迹，当时的我并没有想到大学对我来说意味着什么。在哥哥地鼓励下，我取得了不错的成绩。不可否认的是，那时的我并没有想到自己的将来是什么样子的。与初中满怀希望和憧憬迈进高中的我不一样的是，高考完我整个人一片空虚，高中三年确实有点压抑，我不知道我人生的路该往何方。我填了一个陌生而又熟悉的城市的大学志愿。</p>
+<p>我以前从未听说过这所学校，直到我填高考志愿时，除了它的往届录取分数线外，我对它仍然一无所知。但我还是来了，正如我当时的想法一样，我应该去到这座中国最大的城市来看看。我一个人背着一个包来了。</p>
+<p>生活了三年多之后，我依然对这座城市感到陌生，我仿佛一个匆匆过客，悄悄的来了，然后悄无声息的走了。我不知道我的未来应该如何，大学毕业后又是一个未知的新世界。刚入大学，老师对我们说，经过大学四年之后，人与人之间会有巨大的差距，有些人一顿饭钱可能会是另一些人一个月的工资，所以我们应该努力学习，取得良好的成绩，不要虚度大学时光。</p>
+<p>到了今天，我仿佛明白了这句话的另一层含义，大学四年之后，人与人之间的差距仿佛确实有天大的区别。社会中存在种种壁垒，各种无形的墙阻拦着人。到了实习的公司，总经理助理和我们说，无论遇到什么事情，第一件事情是学会请示，因为领导和员工掌握的信息是不对等的。</p>
+<p>随着互联网的飞速发展，社会上信息的不对等得到了极大的改善。但是，信息的不对称依旧存在，这正是各种墙存在的原因。很多人也只能局限于自己思维的一隅，跟着自己身边的人随波逐流。从我自己的角度出发，我也是随波逐流的一员。</p>
+<p>人生应该随波逐流吗？不。人应该有坚定的梦想。我应该相信自己，相信自己能去完成自己的伟大梦想。为自己的梦想去努力的奋斗。这正是我大学的宝贵财富，我找到了自己梦想。</p>
+]]></content>
   </entry>
   <entry>
     <title>Ajax</title>
@@ -558,18 +584,6 @@
 </html>]]></content>
   </entry>
   <entry>
-    <title>2021-01-24</title>
-    <url>/2021/01/24/2021-01-24/</url>
-    <content><![CDATA[<p>回想高中刚毕业那一瞬间，我当时都不知道自己想要的是什么，我没有梦想，我有点像一副空躯壳。正如我当时写信给远方的陌生人，讲述自己求职失败的经历和高考后的失落。</p>
-<p>从某种意义上来说，确实是高考改变了我的人生轨迹，当时的我并没有想到大学对我来说意味着什么。在哥哥地鼓励下，我取得了不错的成绩。不可否认的是，那时的我并没有想到自己的将来是什么样子的。与初中满怀希望和憧憬迈进高中的我不一样的是，高考完我整个人一片空虚，高中三年确实有点压抑，我不知道我人生的路该往何方。我填了一个陌生而又熟悉的城市的大学志愿。</p>
-<p>我以前从未听说过这所学校，直到我填高考志愿时，除了它的往届录取分数线外，我对它仍然一无所知。但我还是来了，正如我当时的想法一样，我应该去到这座中国最大的城市来看看。我一个人背着一个包来了。</p>
-<p>生活了三年多之后，我依然对这座城市感到陌生，我仿佛一个匆匆过客，悄悄的来了，然后悄无声息的走了。我不知道我的未来应该如何，大学毕业后又是一个未知的新世界。刚入大学，老师对我们说，经过大学四年之后，人与人之间会有巨大的差距，有些人一顿饭钱可能会是另一些人一个月的工资，所以我们应该努力学习，取得良好的成绩，不要虚度大学时光。</p>
-<p>到了今天，我仿佛明白了这句话的另一层含义，大学四年之后，人与人之间的差距仿佛确实有天大的区别。社会中存在种种壁垒，各种无形的墙阻拦着人。到了实习的公司，总经理助理和我们说，无论遇到什么事情，第一件事情是学会请示，因为领导和员工掌握的信息是不对等的。</p>
-<p>随着互联网的飞速发展，社会上信息的不对等得到了极大的改善。但是，信息的不对称依旧存在，这正是各种墙存在的原因。很多人也只能局限于自己思维的一隅，跟着自己身边的人随波逐流。从我自己的角度出发，我也是随波逐流的一员。</p>
-<p>人生应该随波逐流吗？不。人应该有坚定的梦想。我应该相信自己，相信自己能去完成自己的伟大梦想。为自己的梦想去努力的奋斗。这正是我大学的宝贵财富，我找到了自己梦想。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>CRUD测试</title>
     <url>/2020/11/15/CRUD%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<h1 id="CRUD测试"><a href="#CRUD测试" class="headerlink" title="CRUD测试"></a>CRUD测试</h1><h2 id="pojo—-gt-mapper—-gt-service—-gt-controller"><a href="#pojo—-gt-mapper—-gt-service—-gt-controller" class="headerlink" title="==pojo—&gt;mapper—&gt;service—&gt;controller=="></a>==pojo—&gt;mapper—&gt;service—&gt;controller==</h2><h3 id="1—导入xml依赖"><a href="#1—导入xml依赖" class="headerlink" title="##1—导入xml依赖"></a>##1—导入xml依赖</h3><h3 id="2—写config"><a href="#2—写config" class="headerlink" title="2—写config"></a>2—写config</h3><p>3—配置.yml连接数据库</p>
@@ -579,31 +593,6 @@
 <p>7—编写service实现代码</p>
 <p>8—编写controller</p>
 <p>9—编写前端页面，将数据传到前端</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>2021-01-22随便感想</title>
-    <url>/2021/01/22/2021-01-22%E9%9A%8F%E4%BE%BF%E6%84%9F%E6%83%B3/</url>
-    <content><![CDATA[<p>2020-01-22随便感想</p>
-<p>中国有1.5亿学生，将近1000万老师。大概15个学生拥有一个老师。</p>
-<p>然而这么多的老师的水平参差不齐，城市与农村、东部与西部之间的教育水平差距特大。如果我们将前1%100之一的优秀教师集中起来出网课，给所有学生一起上课，这样可以缩小我国的教育水平差距。</p>
-<p>创建一个免费的学习网站，让各行各业优秀的人在上面传授他们的知识，这样就不需要那么多的老师，可以让更多的人去做其他的事情，也可以让更多的人享受到更为优质的教育。我们只需要拿出我们教育经费的一小部分来给这些优秀的老师发工资，同时我们可以鼓励大家分享自己的知识，创作学习视频。这样可以让全民终身免费的学习，让人们不在苦于学历而没有机会学习。</p>
-<p>重点在于打造一个学习社区，让大家愿意分享自己所学的知识，同时，让他们分享知识的同时，能够获取利益，可以是金钱的利益，也可以其他形式的利益。</p>
-<p>这个网站有三点意义。</p>
-<p>1—促进教育公平</p>
-<p>2—降低教育成本</p>
-<p>3—让人们获得更优质的教育</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Echarts步骤</title>
-    <url>/2020/12/09/Echarts%E6%AD%A5%E9%AA%A4/</url>
-    <content><![CDATA[<p>Echarts步骤</p>
-<p>1—导入echarts.js文件</p>
-<p>2—准备一个呈现图标的盒子</p>
-<p>3—初始化echarts示例对象</p>
-<p>4—准备配置项</p>
-<p>5—将配置项设置给echarts实例对象</p>
 ]]></content>
   </entry>
   <entry>
@@ -771,6 +760,17 @@
       </tags>
   </entry>
   <entry>
+    <title>Echarts步骤</title>
+    <url>/2020/12/09/Echarts%E6%AD%A5%E9%AA%A4/</url>
+    <content><![CDATA[<p>Echarts步骤</p>
+<p>1—导入echarts.js文件</p>
+<p>2—准备一个呈现图标的盒子</p>
+<p>3—初始化echarts示例对象</p>
+<p>4—准备配置项</p>
+<p>5—将配置项设置给echarts实例对象</p>
+]]></content>
+  </entry>
+  <entry>
     <title>JDBC操作</title>
     <url>/2020/11/12/JDBC%E6%93%8D%E4%BD%9C/</url>
     <content><![CDATA[<h1 id="JDBC操作"><a href="#JDBC操作" class="headerlink" title="JDBC操作"></a>JDBC操作</h1><h2 id="JDBC编程步骤"><a href="#JDBC编程步骤" class="headerlink" title="JDBC编程步骤"></a>JDBC编程步骤</h2><p>1、加载驱动</p>
@@ -781,6 +781,36 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">conn.createStatement();</span><br><span class="line">conn.prepareStatement(sql);</span><br></pre></td></tr></table></figure>
 <h5 id="完整实例"><a href="#完整实例" class="headerlink" title="完整实例"></a>完整实例</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.sql.Connection;</span><br><span class="line"><span class="keyword">import</span> java.sql.DriverManager;</span><br><span class="line"><span class="keyword">import</span> java.sql.ResultSet;</span><br><span class="line"><span class="keyword">import</span> java.sql.Statement;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DbUtil</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String URL = <span class="string">"jdbc:mysql://localhost:3306/imooc"</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String USER = <span class="string">"liulx"</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String PASSWORD = <span class="string">"123456"</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        <span class="comment">//1.加载驱动程序</span></span><br><span class="line">        Class.forName(<span class="string">"com.mysql.jdbc.Driver"</span>);</span><br><span class="line">        <span class="comment">//2. 获得数据库连接</span></span><br><span class="line">        Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);</span><br><span class="line">        <span class="comment">//3.操作数据库，实现增删改查</span></span><br><span class="line">        Statement stmt = conn.createStatement();</span><br><span class="line">        ResultSet rs = stmt.executeQuery(<span class="string">"SELECT user_name, age FROM imooc_goddess"</span>);</span><br><span class="line">        <span class="comment">//如果有数据，rs.next()返回true</span></span><br><span class="line">        <span class="keyword">while</span>(rs.next())&#123;</span><br><span class="line">            System.out.println(rs.getString(<span class="string">"user_name"</span>)+<span class="string">" 年龄："</span>+rs.getInt(<span class="string">"age"</span>));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="增删改查"><a href="#增删改查" class="headerlink" title="增删改查"></a>增删改查</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DbUtil</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String URL = <span class="string">"jdbc:mysql://localhost:3306/imooc"</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String USER = <span class="string">"liulx"</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String PASSWORD = <span class="string">"123456"</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Connection conn = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">static</span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">//1.加载驱动程序</span></span><br><span class="line">            Class.forName(<span class="string">"com.mysql.jdbc.Driver"</span>);</span><br><span class="line">            <span class="comment">//2. 获得数据库连接</span></span><br><span class="line">            conn = DriverManager.getConnection(URL, USER, PASSWORD);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Connection <span class="title">getConnection</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> conn;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//模型</span></span><br><span class="line"><span class="keyword">package</span> liulx.model;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Date;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Goddess</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> Integer id;</span><br><span class="line">    <span class="keyword">private</span> String user_name;</span><br><span class="line">    <span class="keyword">private</span> Integer sex;</span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line">    <span class="keyword">private</span> Date birthday; <span class="comment">//注意用的是java.util.Date</span></span><br><span class="line">    <span class="keyword">private</span> String email;</span><br><span class="line">    <span class="keyword">private</span> String mobile;</span><br><span class="line">    <span class="keyword">private</span> String create_user;</span><br><span class="line">    <span class="keyword">private</span> String update_user;</span><br><span class="line">    <span class="keyword">private</span> Date create_date;</span><br><span class="line">    <span class="keyword">private</span> Date update_date;</span><br><span class="line">    <span class="keyword">private</span> Integer isDel;</span><br><span class="line">    <span class="comment">//getter setter方法。。。</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//---------dao层--------------</span></span><br><span class="line"><span class="keyword">package</span> liulx.dao;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> liulx.db.DbUtil;</span><br><span class="line"><span class="keyword">import</span> liulx.model.Goddess;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.sql.Connection;</span><br><span class="line"><span class="keyword">import</span> java.sql.ResultSet;</span><br><span class="line"><span class="keyword">import</span> java.sql.SQLException;</span><br><span class="line"><span class="keyword">import</span> java.sql.Statement;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">GoddessDao</span> </span>&#123;</span><br><span class="line">    <span class="comment">//增加</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addGoddess</span><span class="params">(Goddess g)</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">        <span class="comment">//获取连接</span></span><br><span class="line">        Connection conn = DbUtil.getConnection();</span><br><span class="line">        <span class="comment">//sql</span></span><br><span class="line">        String sql = <span class="string">"INSERT INTO imooc_goddess(user_name, sex, age, birthday, email, mobile,"</span>+</span><br><span class="line">            <span class="string">"create_user, create_date, update_user, update_date, isdel)"</span></span><br><span class="line">                +<span class="string">"values("</span>+<span class="string">"?,?,?,?,?,?,?,CURRENT_DATE(),?,CURRENT_DATE(),?)"</span>;</span><br><span class="line">        <span class="comment">//预编译</span></span><br><span class="line">        PreparedStatement ptmt = conn.prepareStatement(sql); <span class="comment">//预编译SQL，减少sql执行</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//传参</span></span><br><span class="line">        ptmt.setString(<span class="number">1</span>, g.getUser_name());</span><br><span class="line">        ptmt.setInt(<span class="number">2</span>, g.getSex());</span><br><span class="line">        ptmt.setInt(<span class="number">3</span>, g.getAge());</span><br><span class="line">        ptmt.setDate(<span class="number">4</span>, <span class="keyword">new</span> Date(g.getBirthday().getTime()));</span><br><span class="line">        ptmt.setString(<span class="number">5</span>, g.getEmail());</span><br><span class="line">        ptmt.setString(<span class="number">6</span>, g.getMobile());</span><br><span class="line">        ptmt.setString(<span class="number">7</span>, g.getCreate_user());</span><br><span class="line">        ptmt.setString(<span class="number">8</span>, g.getUpdate_user());</span><br><span class="line">        ptmt.setInt(<span class="number">9</span>, g.getIsDel());</span><br><span class="line"></span><br><span class="line">        <span class="comment">//执行</span></span><br><span class="line">        ptmt.execute();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">updateGoddess</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="comment">//获取连接</span></span><br><span class="line">        Connection conn = DbUtil.getConnection();</span><br><span class="line">        <span class="comment">//sql, 每行加空格</span></span><br><span class="line">        String sql = <span class="string">"UPDATE imooc_goddess"</span> +</span><br><span class="line">                <span class="string">" set user_name=?, sex=?, age=?, birthday=?, email=?, mobile=?,"</span>+</span><br><span class="line">                <span class="string">" update_user=?, update_date=CURRENT_DATE(), isdel=? "</span>+</span><br><span class="line">                <span class="string">" where id=?"</span>;</span><br><span class="line">        <span class="comment">//预编译</span></span><br><span class="line">        PreparedStatement ptmt = conn.prepareStatement(sql); <span class="comment">//预编译SQL，减少sql执行</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//传参</span></span><br><span class="line">        ptmt.setString(<span class="number">1</span>, g.getUser_name());</span><br><span class="line">        ptmt.setInt(<span class="number">2</span>, g.getSex());</span><br><span class="line">        ptmt.setInt(<span class="number">3</span>, g.getAge());</span><br><span class="line">        ptmt.setDate(<span class="number">4</span>, <span class="keyword">new</span> Date(g.getBirthday().getTime()));</span><br><span class="line">        ptmt.setString(<span class="number">5</span>, g.getEmail());</span><br><span class="line">        ptmt.setString(<span class="number">6</span>, g.getMobile());</span><br><span class="line">        ptmt.setString(<span class="number">7</span>, g.getUpdate_user());</span><br><span class="line">        ptmt.setInt(<span class="number">8</span>, g.getIsDel());</span><br><span class="line">        ptmt.setInt(<span class="number">9</span>, g.getId());</span><br><span class="line"></span><br><span class="line">        <span class="comment">//执行</span></span><br><span class="line">        ptmt.execute();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">delGoddess</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="comment">//获取连接</span></span><br><span class="line">        Connection conn = DbUtil.getConnection();</span><br><span class="line">        <span class="comment">//sql, 每行加空格</span></span><br><span class="line">        String sql = <span class="string">"delete from imooc_goddess where id=?"</span>;</span><br><span class="line">        <span class="comment">//预编译SQL，减少sql执行</span></span><br><span class="line">        PreparedStatement ptmt = conn.prepareStatement(sql);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//传参</span></span><br><span class="line">        ptmt.setInt(<span class="number">1</span>, id);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//执行</span></span><br><span class="line">        ptmt.execute();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Goddess&gt; <span class="title">query</span><span class="params">()</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">        Connection conn = DbUtil.getConnection();</span><br><span class="line">        Statement stmt = conn.createStatement();</span><br><span class="line">        ResultSet rs = stmt.executeQuery(<span class="string">"SELECT user_name, age FROM imooc_goddess"</span>);</span><br><span class="line"></span><br><span class="line">        List&lt;Goddess&gt; gs = <span class="keyword">new</span> ArrayList&lt;Goddess&gt;();</span><br><span class="line">        Goddess g = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">while</span>(rs.next())&#123;</span><br><span class="line">            g = <span class="keyword">new</span> Goddess();</span><br><span class="line">            g.setUser_name(rs.getString(<span class="string">"user_name"</span>));</span><br><span class="line">            g.setAge(rs.getInt(<span class="string">"age"</span>));</span><br><span class="line"></span><br><span class="line">            gs.add(g);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> gs;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Goddess <span class="title">get</span><span class="params">()</span></span>&#123;</span><br><span class="line">        Goddess g = <span class="keyword">null</span>;</span><br><span class="line">        <span class="comment">//获取连接</span></span><br><span class="line">        Connection conn = DbUtil.getConnection();</span><br><span class="line">        <span class="comment">//sql, 每行加空格</span></span><br><span class="line">        String sql = <span class="string">"select * from  imooc_goddess where id=?"</span>;</span><br><span class="line">        <span class="comment">//预编译SQL，减少sql执行</span></span><br><span class="line">        PreparedStatement ptmt = conn.prepareStatement(sql);</span><br><span class="line">        <span class="comment">//传参</span></span><br><span class="line">        ptmt.setInt(<span class="number">1</span>, id);</span><br><span class="line">        <span class="comment">//执行</span></span><br><span class="line">        ResultSet rs = ptmt.executeQuery();</span><br><span class="line">        <span class="keyword">while</span>(rs.next())&#123;</span><br><span class="line">            g = <span class="keyword">new</span> Goddess();</span><br><span class="line">            g.setId(rs.getInt(<span class="string">"id"</span>));</span><br><span class="line">            g.setUser_name(rs.getString(<span class="string">"user_name"</span>));</span><br><span class="line">            g.setAge(rs.getInt(<span class="string">"age"</span>));</span><br><span class="line">            g.setSex(rs.getInt(<span class="string">"sex"</span>));</span><br><span class="line">            g.setBirthday(rs.getDate(<span class="string">"birthday"</span>));</span><br><span class="line">            g.setEmail(rs.getString(<span class="string">"email"</span>));</span><br><span class="line">            g.setMobile(rs.getString(<span class="string">"mobile"</span>));</span><br><span class="line">            g.setCreate_date(rs.getDate(<span class="string">"create_date"</span>));</span><br><span class="line">            g.setCreate_user(rs.getString(<span class="string">"create_user"</span>));</span><br><span class="line">            g.setUpdate_date(rs.getDate(<span class="string">"update_date"</span>));</span><br><span class="line">            g.setUpdate_user(rs.getString(<span class="string">"update_user"</span>));</span><br><span class="line">            g.setIsDel(rs.getInt(<span class="string">"isdel"</span>));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> g;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>Java</title>
+    <url>/2020/07/04/Java/</url>
+    <content><![CDATA[<h4 id="Java后端开发学习路线"><a href="#Java后端开发学习路线" class="headerlink" title="Java后端开发学习路线"></a>Java后端开发学习路线</h4><img src="/2020/07/04/Java/Java%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.png" class title="Java">
+<h4 id="引用数据类型"><a href="#引用数据类型" class="headerlink" title="引用数据类型"></a><u>引用数据类型</u></h4><p>数据类型    变量名 = new    数据类型();</p>
+<p>Scanner    sc = new Scanner();    //键盘输入</p>
+<h4 id="ArrayList类"><a href="#ArrayList类" class="headerlink" title="ArrayList类"></a><u>ArrayList</u>类</h4><p>ArrayList&lt;数据类型&gt;    变量名 = new ArrayLsit&lt;数据类型&gt;();</p>
+<p>ArrayList list = new ArrayList();</p>
+<p>list.add();        //放入元素。</p>
+<h4 id="异常"><a href="#异常" class="headerlink" title="异常"></a><u>异常</u></h4><p>程序执行过程中出现非正常的情况导致JVM的非正常停止。</p>
+<p>Throwable    超类</p>
+<p>Error    严重错误</p>
+<p>Exception    编译器异常</p>
+<p>RuntimeException    运行期异常</p>
+<h5 id="抛出异常"><a href="#抛出异常" class="headerlink" title="抛出异常"></a>抛出异常</h5><p>throw new 异常类名(参数);</p>
+<h5 id="声明异常"><a href="#声明异常" class="headerlink" title="声明异常"></a>声明异常</h5><p>修饰符    返回值类型    方法名(参数)    throws    异常类名1，异常类名2{</p>
+<p>}</p>
+<h5 id="捕获异常"><a href="#捕获异常" class="headerlink" title="捕获异常"></a>捕获异常</h5><p>try{</p>
+<p>//可能会出现异常的代码</p>
+<p>}    catch(异常类型 参数名称){</p>
+<p>//处理出现的异常</p>
+<p>}</p>
+<h3 id="IO"><a href="#IO" class="headerlink" title="IO"></a><u>IO</u></h3><h4 id="字节流Stream"><a href="#字节流Stream" class="headerlink" title="字节流Stream"></a>字节流Stream</h4><h5 id="InputStream"><a href="#InputStream" class="headerlink" title="InputStream"></a>InputStream</h5><h6 id="FileInputStream"><a href="#FileInputStream" class="headerlink" title="FileInputStream"></a>FileInputStream</h6><h5 id="OutputStream"><a href="#OutputStream" class="headerlink" title="OutputStream"></a>OutputStream</h5><h6 id="FileInputSteam"><a href="#FileInputSteam" class="headerlink" title="FileInputSteam"></a>FileInputSteam</h6><h4 id="字符流"><a href="#字符流" class="headerlink" title="字符流"></a>字符流</h4><h5 id="Writer"><a href="#Writer" class="headerlink" title="Writer"></a>Writer</h5><h5 id="Reader"><a href="#Reader" class="headerlink" title="Reader"></a>Reader</h5>]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
   </entry>
   <entry>
     <title>数值分析:L，U分解与计算方法</title>
@@ -965,53 +995,141 @@ x&=
       </tags>
   </entry>
   <entry>
-    <title>Java</title>
-    <url>/2020/07/04/Java/</url>
-    <content><![CDATA[<h4 id="Java后端开发学习路线"><a href="#Java后端开发学习路线" class="headerlink" title="Java后端开发学习路线"></a>Java后端开发学习路线</h4><img src="/2020/07/04/Java/Java%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.png" class title="Java">
-<h4 id="引用数据类型"><a href="#引用数据类型" class="headerlink" title="引用数据类型"></a><u>引用数据类型</u></h4><p>数据类型    变量名 = new    数据类型();</p>
-<p>Scanner    sc = new Scanner();    //键盘输入</p>
-<h4 id="ArrayList类"><a href="#ArrayList类" class="headerlink" title="ArrayList类"></a><u>ArrayList</u>类</h4><p>ArrayList&lt;数据类型&gt;    变量名 = new ArrayLsit&lt;数据类型&gt;();</p>
-<p>ArrayList list = new ArrayList();</p>
-<p>list.add();        //放入元素。</p>
-<h4 id="异常"><a href="#异常" class="headerlink" title="异常"></a><u>异常</u></h4><p>程序执行过程中出现非正常的情况导致JVM的非正常停止。</p>
-<p>Throwable    超类</p>
-<p>Error    严重错误</p>
-<p>Exception    编译器异常</p>
-<p>RuntimeException    运行期异常</p>
-<h5 id="抛出异常"><a href="#抛出异常" class="headerlink" title="抛出异常"></a>抛出异常</h5><p>throw new 异常类名(参数);</p>
-<h5 id="声明异常"><a href="#声明异常" class="headerlink" title="声明异常"></a>声明异常</h5><p>修饰符    返回值类型    方法名(参数)    throws    异常类名1，异常类名2{</p>
-<p>}</p>
-<h5 id="捕获异常"><a href="#捕获异常" class="headerlink" title="捕获异常"></a>捕获异常</h5><p>try{</p>
-<p>//可能会出现异常的代码</p>
-<p>}    catch(异常类型 参数名称){</p>
-<p>//处理出现的异常</p>
-<p>}</p>
-<h3 id="IO"><a href="#IO" class="headerlink" title="IO"></a><u>IO</u></h3><h4 id="字节流Stream"><a href="#字节流Stream" class="headerlink" title="字节流Stream"></a>字节流Stream</h4><h5 id="InputStream"><a href="#InputStream" class="headerlink" title="InputStream"></a>InputStream</h5><h6 id="FileInputStream"><a href="#FileInputStream" class="headerlink" title="FileInputStream"></a>FileInputStream</h6><h5 id="OutputStream"><a href="#OutputStream" class="headerlink" title="OutputStream"></a>OutputStream</h5><h6 id="FileInputSteam"><a href="#FileInputSteam" class="headerlink" title="FileInputSteam"></a>FileInputSteam</h6><h4 id="字符流"><a href="#字符流" class="headerlink" title="字符流"></a>字符流</h4><h5 id="Writer"><a href="#Writer" class="headerlink" title="Writer"></a>Writer</h5><h5 id="Reader"><a href="#Reader" class="headerlink" title="Reader"></a>Reader</h5>]]></content>
+    <title>POI</title>
+    <url>/2021/01/26/POI/</url>
+    <content><![CDATA[<p>POI</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>SSM</title>
+    <url>/2020/06/14/SSM/</url>
+    <content><![CDATA[<h1 id="ideaMaven设置"><a href="#ideaMaven设置" class="headerlink" title="ideaMaven设置"></a>ideaMaven设置</h1><img src="/2020/06/14/SSM/ideaMaven.jpg" class title="ideaMaven配置">
+<hr>
+<h1 id="SpringMVC"><a href="#SpringMVC" class="headerlink" title="SpringMVC"></a>SpringMVC</h1><img src="/2020/06/14/SSM/spring_mvc%E5%9B%BE.jpg" class title="mvc图">
+<hr>
+<h1 id="SSM架构图"><a href="#SSM架构图" class="headerlink" title="SSM架构图"></a>SSM架构图</h1><img src="/2020/06/14/SSM/SSM%E6%9E%B6%E6%9E%84%E5%9B%BE.png" class title="SSM图">
+<hr>
+<h1 id="Mybatis"><a href="#Mybatis" class="headerlink" title="Mybatis"></a>Mybatis</h1><h3 id="三层架构"><a href="#三层架构" class="headerlink" title="三层架构"></a>三层架构</h3><p>表现层：展示数据</p>
+<p>业务层：处理逻辑</p>
+<p>持久层：数据库交互</p>
+<h2 id="持久层技术"><a href="#持久层技术" class="headerlink" title="==持久层技术=="></a>==<strong>持久层技术</strong>==</h2><h2 id="JDBC"><a href="#JDBC" class="headerlink" title="JDBC"></a>JDBC</h2><p>Connection</p>
+<p>PreparedStatement</p>
+<p>ResultSet</p>
+<h2 id="SpringJdbcTemplate"><a href="#SpringJdbcTemplate" class="headerlink" title="SpringJdbcTemplate"></a>SpringJdbcTemplate</h2><p>jdbc封装。</p>
+<p>ORM:(Object Relational Mapping)</p>
+<p>对象关系映射：数据库表——&gt;实体类</p>
+<center><font color="line" size="6" face="STCAIYUN">
+    夔府孤城落日斜，每依北斗望京华。
+</font></center>
+
+
+
+]]></content>
       <categories>
-        <category>java</category>
+        <category>SSM</category>
       </categories>
       <tags>
         <tag>java</tag>
+        <tag>软件架构</tag>
       </tags>
   </entry>
   <entry>
-    <title>axios-vue</title>
-    <url>/2020/12/23/axios-vue/</url>
-    <content><![CDATA[<h1 id="axios-vue"><a href="#axios-vue" class="headerlink" title="axios-vue"></a>axios-vue</h1><h2 id="1—跨域问题"><a href="#1—跨域问题" class="headerlink" title="1—跨域问题"></a>1—跨域问题</h2><p>在controller中添加注解@CrossOrigin</p>
-<h2 id="2—axios在vue中的模块封装"><a href="#2—axios在vue中的模块封装" class="headerlink" title="2—axios在vue中的模块封装"></a>2—axios在vue中的模块封装</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;封装位置  文件位置: .&#x2F;network&#x2F;request&#x2F;request</span><br><span class="line">import axios from &quot;axios&quot;;</span><br><span class="line"></span><br><span class="line">export function request(config,success,fail) &#123;</span><br><span class="line">    axios(&#123;</span><br><span class="line">        url:config</span><br><span class="line">    &#125;).then(res&#x3D;&gt;&#123;</span><br><span class="line">        success(res);</span><br><span class="line">    &#125;).catch(err&#x3D;&gt;&#123;</span><br><span class="line">        fail(err);</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;调用者位置</span><br><span class="line">import &#123;request&#125; from &quot;.&#x2F;network&#x2F;request&#x2F;request&quot;;</span><br><span class="line">request(&#39;http:&#x2F;&#x2F;localhost:8080&#x2F;userList&#39;,res&#x3D;&gt;&#123;</span><br><span class="line">  console.log(res);</span><br><span class="line">&#125;,err&#x3D;&gt;&#123;</span><br><span class="line">  console.log(err);</span><br><span class="line">    &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;封装位置</span><br><span class="line">import axios from &quot;axios&quot;;</span><br><span class="line"></span><br><span class="line">export function request(config) &#123;</span><br><span class="line">    axios.defaults.baseURL&#x3D;&quot;http:&#x2F;&#x2F;localhost:8080&quot;</span><br><span class="line">    axios(</span><br><span class="line">        config.url</span><br><span class="line">    ).then(</span><br><span class="line">        res&#x3D;&gt;&#123;</span><br><span class="line">            config.success(res)</span><br><span class="line">        &#125;</span><br><span class="line">    ).catch(err&#x3D;&gt;&#123;</span><br><span class="line">        config.fail(err);</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;调用者位置</span><br><span class="line">import &#123;request&#125; from &quot;.&#x2F;network&#x2F;request&#x2F;request&quot;;</span><br><span class="line">request(&#123;</span><br><span class="line">  url:&#39;userList&#39;,</span><br><span class="line">  success:res&#x3D;&gt;&#123;</span><br><span class="line">    console.log(res);</span><br><span class="line">  &#125;,</span><br><span class="line">  fail:err&#x3D;&gt;&#123;</span><br><span class="line">    config.log(res);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>SSM项目搭建</title>
-    <url>/2020/11/11/SSM%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<h1 id="SSM项目搭建过程"><a href="#SSM项目搭建过程" class="headerlink" title="SSM项目搭建过程"></a>SSM项目搭建过程</h1><h4 id="1-选择maven项目"><a href="#1-选择maven项目" class="headerlink" title="1-选择maven项目"></a>1-选择maven项目</h4><h4 id="2-选择maven的安装路径"><a href="#2-选择maven的安装路径" class="headerlink" title="2-选择maven的安装路径"></a>2-选择maven的安装路径</h4><p>Properties属性添加name:    archetypeCatalog,    value:    internal</p>
-<h4 id="3-在pom-xml文件中添加Spring相关依赖"><a href="#3-在pom-xml文件中添加Spring相关依赖" class="headerlink" title="3-在pom.xml文件中添加Spring相关依赖"></a>3-在pom.xml文件中添加Spring相关依赖</h4><p>1—创建applicationContext.xml配置文件</p>
-<p>2—配置web.xml配置文件</p>
-<p>3—添加Test测试类</p>
-<h4 id="4-bean类-实体类，对应数据库数据"><a href="#4-bean类-实体类，对应数据库数据" class="headerlink" title="4-bean类   实体类，对应数据库数据"></a>4-bean类   实体类，对应数据库数据</h4><h4 id="5-dao类-数据接口，提供CRUD操作的接口"><a href="#5-dao类-数据接口，提供CRUD操作的接口" class="headerlink" title="5-dao类    数据接口，提供CRUD操作的接口"></a>5-dao类    数据接口，提供CRUD操作的接口</h4><h4 id="6-server类-服务层，提供服务层接口"><a href="#6-server类-服务层，提供服务层接口" class="headerlink" title="6-server类 服务层，提供服务层接口"></a>6-server类 服务层，提供服务层接口</h4><p>服务层实现类ServiceImpl，注入dao接口，实现具体的方法，并且调用dao接口中的方法</p>
-<h4 id="7-controller类-，注入服务层接口，添加映射路径，在方法上添加映射路径"><a href="#7-controller类-，注入服务层接口，添加映射路径，在方法上添加映射路径" class="headerlink" title="7-controller类 ，注入服务层接口，添加映射路径，在方法上添加映射路径"></a>7-controller类 ，注入服务层接口，添加映射路径，在方法上添加映射路径</h4><h4 id="8-创建Mapper-xml配置文件并配置。"><a href="#8-创建Mapper-xml配置文件并配置。" class="headerlink" title="8-创建Mapper.xml配置文件并配置。"></a>8-创建Mapper.xml配置文件并配置。</h4><h3 id><a href="#" class="headerlink" title="#"></a>#</h3>]]></content>
+    <title>Linux</title>
+    <url>/2021/03/08/Linux/</url>
+    <content><![CDATA[<h2 id="Linux（一切皆文件）"><a href="#Linux（一切皆文件）" class="headerlink" title="Linux（一切皆文件）"></a>Linux（一切皆文件）</h2><p>xshell（远程连接工具）</p>
+<p>xftp（文件上传工具）</p>
+<h2 id="linux基本命令（命令可以组合使用）"><a href="#linux基本命令（命令可以组合使用）" class="headerlink" title="linux基本命令（命令可以组合使用）"></a>linux基本命令（命令可以组合使用）</h2><p>sync # 将数据从内存同步到硬盘</p>
+<p>shutdown #关机</p>
+<p>reboot       #重启</p>
+<p>halt            # 关闭系统</p>
+<p>ls                # 查看当前目录</p>
+<p>ls -a           #查看所有目录，包括隐藏目录</p>
+<p>ls -l           #查看所有文件，包含文件的属性和权限，不包括隐藏文件</p>
+<p>cd               # 切换目录</p>
+<p>cd..             # 返回上一级目录</p>
+<p>cd~             #回到当前用户目录</p>
+<p>pwd            #显示当前用户所在的目录</p>
+<p>mkdir         #创建目录</p>
+<p>mkdir -p    #创建多级目录</p>
+<p>rmdir         #删除目录</p>
+<p>rmdir -p     #删除多级目录</p>
+<p>rm               #删除文件</p>
+<p>rm -f            #忽略不存在的文件，强制删除</p>
+<p>rm -r            #递归删除目录</p>
+<p>rm -i            #互动，询问是否删除</p>
+<p>rm -rf /       #删除系统中所有的文件</p>
+<p>cp                #复制文件或者目录</p>
+<p>mv              #移动文件或者目录</p>
+<p>mv -f         #强制</p>
+<p>mv -u        #只更换已经更新过的文件</p>
+<p>chgrp         #更改文件属组</p>
+<p>chown        #更改文件属主，也可同时更改文件属组</p>
+<p>==chmod        #更改文件9个属性==</p>
+<p>r=4    w=2    x=1</p>
+<p>ln                 #创建硬链接</p>
+<p>ln -s            #创建软链接</p>
+<p>touch          #创建文件</p>
+<p>echo            #输入字符串</p>
+<h2 id="查看文件中的内容的命令"><a href="#查看文件中的内容的命令" class="headerlink" title="查看文件中的内容的命令"></a>查看文件中的内容的命令</h2><p>cat    由第一行开始显示文件内容</p>
+<p>tac    从最后一行开始显示</p>
+<p>nl    显示的时候，顺道输出行号</p>
+<p>more    一页一页的显示文件内容</p>
+<p>less    与more类似，可以往前翻页</p>
+<p>head    只看头几行</p>
+<p>tail    只看尾部几行</p>
+<h2 id="主要文件的功能"><a href="#主要文件的功能" class="headerlink" title="主要文件的功能"></a>主要文件的功能</h2><p><img src="/2021/03/08/Linux/image-20210308102439953.png" alt="image-20210308102439953"></p>
+<p><img src="/2021/03/08/Linux/image-20210308102807265.png" alt="image-20210308102807265"></p>
+<h2 id="vim"><a href="#vim" class="headerlink" title="vim"></a>vim</h2><h5 id="命令模式"><a href="#命令模式" class="headerlink" title="命令模式"></a>命令模式</h5><p>i    切换到输入模式</p>
+<p>x    删除当前光标所在处的字符</p>
+<p>:    切换到底线命令模式，以在最底一行输入命令。（如果在输入模式，需要按esc退出）</p>
+<h5 id="输入模式"><a href="#输入模式" class="headerlink" title="输入模式"></a>输入模式</h5><h5 id="底线命令模式"><a href="#底线命令模式" class="headerlink" title="底线命令模式"></a>底线命令模式</h5><p>w    保存文件</p>
+<p>q    退出程序</p>
+<p>:set nu    显示行号</p>
+<p>:set nonu    取消行号</p>
+<p>/word        word=要搜索的字符</p>
+<p>u            撤销</p>
+<h2 id="linux用户管理"><a href="#linux用户管理" class="headerlink" title="linux用户管理"></a>linux用户管理</h2><p>useradd        添加用户</p>
+<p>useradd -m        自动添加主目录</p>
+<p>userdel        删除用户</p>
+<p>userdel -r        删除用户的时候将目录一并删掉</p>
+<p>usermod        修改用户</p>
+<h2 id="linux用户组管理"><a href="#linux用户组管理" class="headerlink" title="linux用户组管理"></a>linux用户组管理</h2><p>groupadd        添加用户组</p>
+<p>groupadd -g    添加用户组并指定端口号</p>
+<p>groupdel        删除用户组</p>
+<p>groupmod        修改用户组</p>
+<h2 id="linux磁盘管理"><a href="#linux磁盘管理" class="headerlink" title="linux磁盘管理"></a>linux磁盘管理</h2><p>df                 列出文件系统整体的磁盘使用量</p>
+<p>du                检查磁盘空间使用量</p>
+<p>mount         挂载</p>
+<p>umount       卸载</p>
+<h2 id="linux进程管理"><a href="#linux进程管理" class="headerlink" title="linux进程管理"></a>linux进程管理</h2><p>ps                查看当前系统中正在执行的各种进程的信息</p>
+<p>ps -a            显示当前终端运行的所有的进程信息</p>
+<p>ps -u            以用户的信息显示进程</p>
+<p>ps -x            显示后台运行进程的参数</p>
+<p>grep             查找文件中符合条件的字符串</p>
+<p>|                    管道符</p>
+<p>ps -aux|grep    mysql        查看所有与mysql相关的进程</p>
+<p>ps -ef            查看父进程的信息</p>
+<p>pstree -pu    显示父id和显示用户组</p>
+<h2 id="环境安装-rpm，解压缩，yum在线安装"><a href="#环境安装-rpm，解压缩，yum在线安装" class="headerlink" title="环境安装(rpm，解压缩，yum在线安装)"></a>环境安装(rpm，解压缩，yum在线安装)</h2><p>1—安装jdk</p>
+<p>2—安装java环境</p>
+<p>java -version                      检查当前系统是否存在java环境</p>
+<p>rpm -e —nodeps  jdk_        强制卸载jdk</p>
+<p>rpm -ivh jdk文件名            安装jdk</p>
+<p>rpm -qa|grep jdk                检测jdk版本信息</p>
+<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><p>vim /etc/profile</p>
+<p>JAVA_HOME=/user/java/jdk1.8….-amd64</p>
+<p>CLASSPATH=%JAVA_HOME%/lib;%JAVA_HOME%/jre/lib</p>
+<p>PATH=$JAVA_HOME/bin;$JAVA_HOME/jre/bin</p>
+<p>export PATH CLASSPTH JAVA_HOME</p>
+<p><img src="/2021/03/08/Linux/image-20210308155412819.png" alt="image-20210308155412819"></p>
+<p><img src="/2021/03/08/Linux/image-20210308160435266.png" alt="image-20210308160435266"></p>
+<h2 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a>防火墙</h2><p><img src="/2021/03/08/Linux/image-20210308160228815.png" alt="image-20210308160228815"></p>
+<h2 id="tomcat安装"><a href="#tomcat安装" class="headerlink" title="tomcat安装"></a>tomcat安装</h2><p>tar    -zxvf    apache-tomcat…..            解压</p>
+<p>./xxx.sh                                                     测试tomcat</p>
+<p>./startup.sh                                执行</p>
+<p>./shutdown.sh                            停止</p>
+<h2 id="docker安装"><a href="#docker安装" class="headerlink" title="docker安装"></a>docker安装</h2><p><img src="/2021/03/08/Linux/image-20210308164228630.png" alt="image-20210308164228630"></p>
+]]></content>
   </entry>
   <entry>
     <title>SpringSecurity微服务架构</title>
@@ -1113,6 +1231,44 @@ x&=
 ]]></content>
   </entry>
   <entry>
+    <title>SSM项目搭建</title>
+    <url>/2020/11/11/SSM%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h1 id="SSM项目搭建过程"><a href="#SSM项目搭建过程" class="headerlink" title="SSM项目搭建过程"></a>SSM项目搭建过程</h1><h4 id="1-选择maven项目"><a href="#1-选择maven项目" class="headerlink" title="1-选择maven项目"></a>1-选择maven项目</h4><h4 id="2-选择maven的安装路径"><a href="#2-选择maven的安装路径" class="headerlink" title="2-选择maven的安装路径"></a>2-选择maven的安装路径</h4><p>Properties属性添加name:    archetypeCatalog,    value:    internal</p>
+<h4 id="3-在pom-xml文件中添加Spring相关依赖"><a href="#3-在pom-xml文件中添加Spring相关依赖" class="headerlink" title="3-在pom.xml文件中添加Spring相关依赖"></a>3-在pom.xml文件中添加Spring相关依赖</h4><p>1—创建applicationContext.xml配置文件</p>
+<p>2—配置web.xml配置文件</p>
+<p>3—添加Test测试类</p>
+<h4 id="4-bean类-实体类，对应数据库数据"><a href="#4-bean类-实体类，对应数据库数据" class="headerlink" title="4-bean类   实体类，对应数据库数据"></a>4-bean类   实体类，对应数据库数据</h4><h4 id="5-dao类-数据接口，提供CRUD操作的接口"><a href="#5-dao类-数据接口，提供CRUD操作的接口" class="headerlink" title="5-dao类    数据接口，提供CRUD操作的接口"></a>5-dao类    数据接口，提供CRUD操作的接口</h4><h4 id="6-server类-服务层，提供服务层接口"><a href="#6-server类-服务层，提供服务层接口" class="headerlink" title="6-server类 服务层，提供服务层接口"></a>6-server类 服务层，提供服务层接口</h4><p>服务层实现类ServiceImpl，注入dao接口，实现具体的方法，并且调用dao接口中的方法</p>
+<h4 id="7-controller类-，注入服务层接口，添加映射路径，在方法上添加映射路径"><a href="#7-controller类-，注入服务层接口，添加映射路径，在方法上添加映射路径" class="headerlink" title="7-controller类 ，注入服务层接口，添加映射路径，在方法上添加映射路径"></a>7-controller类 ，注入服务层接口，添加映射路径，在方法上添加映射路径</h4><h4 id="8-创建Mapper-xml配置文件并配置。"><a href="#8-创建Mapper-xml配置文件并配置。" class="headerlink" title="8-创建Mapper.xml配置文件并配置。"></a>8-创建Mapper.xml配置文件并配置。</h4><h3 id><a href="#" class="headerlink" title="#"></a>#</h3>]]></content>
+  </entry>
+  <entry>
+    <title>SpringMVC</title>
+    <url>/2021/03/19/SpringMVC/</url>
+    <content><![CDATA[<h1 id="SpringMVC"><a href="#SpringMVC" class="headerlink" title="SpringMVC"></a>SpringMVC</h1><p>Spring Web MVC 是一种基于 Java 的实现了 Web MVC 设计模式的请求驱动类型的轻量级 Web 框架，即使用了 MVC 架构模式的思想，将 web 层进行职责解耦，基于请求驱动指的就是使用请求-响应模型，框架的目的就是帮助我们简化开发，Spring Web MVC 也是要简化我们日常 Web 开发的。在 传统的 Jsp/Servlet 技术体系中，如果要开发接口，一个接口对应一个 Servlet，会导致我们开发出许多 Servlet，使用 SpringMVC 可以有效的简化这一步骤。</p>
+<p>Spring Web MVC 也是服务到工作者模式的实现，但进行可优化。前端控制器是 DispatcherServlet；应用控制器可以拆为处理器映射器(Handler Mapping)进行处理器管理和视图解析器(View Resolver)进行视图管理；页面控制器/动作/处理器为 Controller 接口（仅包含 ModelAndView handleRequest(request, response) 方法，也有人称作 Handler）的实现（也可以是任何的 POJO 类）；支持本地化（Locale）解析、主题（Theme）解析及文件上传等；提供了非常灵活的数据验证、格式化和数据绑定机制；提供了强大的约定大于配置（惯例优先原则）的契约式编程支持。</p>
+<h2 id="SpringMVC-能够做什么"><a href="#SpringMVC-能够做什么" class="headerlink" title="SpringMVC 能够做什么"></a>SpringMVC 能够做什么</h2><ul>
+<li>让我们能非常简单的设计出干净的 Web 层和薄薄的 Web 层；</li>
+<li>进行更简洁的 Web 层的开发；</li>
+<li>天生与 Spring 框架集成（如 IoC 容器、AOP 等）；</li>
+<li>提供强大的约定大于配置的契约式编程支持；</li>
+<li>能简单的进行 Web 层的单元测试；</li>
+<li>支持灵活的 URL 到页面控制器的映射；</li>
+<li>非常容易与其他视图技术集成，如 Velocity、FreeMarker 等等，因为模型数据不放在特定的 API 里，而是放在一个 Model 里（Map 数据结构实现，因此很容易被其他框架使用）；</li>
+<li>非常灵活的数据验证、格式化和数据绑定机制，能使用任何对象进行数据绑定，不必实现特定框架的 API；</li>
+<li>提供一套强大的 JSP 标签库，简化 JSP 开发；</li>
+<li>支持灵活的本地化、主题等解析；</li>
+<li>更加简单的异常处理；</li>
+<li>对静态资源的支持；</li>
+<li>支持 RESTful 风格</li>
+</ul>
+<h2 id="SpringMVC组件"><a href="#SpringMVC组件" class="headerlink" title="SpringMVC组件"></a>SpringMVC组件</h2><p>DispatcherServlet:前端控制器</p>
+<p>HandlerMapping:处理器映射器</p>
+<p>Handler:处理器</p>
+<p>HandlerAdapter:处理器适配器</p>
+<p>ViewResolvere:视图解析器</p>
+<h2 id="SpringMVC工作流程"><a href="#SpringMVC工作流程" class="headerlink" title="SpringMVC工作流程"></a>SpringMVC工作流程</h2><p><img src="/2021/03/19/SpringMVC/image-20210319132933147.png" alt="image-20210319132933147"></p>
+<h2 id="SpringMVC容器是Spring容器的子容器"><a href="#SpringMVC容器是Spring容器的子容器" class="headerlink" title="SpringMVC容器是Spring容器的子容器"></a>SpringMVC容器是Spring容器的子容器</h2>]]></content>
+  </entry>
+  <entry>
     <title>SpringSecurity</title>
     <url>/2021/01/05/SpringSecurity/</url>
     <content><![CDATA[<h1 id="SpringSecurity"><a href="#SpringSecurity" class="headerlink" title="SpringSecurity"></a>SpringSecurity</h1><h2 id="1—导入jar包"><a href="#1—导入jar包" class="headerlink" title="1—导入jar包"></a>1—导入jar包</h2><h2 id="2—SecurityConfig"><a href="#2—SecurityConfig" class="headerlink" title="2—SecurityConfig"></a>2—SecurityConfig</h2><h2 id="3—LoginUserDetailsService"><a href="#3—LoginUserDetailsService" class="headerlink" title="3—LoginUserDetailsService"></a>3—LoginUserDetailsService</h2><h1 id="Security本质是一个过滤器链"><a href="#Security本质是一个过滤器链" class="headerlink" title="Security本质是一个过滤器链"></a>Security本质是一个过滤器链</h1><h4 id="FilterSecurityInterceptor-方法的权限过滤器"><a href="#FilterSecurityInterceptor-方法的权限过滤器" class="headerlink" title="FilterSecurityInterceptor(方法的权限过滤器)"></a>FilterSecurityInterceptor(方法的权限过滤器)</h4><h4 id="ExceptionTranslationFilter-异常过滤器"><a href="#ExceptionTranslationFilter-异常过滤器" class="headerlink" title="ExceptionTranslationFilter(异常过滤器)"></a>ExceptionTranslationFilter(异常过滤器)</h4><h4 id="UsernamePasswordAuthenticationFilter-对post请求拦截，验证用户名和密码"><a href="#UsernamePasswordAuthenticationFilter-对post请求拦截，验证用户名和密码" class="headerlink" title="UsernamePasswordAuthenticationFilter(对post请求拦截，验证用户名和密码)"></a>UsernamePasswordAuthenticationFilter(对post请求拦截，验证用户名和密码)</h4><h1 id="两个重要接口"><a href="#两个重要接口" class="headerlink" title="两个重要接口"></a>两个重要接口</h1><h2 id="UserDetailsService接口：查询数据库用户名和密码"><a href="#UserDetailsService接口：查询数据库用户名和密码" class="headerlink" title="UserDetailsService接口：查询数据库用户名和密码"></a>UserDetailsService接口：查询数据库用户名和密码</h2><p>创建类UsernamePasswordAuthenticationFilter ，重写三个方法</p>
@@ -1151,6 +1307,25 @@ x&=
 <p>2-在controller的方法上使用注解，设置角色</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">@PostAuthorize(&quot;hasAnyAuthority(&#39;admins&#39;)&quot;)</span><br><span class="line">@GetMapping(&quot;update&quot;)</span><br><span class="line">public String update()&#123;</span><br><span class="line">    System.out.println(&quot;update!!!!!!&quot;);</span><br><span class="line">    return &quot;hello update&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="PostFilter（方法返回数据进行过滤）"><a href="#PostFilter（方法返回数据进行过滤）" class="headerlink" title="@PostFilter（方法返回数据进行过滤）"></a>@PostFilter（方法返回数据进行过滤）</h4><h4 id="PreFilter（传入方法数据进行过滤）"><a href="#PreFilter（传入方法数据进行过滤）" class="headerlink" title="@PreFilter（传入方法数据进行过滤）"></a>@PreFilter（传入方法数据进行过滤）</h4>]]></content>
+  </entry>
+  <entry>
+    <title>axios-vue</title>
+    <url>/2020/12/23/axios-vue/</url>
+    <content><![CDATA[<h1 id="axios-vue"><a href="#axios-vue" class="headerlink" title="axios-vue"></a>axios-vue</h1><h2 id="1—跨域问题"><a href="#1—跨域问题" class="headerlink" title="1—跨域问题"></a>1—跨域问题</h2><p>在controller中添加注解@CrossOrigin</p>
+<h2 id="2—axios在vue中的模块封装"><a href="#2—axios在vue中的模块封装" class="headerlink" title="2—axios在vue中的模块封装"></a>2—axios在vue中的模块封装</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;封装位置  文件位置: .&#x2F;network&#x2F;request&#x2F;request</span><br><span class="line">import axios from &quot;axios&quot;;</span><br><span class="line"></span><br><span class="line">export function request(config,success,fail) &#123;</span><br><span class="line">    axios(&#123;</span><br><span class="line">        url:config</span><br><span class="line">    &#125;).then(res&#x3D;&gt;&#123;</span><br><span class="line">        success(res);</span><br><span class="line">    &#125;).catch(err&#x3D;&gt;&#123;</span><br><span class="line">        fail(err);</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;调用者位置</span><br><span class="line">import &#123;request&#125; from &quot;.&#x2F;network&#x2F;request&#x2F;request&quot;;</span><br><span class="line">request(&#39;http:&#x2F;&#x2F;localhost:8080&#x2F;userList&#39;,res&#x3D;&gt;&#123;</span><br><span class="line">  console.log(res);</span><br><span class="line">&#125;,err&#x3D;&gt;&#123;</span><br><span class="line">  console.log(err);</span><br><span class="line">    &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;封装位置</span><br><span class="line">import axios from &quot;axios&quot;;</span><br><span class="line"></span><br><span class="line">export function request(config) &#123;</span><br><span class="line">    axios.defaults.baseURL&#x3D;&quot;http:&#x2F;&#x2F;localhost:8080&quot;</span><br><span class="line">    axios(</span><br><span class="line">        config.url</span><br><span class="line">    ).then(</span><br><span class="line">        res&#x3D;&gt;&#123;</span><br><span class="line">            config.success(res)</span><br><span class="line">        &#125;</span><br><span class="line">    ).catch(err&#x3D;&gt;&#123;</span><br><span class="line">        config.fail(err);</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;调用者位置</span><br><span class="line">import &#123;request&#125; from &quot;.&#x2F;network&#x2F;request&#x2F;request&quot;;</span><br><span class="line">request(&#123;</span><br><span class="line">  url:&#39;userList&#39;,</span><br><span class="line">  success:res&#x3D;&gt;&#123;</span><br><span class="line">    console.log(res);</span><br><span class="line">  &#125;,</span><br><span class="line">  fail:err&#x3D;&gt;&#123;</span><br><span class="line">    config.log(res);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>docker</title>
+    <url>/2021/01/21/docker/</url>
+    <content><![CDATA[<h2 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h2>]]></content>
+  </entry>
+  <entry>
+    <title>VUE动态加载菜单</title>
+    <url>/2021/01/25/VUE%E5%8A%A8%E6%80%81%E5%8A%A0%E8%BD%BD%E8%8F%9C%E5%8D%95/</url>
+    <content><![CDATA[<h2 id="VUE动态加载菜单"><a href="#VUE动态加载菜单" class="headerlink" title="VUE动态加载菜单"></a>VUE动态加载菜单</h2><h3 id="1—数据准备"><a href="#1—数据准备" class="headerlink" title="1—数据准备"></a>1—数据准备</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MenuList: [</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;id&quot;: 1,</span><br><span class="line">        &quot;parentId&quot;: 0,</span><br><span class="line">        &quot;menuName&quot;: &quot;我的主页&quot;,</span><br><span class="line">        &quot;url&quot;: &quot;&quot;,</span><br><span class="line">        &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">        &quot;orderNum&quot;: 1,</span><br><span class="line">        &quot;open&quot;:1,</span><br><span class="line">        &quot;disabled&quot;: false,</span><br><span class="line">        &quot;perms&quot;: null,</span><br><span class="line">        &quot;type&quot;: 0,</span><br><span class="line">        &quot;children&quot;:[</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 11,</span><br><span class="line">                &quot;parentId&quot;: 1,</span><br><span class="line">                &quot;menuName&quot;: &quot;我的项目&quot;,</span><br><span class="line">                &quot;url&quot;: &quot;&#x2F;myPro&quot;,</span><br><span class="line">                &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">                &quot;orderNum&quot;: 1,</span><br><span class="line">                &quot;open&quot;:0,</span><br><span class="line">                &quot;disabled&quot;: false,</span><br><span class="line">                &quot;perms&quot;: &quot;&quot;,</span><br><span class="line">                &quot;type&quot;: 0,</span><br><span class="line">                &quot;children&quot;:[],</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 12,</span><br><span class="line">                &quot;parentId&quot;: 1,</span><br><span class="line">                &quot;menuName&quot;: &quot;我的任务&quot;,</span><br><span class="line">                &quot;url&quot;: &quot;&#x2F;myTask&quot;,</span><br><span class="line">                &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">                &quot;orderNum&quot;: 2,</span><br><span class="line">                &quot;open&quot;:0,</span><br><span class="line">                &quot;disabled&quot;: false,</span><br><span class="line">                &quot;perms&quot;: null,</span><br><span class="line">                &quot;type&quot;: 0,</span><br><span class="line">                &quot;children&quot;:[]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 13,</span><br><span class="line">                &quot;parentId&quot;: 1,</span><br><span class="line">                &quot;menuName&quot;: &quot;我的周报&quot;,</span><br><span class="line">                &quot;url&quot;: &quot;&#x2F;myWeekly&quot;,</span><br><span class="line">                &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">                &quot;orderNum&quot;: 3,</span><br><span class="line">                &quot;open&quot;:0,</span><br><span class="line">                &quot;disabled&quot;: false,</span><br><span class="line">                &quot;perms&quot;: null,</span><br><span class="line">                &quot;type&quot;: 0,</span><br><span class="line">                &quot;children&quot;:[]</span><br><span class="line">            &#125;,</span><br><span class="line">        ]</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;id&quot;: 2,</span><br><span class="line">        &quot;parentId&quot;: 0,</span><br><span class="line">        &quot;menuName&quot;: &quot;项目管理&quot;,</span><br><span class="line">        &quot;url&quot;: &quot;&quot;,</span><br><span class="line">        &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">        &quot;orderNum&quot;: 2,</span><br><span class="line">        &quot;open&quot;:0,</span><br><span class="line">        &quot;disabled&quot;: false,</span><br><span class="line">        &quot;perms&quot;: null,</span><br><span class="line">        &quot;type&quot;: 0,</span><br><span class="line">        &quot;children&quot;:[</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 21,</span><br><span class="line">                &quot;parentId&quot;: 2,</span><br><span class="line">                &quot;menuName&quot;: &quot;项目及任务&quot;,</span><br><span class="line">                &quot;url&quot;: &quot;&#x2F;pro&quot;,</span><br><span class="line">                &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">                &quot;orderNum&quot;: 1,</span><br><span class="line">                &quot;open&quot;:0,</span><br><span class="line">                &quot;disabled&quot;: false,</span><br><span class="line">                &quot;perms&quot;: null,</span><br><span class="line">                &quot;type&quot;: 0,</span><br><span class="line">                &quot;children&quot;:[]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 22,</span><br><span class="line">                &quot;parentId&quot;: 2,</span><br><span class="line">                &quot;menuName&quot;: &quot;周报管理&quot;,</span><br><span class="line">                &quot;url&quot;: &quot;&#x2F;weekly&quot;,</span><br><span class="line">                &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">                &quot;orderNum&quot;: 2,</span><br><span class="line">                &quot;open&quot;:0,</span><br><span class="line">                &quot;disabled&quot;: false,</span><br><span class="line">                &quot;perms&quot;: null,</span><br><span class="line">                &quot;type&quot;: 0,</span><br><span class="line">                &quot;children&quot;:[]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 23,</span><br><span class="line">                &quot;parentId&quot;: 2,</span><br><span class="line">                &quot;menuName&quot;: &quot;里程碑&quot;,</span><br><span class="line">                &quot;url&quot;: &quot;&#x2F;milestone&quot;,</span><br><span class="line">                &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">                &quot;orderNum&quot;: 3,</span><br><span class="line">                &quot;open&quot;:0,</span><br><span class="line">                &quot;disabled&quot;: false,</span><br><span class="line">                &quot;perms&quot;: null,</span><br><span class="line">                &quot;type&quot;: 0,</span><br><span class="line">                &quot;children&quot;:[]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 24,</span><br><span class="line">                &quot;parentId&quot;: 2,</span><br><span class="line">                &quot;menuName&quot;: &quot;声学部周报&quot;,</span><br><span class="line">                &quot;url&quot;: &quot;&#x2F;acousticsWeekly&quot;,</span><br><span class="line">                &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">                &quot;orderNum&quot;: 3,</span><br><span class="line">                &quot;open&quot;:0,</span><br><span class="line">                &quot;disabled&quot;: false,</span><br><span class="line">                &quot;perms&quot;: null,</span><br><span class="line">                &quot;type&quot;: 0,</span><br><span class="line">                &quot;children&quot;:[]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 25,</span><br><span class="line">                &quot;parentId&quot;: 2,</span><br><span class="line">                &quot;menuName&quot;: &quot;显控部周报&quot;,</span><br><span class="line">                &quot;url&quot;: &quot;&#x2F;displayControllerWeekly&quot;,</span><br><span class="line">                &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">                &quot;orderNum&quot;: 3,</span><br><span class="line">                &quot;open&quot;:0,</span><br><span class="line">                &quot;disabled&quot;: false,</span><br><span class="line">                &quot;perms&quot;: null,</span><br><span class="line">                &quot;type&quot;: 0,</span><br><span class="line">                &quot;children&quot;:[]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 26,</span><br><span class="line">                &quot;parentId&quot;: 2,</span><br><span class="line">                &quot;menuName&quot;: &quot;图形图像部周报&quot;,</span><br><span class="line">                &quot;url&quot;: &quot;&#x2F;imageWeekly&quot;,</span><br><span class="line">                &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">                &quot;orderNum&quot;: 3,</span><br><span class="line">                &quot;open&quot;:0,</span><br><span class="line">                &quot;disabled&quot;: false,</span><br><span class="line">                &quot;perms&quot;: null,</span><br><span class="line">                &quot;type&quot;: 0,</span><br><span class="line">                &quot;children&quot;:[]</span><br><span class="line">            &#125;,</span><br><span class="line">        ]</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;id&quot;: 3,</span><br><span class="line">        &quot;parentId&quot;: 0,</span><br><span class="line">        &quot;menuName&quot;: &quot;用户管理&quot;,</span><br><span class="line">        &quot;url&quot;: &quot;&#x2F;user&quot;,</span><br><span class="line">        &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">        &quot;orderNum&quot;: 3,</span><br><span class="line">        &quot;open&quot;:0,</span><br><span class="line">        &quot;disabled&quot;: false,</span><br><span class="line">        &quot;perms&quot;: null,</span><br><span class="line">        &quot;type&quot;: 0,</span><br><span class="line">        &quot;children&quot;:[]</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;id&quot;: 4,</span><br><span class="line">        &quot;parentId&quot;: 0,</span><br><span class="line">        &quot;menuName&quot;: &quot;权限管理&quot;,</span><br><span class="line">        &quot;url&quot;: &quot;&#x2F;auth&quot;,</span><br><span class="line">        &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">        &quot;orderNum&quot;: 4,</span><br><span class="line">        &quot;open&quot;:0,</span><br><span class="line">        &quot;disabled&quot;: false,</span><br><span class="line">        &quot;perms&quot;: null,</span><br><span class="line">        &quot;type&quot;: 0,</span><br><span class="line">        &quot;children&quot;:[]</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;id&quot;: 5,</span><br><span class="line">        &quot;parentId&quot;: 0,</span><br><span class="line">        &quot;menuName&quot;: &quot;文件管理&quot;,</span><br><span class="line">        &quot;url&quot;: &quot;&#x2F;document&quot;,</span><br><span class="line">        &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">        &quot;orderNum&quot;: 5,</span><br><span class="line">        &quot;open&quot;:0,</span><br><span class="line">        &quot;disabled&quot;: false,</span><br><span class="line">        &quot;perms&quot;: null,</span><br><span class="line">        &quot;type&quot;: 0,</span><br><span class="line">        &quot;children&quot;:[]</span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>axios</title>
@@ -1207,73 +1382,6 @@ x&=
 ]]></content>
   </entry>
   <entry>
-    <title>初等函数图像</title>
-    <url>/2020/05/22/images/</url>
-    <content><![CDATA[<h1 id="三角函数"><a href="#三角函数" class="headerlink" title="三角函数"></a>三角函数</h1><h2 id="正弦和余弦"><a href="#正弦和余弦" class="headerlink" title="正弦和余弦"></a>正弦和余弦</h2><img src="/2020/05/22/images/sinx&cosx.jpg" class title="正弦和余弦">
-<hr>
-<h2 id="正切和余切"><a href="#正切和余切" class="headerlink" title="正切和余切"></a>正切和余切</h2><img src="/2020/05/22/images/tanx&cotx.jpg" class title="正切和余切">
-<hr>
-<h2 id="正割和余割"><a href="#正割和余割" class="headerlink" title="正割和余割"></a>正割和余割</h2><img src="/2020/05/22/images/secx&cscx.jpg" class title="正割和余割">
-<hr>
-<h1 id="反三角函数"><a href="#反三角函数" class="headerlink" title="反三角函数"></a>反三角函数</h1><img src="/2020/05/22/images/arcsinx&arccosx&arctanx.jpg" class title="反三角函数">
-<hr>
-<center><font color="OliveDrab" size="6" face="STCAIYUN">
-    曾经沧海难为水，除却巫山不是云。
-</font></center>
-
-]]></content>
-      <categories>
-        <category>数学</category>
-      </categories>
-      <tags>
-        <tag>数学</tag>
-        <tag>函数</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SSM</title>
-    <url>/2020/06/14/SSM/</url>
-    <content><![CDATA[<h1 id="ideaMaven设置"><a href="#ideaMaven设置" class="headerlink" title="ideaMaven设置"></a>ideaMaven设置</h1><img src="/2020/06/14/SSM/ideaMaven.jpg" class title="ideaMaven配置">
-<hr>
-<h1 id="SpringMVC"><a href="#SpringMVC" class="headerlink" title="SpringMVC"></a>SpringMVC</h1><img src="/2020/06/14/SSM/spring_mvc%E5%9B%BE.jpg" class title="mvc图">
-<hr>
-<h1 id="SSM架构图"><a href="#SSM架构图" class="headerlink" title="SSM架构图"></a>SSM架构图</h1><img src="/2020/06/14/SSM/SSM%E6%9E%B6%E6%9E%84%E5%9B%BE.png" class title="SSM图">
-<hr>
-<h1 id="Mybatis"><a href="#Mybatis" class="headerlink" title="Mybatis"></a>Mybatis</h1><h3 id="三层架构"><a href="#三层架构" class="headerlink" title="三层架构"></a>三层架构</h3><p>表现层：展示数据</p>
-<p>业务层：处理逻辑</p>
-<p>持久层：数据库交互</p>
-<h2 id="持久层技术"><a href="#持久层技术" class="headerlink" title="==持久层技术=="></a>==<strong>持久层技术</strong>==</h2><h2 id="JDBC"><a href="#JDBC" class="headerlink" title="JDBC"></a>JDBC</h2><p>Connection</p>
-<p>PreparedStatement</p>
-<p>ResultSet</p>
-<h2 id="SpringJdbcTemplate"><a href="#SpringJdbcTemplate" class="headerlink" title="SpringJdbcTemplate"></a>SpringJdbcTemplate</h2><p>jdbc封装。</p>
-<p>ORM:(Object Relational Mapping)</p>
-<p>对象关系映射：数据库表——&gt;实体类</p>
-<center><font color="line" size="6" face="STCAIYUN">
-    夔府孤城落日斜，每依北斗望京华。
-</font></center>
-
-
-
-]]></content>
-      <categories>
-        <category>SSM</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>软件架构</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>docker</title>
-    <url>/2021/01/21/docker/</url>
-    <content><![CDATA[<h2 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h2>]]></content>
-  </entry>
-  <entry>
-    <title>mybatis</title>
-    <url>/2020/12/31/mybatis/</url>
-    <content><![CDATA[<h1 id="mybatis"><a href="#mybatis" class="headerlink" title="mybatis"></a>mybatis</h1>]]></content>
-  </entry>
-  <entry>
     <title>hello-world</title>
     <url>/2020/05/19/hello-world/</url>
     <content><![CDATA[<!DOCTYPE html>
@@ -1317,6 +1425,41 @@ gitalk.render('gitalk-container')
 </html>]]></content>
   </entry>
   <entry>
+    <title>mysql语句</title>
+    <url>/2020/12/11/mysql%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<p>mysql语句</p>
+<p>//定义外键约束 </p>
+<p>ALTER TABLE student </p>
+<p>ADD CONSTRAINT fk_class_id  //外键约束的名称fk_class_id可以任意</p>
+<p> FOREIGN KEY (class_id)     //指定了class_id作为外键</p>
+<p> REFERENCES class (id);    //指定了这个外键将关联到class表的id列（即class表的主键）</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>初等函数图像</title>
+    <url>/2020/05/22/images/</url>
+    <content><![CDATA[<h1 id="三角函数"><a href="#三角函数" class="headerlink" title="三角函数"></a>三角函数</h1><h2 id="正弦和余弦"><a href="#正弦和余弦" class="headerlink" title="正弦和余弦"></a>正弦和余弦</h2><img src="/2020/05/22/images/sinx&cosx.jpg" class title="正弦和余弦">
+<hr>
+<h2 id="正切和余切"><a href="#正切和余切" class="headerlink" title="正切和余切"></a>正切和余切</h2><img src="/2020/05/22/images/tanx&cotx.jpg" class title="正切和余切">
+<hr>
+<h2 id="正割和余割"><a href="#正割和余割" class="headerlink" title="正割和余割"></a>正割和余割</h2><img src="/2020/05/22/images/secx&cscx.jpg" class title="正割和余割">
+<hr>
+<h1 id="反三角函数"><a href="#反三角函数" class="headerlink" title="反三角函数"></a>反三角函数</h1><img src="/2020/05/22/images/arcsinx&arccosx&arctanx.jpg" class title="反三角函数">
+<hr>
+<center><font color="OliveDrab" size="6" face="STCAIYUN">
+    曾经沧海难为水，除却巫山不是云。
+</font></center>
+
+]]></content>
+      <categories>
+        <category>数学</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
+        <tag>函数</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>jwt+cookie+session</title>
     <url>/2021/01/13/jwt+cookie+session/</url>
     <content><![CDATA[<h1 id="jwt-cookie-session"><a href="#jwt-cookie-session" class="headerlink" title="jwt+cookie+session"></a>jwt+cookie+session</h1><h2 id="http为无状态协议"><a href="#http为无状态协议" class="headerlink" title="http为无状态协议"></a>http为无状态协议</h2><h2 id="cookie无法跨域（放在客户端）"><a href="#cookie无法跨域（放在客户端）" class="headerlink" title="cookie无法跨域（放在客户端）"></a>cookie无法跨域（放在客户端）</h2><h2 id="session-记录服务器和客户端会话状态的机制"><a href="#session-记录服务器和客户端会话状态的机制" class="headerlink" title="session:记录服务器和客户端会话状态的机制"></a>session:记录服务器和客户端会话状态的机制</h2><p>session基于cookie实现，session存储在服务器端，sessionID存储在客户端的cookie中。</p>
@@ -1342,6 +1485,75 @@ gitalk.render('gitalk-container')
 ]]></content>
   </entry>
   <entry>
+    <title>mybatis</title>
+    <url>/2020/12/31/mybatis/</url>
+    <content><![CDATA[<h1 id="mybatis"><a href="#mybatis" class="headerlink" title="mybatis"></a>mybatis</h1>]]></content>
+  </entry>
+  <entry>
+    <title>security</title>
+    <url>/2020/11/23/security/</url>
+    <content><![CDATA[<h1 id="security"><a href="#security" class="headerlink" title="security"></a>security</h1><p>1—添加pom依赖jar包</p>
+<p>2—创建SecurityConfig</p>
+<p>3—extends WebSecurityConfigurerAdapter</p>
+<p>4—config(AuthenticationManagerBuilder)</p>
+<p>5—数据库连接<img src="/2020/11/23/security/image-20201123095631760.png" alt="image-20201123095631760"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>shell</title>
+    <url>/2021/03/09/shell/</url>
+    <content><![CDATA[<h1 id="shell"><a href="#shell" class="headerlink" title="shell"></a>shell</h1><h2 id="nginx安装脚本"><a href="#nginx安装脚本" class="headerlink" title="nginx安装脚本"></a>nginx安装脚本</h2><p><img src="/2021/03/09/shell/image-20210309094449341.png" alt="image-20210309094449341"></p>
+<p>shell脚本运行步骤</p>
+<p>1—创建一个.sh文件</p>
+<p>vim hello.sh</p>
+<p>2—在hello.sh里编写shell代码</p>
+<p>echo hello world</p>
+<p>3—执行shell脚本文件</p>
+<p>bash hello.sh</p>
+<p>或者chmod 700 hello.sh</p>
+<p>./hello.sh</p>
+<p>>                     写入，会覆盖掉文件原有的内容</p>
+<p>>&gt;                    追加写入，不会覆盖原有内容</p>
+<p>echo                输出</p>
+<p>-n                    不换行</p>
+<p>-e                    如若字符串出现一下支付，则特别加以处理，而不会将它当成一般文字输出；</p>
+<p>\a                        发出警告声</p>
+<p>\b                        删除前一个字符</p>
+<p>\c                        最后不加上换行符号</p>
+<p>\f                        换行但光标仍旧停留在原来的位置</p>
+<p>\n                        换行且光标移至行首</p>
+<p>\r                        光标移至行首，但不换行</p>
+<p>\t                        插入tab</p>
+<h2 id="数学比较运算"><a href="#数学比较运算" class="headerlink" title="数学比较运算"></a>数学比较运算</h2><p>-eq            等于</p>
+<p>-gt            大于</p>
+<p>-lt            小于</p>
+<p>-ge            大于等于</p>
+<p>-le            小于等于</p>
+<p>-ne            不等于</p>
+<h2 id="文件比较与检查"><a href="#文件比较与检查" class="headerlink" title="文件比较与检查"></a>文件比较与检查</h2><p>-d        检查文件是否存在且为目录</p>
+<p>-e        检查文件是否存在</p>
+<p>-f        检查文件是否存在且为文件</p>
+<p>-r        检查文件是否存在且可读</p>
+<p>-s        检查文件是否存在且不为空</p>
+<p>-w        检查文件是否存在且可写</p>
+<p>-x        检查文件是否存在且可执行</p>
+<p>-o        检查文件是否存在且被当前用户拥有</p>
+<p>-G        检查文件是否存在并且默认组为当前用户组</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>springSecurity流程</title>
+    <url>/2021/01/12/springSecurity%E6%B5%81%E7%A8%8B/</url>
+    <content><![CDATA[<p>springSecurity流程</p>
+<h5 id="1—mapper-使用左连接查询menu资源权限信息"><a href="#1—mapper-使用左连接查询menu资源权限信息" class="headerlink" title="1—mapper  使用左连接查询menu资源权限信息"></a>1—mapper  使用左连接查询menu资源权限信息</h5><h5 id="2—自定义SecurityConfig-config"><a href="#2—自定义SecurityConfig-config" class="headerlink" title="2—自定义SecurityConfig(config)"></a>2—自定义SecurityConfig(config)</h5><p>3—登录成功处理器</p>
+<p>4—登录失败处理器</p>
+<p>5—UserDetails</p>
+<h5 id="6—UserDetailsService-serviceImpl"><a href="#6—UserDetailsService-serviceImpl" class="headerlink" title="6—UserDetailsService(serviceImpl)"></a>6—UserDetailsService(serviceImpl)</h5><p>7—重写基于数据库的权限数据源—FilterInvocationSecurityMetadataSource </p>
+<p>8—重写决策权限—</p>
+<p>9—实现AbstractSecurityInterceptor</p>
+]]></content>
+  </entry>
+  <entry>
     <title>pro-server</title>
     <url>/2020/12/24/pro-server/</url>
     <content><![CDATA[<h1 id="pro-server"><a href="#pro-server" class="headerlink" title="pro-server"></a>pro-server</h1><p>1—新建springboot项目,勾选spring web</p>
@@ -1355,24 +1567,21 @@ gitalk.render('gitalk-container')
 ]]></content>
   </entry>
   <entry>
-    <title>security</title>
-    <url>/2020/11/23/security/</url>
-    <content><![CDATA[<h1 id="security"><a href="#security" class="headerlink" title="security"></a>security</h1><p>1—添加pom依赖jar包</p>
-<p>2—创建SecurityConfig</p>
-<p>3—extends WebSecurityConfigurerAdapter</p>
-<p>4—config(AuthenticationManagerBuilder)</p>
-<p>5—数据库连接<img src="/2020/11/23/security/image-20201123095631760.png" alt="image-20201123095631760"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>mysql语句</title>
-    <url>/2020/12/11/mysql%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<p>mysql语句</p>
-<p>//定义外键约束 </p>
-<p>ALTER TABLE student </p>
-<p>ADD CONSTRAINT fk_class_id  //外键约束的名称fk_class_id可以任意</p>
-<p> FOREIGN KEY (class_id)     //指定了class_id作为外键</p>
-<p> REFERENCES class (id);    //指定了这个外键将关联到class表的id列（即class表的主键）</p>
+    <title>shiro</title>
+    <url>/2020/12/21/shiro/</url>
+    <content><![CDATA[<h1 id="shiro"><a href="#shiro" class="headerlink" title="shiro"></a>shiro</h1><h2 id="Subject"><a href="#Subject" class="headerlink" title="Subject"></a>Subject</h2><p>​    通过安全管理器进行 认证 和授权</p>
+<p>SecurityManager 安全管理器</p>
+<p>​    SecurityManager是shiro框架的核心</p>
+<h2 id="Authenticator-认证器"><a href="#Authenticator-认证器" class="headerlink" title="Authenticator 认证器"></a>Authenticator 认证器</h2><p>​    对主体进行认证</p>
+<h2 id="Authorizer-授权器"><a href="#Authorizer-授权器" class="headerlink" title="Authorizer 授权器"></a>Authorizer 授权器</h2><p>​    用户通过认证器认证通过，在访问时判断用户是否有相应的权限。</p>
+<h2 id="Realm-接口"><a href="#Realm-接口" class="headerlink" title="Realm 接口"></a>Realm 接口</h2><p>​    SecurityManager 进行安全认证需要通过 Realm 获取用户权限数据。</p>
+<p>​    Realm 从配置文件或者数据库读取用户的权限信息</p>
+<p>​    多种实现：1：将用户权限信息放到配置文件</p>
+<p>​                        2：将用户权限信息放到数据库</p>
+<h2 id="SessionManager-会话管理器"><a href="#SessionManager-会话管理器" class="headerlink" title="SessionManager 会话管理器"></a>SessionManager 会话管理器</h2><h2 id="SessionDAO"><a href="#SessionDAO" class="headerlink" title="SessionDAO"></a>SessionDAO</h2><p>​    对session会话操作的一套接口，将会话信息存储到redis数据库。</p>
+<h2 id="CacheManager-缓存管理器"><a href="#CacheManager-缓存管理器" class="headerlink" title="CacheManager 缓存管理器"></a>CacheManager 缓存管理器</h2><p>​    将用户权限数据缓存，提高性能。</p>
+<h2 id="Cryptography"><a href="#Cryptography" class="headerlink" title="Cryptography"></a>Cryptography</h2><p>​    密码管理器，shiro提供一套加密/解密的组件。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;shiro内置过滤器</span><br><span class="line">&#x2F;*</span><br><span class="line">anon: 无需认证就可访问</span><br><span class="line">aughc: 必须认证才能访问</span><br><span class="line">user： 必须拥有 记住我 功能才能用</span><br><span class="line">perms: 拥有对某个资源的权限才能访问</span><br><span class="line">role: 拥有某个角色权限才能访问</span><br><span class="line"> *&#x2F;</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -1401,22 +1610,66 @@ gitalk.render('gitalk-container')
       </tags>
   </entry>
   <entry>
-    <title>shiro</title>
-    <url>/2020/12/21/shiro/</url>
-    <content><![CDATA[<h1 id="shiro"><a href="#shiro" class="headerlink" title="shiro"></a>shiro</h1><h2 id="Subject"><a href="#Subject" class="headerlink" title="Subject"></a>Subject</h2><p>​    通过安全管理器进行 认证 和授权</p>
-<p>SecurityManager 安全管理器</p>
-<p>​    SecurityManager是shiro框架的核心</p>
-<h2 id="Authenticator-认证器"><a href="#Authenticator-认证器" class="headerlink" title="Authenticator 认证器"></a>Authenticator 认证器</h2><p>​    对主体进行认证</p>
-<h2 id="Authorizer-授权器"><a href="#Authorizer-授权器" class="headerlink" title="Authorizer 授权器"></a>Authorizer 授权器</h2><p>​    用户通过认证器认证通过，在访问时判断用户是否有相应的权限。</p>
-<h2 id="Realm-接口"><a href="#Realm-接口" class="headerlink" title="Realm 接口"></a>Realm 接口</h2><p>​    SecurityManager 进行安全认证需要通过 Realm 获取用户权限数据。</p>
-<p>​    Realm 从配置文件或者数据库读取用户的权限信息</p>
-<p>​    多种实现：1：将用户权限信息放到配置文件</p>
-<p>​                        2：将用户权限信息放到数据库</p>
-<h2 id="SessionManager-会话管理器"><a href="#SessionManager-会话管理器" class="headerlink" title="SessionManager 会话管理器"></a>SessionManager 会话管理器</h2><h2 id="SessionDAO"><a href="#SessionDAO" class="headerlink" title="SessionDAO"></a>SessionDAO</h2><p>​    对session会话操作的一套接口，将会话信息存储到redis数据库。</p>
-<h2 id="CacheManager-缓存管理器"><a href="#CacheManager-缓存管理器" class="headerlink" title="CacheManager 缓存管理器"></a>CacheManager 缓存管理器</h2><p>​    将用户权限数据缓存，提高性能。</p>
-<h2 id="Cryptography"><a href="#Cryptography" class="headerlink" title="Cryptography"></a>Cryptography</h2><p>​    密码管理器，shiro提供一套加密/解密的组件。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;shiro内置过滤器</span><br><span class="line">&#x2F;*</span><br><span class="line">anon: 无需认证就可访问</span><br><span class="line">aughc: 必须认证才能访问</span><br><span class="line">user： 必须拥有 记住我 功能才能用</span><br><span class="line">perms: 拥有对某个资源的权限才能访问</span><br><span class="line">role: 拥有某个角色权限才能访问</span><br><span class="line"> *&#x2F;</span><br></pre></td></tr></table></figure>
+    <title>swagger</title>
+    <url>/2020/12/24/swagger/</url>
+    <content><![CDATA[<h1 id="swagger"><a href="#swagger" class="headerlink" title="swagger"></a>swagger</h1><h2 id="1—新建spring-boot项目"><a href="#1—新建spring-boot项目" class="headerlink" title="1—新建spring boot项目"></a>1—新建spring boot项目</h2><h2 id="2—导入依赖"><a href="#2—导入依赖" class="headerlink" title="2—导入依赖"></a>2—导入依赖</h2><h2 id="3—编号controller测试"><a href="#3—编号controller测试" class="headerlink" title="3—编号controller测试"></a>3—编号controller测试</h2><h2 id="4—配置swagger—-gt-config"><a href="#4—配置swagger—-gt-config" class="headerlink" title="4—配置swagger—&gt;config"></a>4—配置swagger—&gt;config</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">@Configuration</span><br><span class="line">@EnableSwagger2</span><br><span class="line">public class SwaggerConfig &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="5—测试地址"><a href="#5—测试地址" class="headerlink" title="5—测试地址"></a>5—测试地址</h2><p><a href="http://localhost:8080/swagger-ui.html" target="_blank" rel="noopener">http://localhost:8080/swagger-ui.html</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>vue-slot</title>
+    <url>/2020/11/27/vue-slot/</url>
+    <content><![CDATA[<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue slot</title>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+
+    <div id="app">
+        <todo>
+            <todo-title slot="todo-title" :title="title"></todo-title>
+            <todo-items slot></todo-items>
+        </todo>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+        Vue.conponent("todo", {
+            template: '<div>\
+                            <slot name="todo-title"></slot>\
+                            <ul>\
+                                <slot name="todo-items"></slot>\
+                            <ul>\
+                        </div>'
+        });
+
+        Vue.conponent("todo-title", {
+            props: ['title'],
+            template: '<div>vue-slot</div>'
+        });
+
+        Vue.conponent("todo-items", {
+            props: ['item'],
+            template: '<li></li>'
+        });
+
+        var app = new Vue({
+            el: "#app",
+            data: {
+                title: "标题",
+                todoItems: ['ok', 'nihao']
+            }
+        })
+    </script>
+</body>
+
+</html>]]></content>
   </entry>
   <entry>
     <title>springsecurity学习</title>
@@ -1449,22 +1702,12 @@ gitalk.render('gitalk-container')
 ]]></content>
   </entry>
   <entry>
-    <title>springSecurity流程</title>
-    <url>/2021/01/12/springSecurity%E6%B5%81%E7%A8%8B/</url>
-    <content><![CDATA[<p>springSecurity流程</p>
-<h5 id="1—mapper-使用左连接查询menu资源权限信息"><a href="#1—mapper-使用左连接查询menu资源权限信息" class="headerlink" title="1—mapper  使用左连接查询menu资源权限信息"></a>1—mapper  使用左连接查询menu资源权限信息</h5><h5 id="2—自定义SecurityConfig-config"><a href="#2—自定义SecurityConfig-config" class="headerlink" title="2—自定义SecurityConfig(config)"></a>2—自定义SecurityConfig(config)</h5><p>3—登录成功处理器</p>
-<p>4—登录失败处理器</p>
-<p>5—UserDetails</p>
-<h5 id="6—UserDetailsService-serviceImpl"><a href="#6—UserDetailsService-serviceImpl" class="headerlink" title="6—UserDetailsService(serviceImpl)"></a>6—UserDetailsService(serviceImpl)</h5><p>7—重写基于数据库的权限数据源—FilterInvocationSecurityMetadataSource </p>
-<p>8—重写决策权限—</p>
-<p>9—实现AbstractSecurityInterceptor</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>swagger</title>
-    <url>/2020/12/24/swagger/</url>
-    <content><![CDATA[<h1 id="swagger"><a href="#swagger" class="headerlink" title="swagger"></a>swagger</h1><h2 id="1—新建spring-boot项目"><a href="#1—新建spring-boot项目" class="headerlink" title="1—新建spring boot项目"></a>1—新建spring boot项目</h2><h2 id="2—导入依赖"><a href="#2—导入依赖" class="headerlink" title="2—导入依赖"></a>2—导入依赖</h2><h2 id="3—编号controller测试"><a href="#3—编号controller测试" class="headerlink" title="3—编号controller测试"></a>3—编号controller测试</h2><h2 id="4—配置swagger—-gt-config"><a href="#4—配置swagger—-gt-config" class="headerlink" title="4—配置swagger—&gt;config"></a>4—配置swagger—&gt;config</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">@Configuration</span><br><span class="line">@EnableSwagger2</span><br><span class="line">public class SwaggerConfig &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="5—测试地址"><a href="#5—测试地址" class="headerlink" title="5—测试地址"></a>5—测试地址</h2><p><a href="http://localhost:8080/swagger-ui.html" target="_blank" rel="noopener">http://localhost:8080/swagger-ui.html</a></p>
+    <title>vue学习</title>
+    <url>/2020/11/19/vue%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h1 id="vue"><a href="#vue" class="headerlink" title="vue"></a>vue</h1><h3 id="elementUI"><a href="#elementUI" class="headerlink" title="elementUI"></a>elementUI</h3><p>iview</p>
+<p>ice</p>
+<p>amazeUI</p>
+<h3 id="vue-element-admin"><a href="#vue-element-admin" class="headerlink" title="vue-element-admin"></a>vue-element-admin</h3><p>1—安装idea vue插件</p>
 ]]></content>
   </entry>
   <entry>
@@ -1550,70 +1793,6 @@ gitalk.render('gitalk-container')
 </html>]]></content>
   </entry>
   <entry>
-    <title>vue学习</title>
-    <url>/2020/11/19/vue%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h1 id="vue"><a href="#vue" class="headerlink" title="vue"></a>vue</h1><h3 id="elementUI"><a href="#elementUI" class="headerlink" title="elementUI"></a>elementUI</h3><p>iview</p>
-<p>ice</p>
-<p>amazeUI</p>
-<h3 id="vue-element-admin"><a href="#vue-element-admin" class="headerlink" title="vue-element-admin"></a>vue-element-admin</h3><p>1—安装idea vue插件</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>vue-slot</title>
-    <url>/2020/11/27/vue-slot/</url>
-    <content><![CDATA[<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vue slot</title>
-<meta name="generator" content="Hexo 4.2.1"></head>
-
-<body>
-
-    <div id="app">
-        <todo>
-            <todo-title slot="todo-title" :title="title"></todo-title>
-            <todo-items slot></todo-items>
-        </todo>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-    <script>
-        Vue.conponent("todo", {
-            template: '<div>\
-                            <slot name="todo-title"></slot>\
-                            <ul>\
-                                <slot name="todo-items"></slot>\
-                            <ul>\
-                        </div>'
-        });
-
-        Vue.conponent("todo-title", {
-            props: ['title'],
-            template: '<div>vue-slot</div>'
-        });
-
-        Vue.conponent("todo-items", {
-            props: ['item'],
-            template: '<li></li>'
-        });
-
-        var app = new Vue({
-            el: "#app",
-            data: {
-                title: "标题",
-                todoItems: ['ok', 'nihao']
-            }
-        })
-    </script>
-</body>
-
-</html>]]></content>
-  </entry>
-  <entry>
     <title>vue双向绑定</title>
     <url>/2020/11/22/vue%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A/</url>
     <content><![CDATA[<!DOCTYPE html>
@@ -1656,21 +1835,6 @@ gitalk.render('gitalk-container')
 </html>]]></content>
   </entry>
   <entry>
-    <title>前端学习</title>
-    <url>/2020/11/18/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h1 id="前端学习"><a href="#前端学习" class="headerlink" title="前端学习"></a>前端学习</h1><p>1—html</p>
-<p>2—css</p>
-<p>3—javascript</p>
-<p>4—ajax</p>
-<h3 id="5—vue"><a href="#5—vue" class="headerlink" title="5—vue"></a>5—vue</h3><p>1-javaScript框架</p>
-<p>2-dom操作</p>
-<p>3-响应式数据驱动</p>
-<p>4—vue-element-admin   or    ice</p>
-<p>6—图标库：onebugman.cn</p>
-<p>6—Axios异步通信框架</p>
-]]></content>
-  </entry>
-  <entry>
     <title>vue所需环境</title>
     <url>/2020/11/24/vue%E6%89%80%E9%9C%80%E7%8E%AF%E5%A2%83/</url>
     <content><![CDATA[<h1 id="vue所需环境"><a href="#vue所需环境" class="headerlink" title="vue所需环境"></a>vue所需环境</h1><p>nodejs</p>
@@ -1705,6 +1869,21 @@ gitalk.render('gitalk-container')
 <p>})</p>
 <h2 id="12-在主页添加router-link"><a href="#12-在主页添加router-link" class="headerlink" title="12-在主页添加router-link"></a>12-在主页添加router-link</h2><h2 id="13—安装element-ui"><a href="#13—安装element-ui" class="headerlink" title="13—安装element-ui"></a>13—安装element-ui</h2><p>添加mian.js的引用</p>
 <h3 id="14—安装axios"><a href="#14—安装axios" class="headerlink" title="14—安装axios"></a>14—安装axios</h3><p>添加mian.js的引用</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>前端学习</title>
+    <url>/2020/11/18/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h1 id="前端学习"><a href="#前端学习" class="headerlink" title="前端学习"></a>前端学习</h1><p>1—html</p>
+<p>2—css</p>
+<p>3—javascript</p>
+<p>4—ajax</p>
+<h3 id="5—vue"><a href="#5—vue" class="headerlink" title="5—vue"></a>5—vue</h3><p>1-javaScript框架</p>
+<p>2-dom操作</p>
+<p>3-响应式数据驱动</p>
+<p>4—vue-element-admin   or    ice</p>
+<p>6—图标库：onebugman.cn</p>
+<p>6—Axios异步通信框架</p>
 ]]></content>
   </entry>
   <entry>
@@ -1760,48 +1939,6 @@ gitalk.render('gitalk-container')
 ]]></content>
   </entry>
   <entry>
-    <title>数据库设计</title>
-    <url>/2020/11/23/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/</url>
-    <content><![CDATA[<h1 id="数据库设计"><a href="#数据库设计" class="headerlink" title="数据库设计"></a>数据库设计</h1><h2 id="1—一对多表设计"><a href="#1—一对多表设计" class="headerlink" title="1—一对多表设计"></a>1—一对多表设计</h2><p>在从表中创建外键指向主表的主键</p>
-<p>关系建立语法：</p>
-<p>alter table 从表名 add constraint[外键名] foreign key (从表外键字段名) references 主表名（主表主键）</p>
-<p>关系删除语法：</p>
-<p>alter table 从表名 drop foreign key 外键名</p>
-<h2 id="2—多对多表设计"><a href="#2—多对多表设计" class="headerlink" title="2—多对多表设计"></a>2—多对多表设计</h2><p>添加一张中间表，让中间表的两个字段作为外键指向各自表的主键。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>MySQL环境变量配置</title>
-    <url>/2020/06/15/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="第一步：复制mysql-exe的文件目录"><a href="#第一步：复制mysql-exe的文件目录" class="headerlink" title="第一步：复制mysql.exe的文件目录"></a>第一步：复制mysql.exe的文件目录</h1><img src="/2020/06/15/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE/mysql%E9%85%8D%E7%BD%AE1.jpg" class title="mysql">
-<h1 id="第二步：将其复制到系统变量Path中"><a href="#第二步：将其复制到系统变量Path中" class="headerlink" title="第二步：将其复制到系统变量Path中"></a>第二步：将其复制到系统变量Path中</h1><img src="/2020/06/15/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE/MySQL%E9%85%8D%E7%BD%AE2.jpg" class title="mysql">
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>配置</tag>
-        <tag>环境变量</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>权限管理需求分析</title>
-    <url>/2021/01/06/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/</url>
-    <content><![CDATA[<h1 id="权限管理需求分析"><a href="#权限管理需求分析" class="headerlink" title="权限管理需求分析"></a>权限管理需求分析</h1><p>1—用户管理</p>
-<p>2—角色管理</p>
-<p>3—菜单管理</p>
-<p>4—API管理</p>
-<p>5—权限分配</p>
-<p>角色-用户分配</p>
-<p>角色-菜单分配</p>
-<p>角色-api分配</p>
-<p>6—其他可拓展</p>
-<h2 id="登录流程"><a href="#登录流程" class="headerlink" title="登录流程"></a>登录流程</h2><p><img src="/2021/01/06/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/image-20210106092824704.png" alt="image-20210106092824704"></p>
-<h2 id="携带token访问api流程图"><a href="#携带token访问api流程图" class="headerlink" title="携带token访问api流程图"></a>携带token访问api流程图</h2><p><img src="/2021/01/06/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/image-20210106092927806.png" alt="image-20210106092927806"></p>
-<h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><p><img src="/2021/01/06/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/image-20210106095315631.png" alt="image-20210106095315631"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>接口文档</title>
     <url>/2020/12/28/%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3/</url>
     <content><![CDATA[<h2 id="接口文档"><a href="#接口文档" class="headerlink" title="接口文档"></a>接口文档</h2><h2 id="user"><a href="#user" class="headerlink" title="user"></a>user</h2><div class="table-container">
@@ -1853,6 +1990,55 @@ gitalk.render('gitalk-container')
 ]]></content>
   </entry>
   <entry>
+    <title>数据库设计</title>
+    <url>/2020/11/23/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/</url>
+    <content><![CDATA[<h1 id="数据库设计"><a href="#数据库设计" class="headerlink" title="数据库设计"></a>数据库设计</h1><h2 id="1—一对多表设计"><a href="#1—一对多表设计" class="headerlink" title="1—一对多表设计"></a>1—一对多表设计</h2><p>在从表中创建外键指向主表的主键</p>
+<p>关系建立语法：</p>
+<p>alter table 从表名 add constraint[外键名] foreign key (从表外键字段名) references 主表名（主表主键）</p>
+<p>关系删除语法：</p>
+<p>alter table 从表名 drop foreign key 外键名</p>
+<h2 id="2—多对多表设计"><a href="#2—多对多表设计" class="headerlink" title="2—多对多表设计"></a>2—多对多表设计</h2><p>添加一张中间表，让中间表的两个字段作为外键指向各自表的主键。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>权限管理需求分析</title>
+    <url>/2021/01/06/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/</url>
+    <content><![CDATA[<h1 id="权限管理需求分析"><a href="#权限管理需求分析" class="headerlink" title="权限管理需求分析"></a>权限管理需求分析</h1><p>1—用户管理</p>
+<p>2—角色管理</p>
+<p>3—菜单管理</p>
+<p>4—API管理</p>
+<p>5—权限分配</p>
+<p>角色-用户分配</p>
+<p>角色-菜单分配</p>
+<p>角色-api分配</p>
+<p>6—其他可拓展</p>
+<h2 id="登录流程"><a href="#登录流程" class="headerlink" title="登录流程"></a>登录流程</h2><p><img src="/2021/01/06/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/image-20210106092824704.png" alt="image-20210106092824704"></p>
+<h2 id="携带token访问api流程图"><a href="#携带token访问api流程图" class="headerlink" title="携带token访问api流程图"></a>携带token访问api流程图</h2><p><img src="/2021/01/06/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/image-20210106092927806.png" alt="image-20210106092927806"></p>
+<h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><p><img src="/2021/01/06/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/image-20210106095315631.png" alt="image-20210106095315631"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>MySQL环境变量配置</title>
+    <url>/2020/06/15/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="第一步：复制mysql-exe的文件目录"><a href="#第一步：复制mysql-exe的文件目录" class="headerlink" title="第一步：复制mysql.exe的文件目录"></a>第一步：复制mysql.exe的文件目录</h1><img src="/2020/06/15/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE/mysql%E9%85%8D%E7%BD%AE1.jpg" class title="mysql">
+<h1 id="第二步：将其复制到系统变量Path中"><a href="#第二步：将其复制到系统变量Path中" class="headerlink" title="第二步：将其复制到系统变量Path中"></a>第二步：将其复制到系统变量Path中</h1><img src="/2020/06/15/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE/MySQL%E9%85%8D%E7%BD%AE2.jpg" class title="mysql">
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>配置</tag>
+        <tag>环境变量</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>菜单接口</title>
+    <url>/2021/01/21/%E8%8F%9C%E5%8D%95%E6%8E%A5%E5%8F%A3/</url>
+    <content><![CDATA[<p>菜单接口</p>
+<p><img src="/2021/01/21/%E8%8F%9C%E5%8D%95%E6%8E%A5%E5%8F%A3/Users\63458\AppData\Roaming\Typora\typora-user-images\image-20210121135129443.png" alt="image-20210121135129443">**</p>
+]]></content>
+  </entry>
+  <entry>
     <title>联想记忆法</title>
     <url>/2021/01/01/%E8%81%94%E6%83%B3%E8%AE%B0%E5%BF%86%E6%B3%95/</url>
     <content><![CDATA[<h1 id="联想记忆法"><a href="#联想记忆法" class="headerlink" title="联想记忆法"></a>联想记忆法</h1><p>1：衣服</p>
@@ -1868,10 +2054,13 @@ gitalk.render('gitalk-container')
 ]]></content>
   </entry>
   <entry>
-    <title>菜单接口</title>
-    <url>/2021/01/21/%E8%8F%9C%E5%8D%95%E6%8E%A5%E5%8F%A3/</url>
-    <content><![CDATA[<p>菜单接口</p>
-<p><img src="/2021/01/21/%E8%8F%9C%E5%8D%95%E6%8E%A5%E5%8F%A3/Users\63458\AppData\Roaming\Typora\typora-user-images\image-20210121135129443.png" alt="image-20210121135129443">**</p>
+    <title>阿里云服务器</title>
+    <url>/2021/02/01/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
+    <content><![CDATA[<p>阿里云服务器</p>
+<p><img src="/2021/02/01/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/image-20210201091758014.png" alt="image-20210201091758014"></p>
+<p>你好</p>
+<p>![image-20210206204248986](阿里云服务器.assets/image-20210206204248986.png</p>
+<p>永远不要评论别人。。。。。。。。！</p>
 ]]></content>
   </entry>
   <entry>
@@ -1882,17 +2071,6 @@ gitalk.render('gitalk-container')
 <p>mysql  Ver 8.0.12 for Win64 on x86_64 (MySQL Community Server - GPL)</p>
 <h2 id="ubuntu-linux"><a href="#ubuntu-linux" class="headerlink" title="ubuntu linux"></a>ubuntu linux</h2><p>openjdk version 1.8.0_255</p>
 <p>mysql Ver 5.7.30</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>项目参考技术</title>
-    <url>/2020/12/01/%E9%A1%B9%E7%9B%AE%E5%8F%82%E8%80%83%E6%8A%80%E6%9C%AF/</url>
-    <content><![CDATA[<h1 id="项目参考技术"><a href="#项目参考技术" class="headerlink" title="项目参考技术"></a>项目参考技术</h1><p>zentao</p>
-<p>oracle primavera p6 eppm</p>
-<h2 id="工作流技术"><a href="#工作流技术" class="headerlink" title="工作流技术"></a>工作流技术</h2><p>activiti</p>
-<p>Shark</p>
-<p>Osworkflow</p>
-<p>jbpm</p>
 ]]></content>
   </entry>
   <entry>
@@ -1920,14 +2098,14 @@ gitalk.render('gitalk-container')
 ]]></content>
   </entry>
   <entry>
-    <title>项目管理系统设计与实现技术栈</title>
-    <url>/2020/11/24/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0%E6%8A%80%E6%9C%AF%E6%A0%88/</url>
-    <content><![CDATA[<h1 id="项目管理系统设计与实现技术栈"><a href="#项目管理系统设计与实现技术栈" class="headerlink" title="项目管理系统设计与实现技术栈"></a>项目管理系统设计与实现技术栈</h1><h2 id="1—SpringBoot"><a href="#1—SpringBoot" class="headerlink" title="1—SpringBoot"></a>1—SpringBoot</h2><h2 id="2—MyBatis"><a href="#2—MyBatis" class="headerlink" title="2—MyBatis"></a>2—MyBatis</h2><h2 id="3—Shiro-安全验证和权限管理"><a href="#3—Shiro-安全验证和权限管理" class="headerlink" title="3—Shiro(安全验证和权限管理)"></a>3—Shiro(安全验证和权限管理)</h2><h2 id="4—Vue"><a href="#4—Vue" class="headerlink" title="4—Vue"></a>4—Vue</h2><p>Restful——json</p>
-<h2 id="5—Echarts"><a href="#5—Echarts" class="headerlink" title="5—Echarts"></a>5—Echarts</h2><h2 id="6—POI（读写excel、word数据）"><a href="#6—POI（读写excel、word数据）" class="headerlink" title="6—POI（读写excel、word数据）"></a>6—POI（读写excel、word数据）</h2><h2 id="7—mysql"><a href="#7—mysql" class="headerlink" title="7—mysql"></a>7—mysql</h2><h2 id="8—MVVM优点"><a href="#8—MVVM优点" class="headerlink" title="8—MVVM优点"></a>8—MVVM优点</h2><p>MVVM模式和MVC模式一样，主要目的是分离<a href="https://baike.baidu.com/item/视图" target="_blank" rel="noopener">视图</a>（View）和模型（Model），有几大优点</p>
-<p><strong>1. 低耦合</strong>。视图（View）可以独立于Model变化和修改，一个ViewModel可以绑定到不同的”View”上，当View变化的时候Model可以不变，当Model变化的时候View也可以不变。</p>
-<p><strong>2. 可重用性</strong>。你可以把一些视图逻辑放在一个ViewModel里面，让很多view重用这段视图逻辑。</p>
-<p><strong>3. 独立开发</strong>。开发人员可以专注于业务逻辑和数据的开发（ViewModel），设计人员可以专注于页面设计，使用Expression Blend可以很容易设计界面并生成xaml代码。</p>
-<p><strong>4. 可测试</strong>。界面素来是比较难于测试的，测试可以针对ViewModel来写</p>
+    <title>项目参考技术</title>
+    <url>/2020/12/01/%E9%A1%B9%E7%9B%AE%E5%8F%82%E8%80%83%E6%8A%80%E6%9C%AF/</url>
+    <content><![CDATA[<h1 id="项目参考技术"><a href="#项目参考技术" class="headerlink" title="项目参考技术"></a>项目参考技术</h1><p>zentao</p>
+<p>oracle primavera p6 eppm</p>
+<h2 id="工作流技术"><a href="#工作流技术" class="headerlink" title="工作流技术"></a>工作流技术</h2><p>activiti</p>
+<p>Shark</p>
+<p>Osworkflow</p>
+<p>jbpm</p>
 ]]></content>
   </entry>
   <entry>
@@ -1972,6 +2150,34 @@ gitalk.render('gitalk-container')
 <p>3—添加Security，控制访问权限。</p>
 <h1 id="11-什么是Druid？"><a href="#11-什么是Druid？" class="headerlink" title="11.什么是Druid？"></a>11<strong>.什么是Druid？</strong></h1><p>Druid是一个高效的数据查询系统，主要解决的是对于大量的基于时序的数据进行聚合查询。数据可以实时摄入，进入到Druid后立即可查，同时数据是几乎是不可变。通常是基于时序的事实事件，事实发生后进入Druid，外部系统就可以对该事实进行查询。 </p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>项目管理系统设计与实现技术栈</title>
+    <url>/2020/11/24/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0%E6%8A%80%E6%9C%AF%E6%A0%88/</url>
+    <content><![CDATA[<h1 id="项目管理系统设计与实现技术栈"><a href="#项目管理系统设计与实现技术栈" class="headerlink" title="项目管理系统设计与实现技术栈"></a>项目管理系统设计与实现技术栈</h1><h2 id="1—SpringBoot"><a href="#1—SpringBoot" class="headerlink" title="1—SpringBoot"></a>1—SpringBoot</h2><h2 id="2—MyBatis"><a href="#2—MyBatis" class="headerlink" title="2—MyBatis"></a>2—MyBatis</h2><h2 id="3—Shiro-安全验证和权限管理"><a href="#3—Shiro-安全验证和权限管理" class="headerlink" title="3—Shiro(安全验证和权限管理)"></a>3—Shiro(安全验证和权限管理)</h2><h2 id="4—Vue"><a href="#4—Vue" class="headerlink" title="4—Vue"></a>4—Vue</h2><p>Restful——json</p>
+<h2 id="5—Echarts"><a href="#5—Echarts" class="headerlink" title="5—Echarts"></a>5—Echarts</h2><h2 id="6—POI（读写excel、word数据）"><a href="#6—POI（读写excel、word数据）" class="headerlink" title="6—POI（读写excel、word数据）"></a>6—POI（读写excel、word数据）</h2><h2 id="7—mysql"><a href="#7—mysql" class="headerlink" title="7—mysql"></a>7—mysql</h2><h2 id="8—MVVM优点"><a href="#8—MVVM优点" class="headerlink" title="8—MVVM优点"></a>8—MVVM优点</h2><p>MVVM模式和MVC模式一样，主要目的是分离<a href="https://baike.baidu.com/item/视图" target="_blank" rel="noopener">视图</a>（View）和模型（Model），有几大优点</p>
+<p><strong>1. 低耦合</strong>。视图（View）可以独立于Model变化和修改，一个ViewModel可以绑定到不同的”View”上，当View变化的时候Model可以不变，当Model变化的时候View也可以不变。</p>
+<p><strong>2. 可重用性</strong>。你可以把一些视图逻辑放在一个ViewModel里面，让很多view重用这段视图逻辑。</p>
+<p><strong>3. 独立开发</strong>。开发人员可以专注于业务逻辑和数据的开发（ViewModel），设计人员可以专注于页面设计，使用Expression Blend可以很容易设计界面并生成xaml代码。</p>
+<p><strong>4. 可测试</strong>。界面素来是比较难于测试的，测试可以针对ViewModel来写</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>07-01/test</title>
+    <url>/2020/11/23/07-01/test/</url>
+    <content><![CDATA[/* //输入框
+prompt('如果我是DJ，你会爱我吗？');
+//输出框
+alert('If I was DJ,Do you love me?');
+//控制台输出，测试用
+console.log("？？？？？？"); */
+
+var age;
+age = 18;
+console.log(age);
+var name;
+name = ('ooo');
+prompt(name);]]></content>
   </entry>
   <entry>
     <title>07-01/style</title>
@@ -2043,22 +2249,5 @@ input:focus {
     color: black;
     background-color: cornsilk;
 }]]></content>
-  </entry>
-  <entry>
-    <title>07-01/test</title>
-    <url>/2020/11/23/07-01/test/</url>
-    <content><![CDATA[/* //输入框
-prompt('如果我是DJ，你会爱我吗？');
-//输出框
-alert('If I was DJ,Do you love me?');
-//控制台输出，测试用
-console.log("？？？？？？"); */
-
-var age;
-age = 18;
-console.log(age);
-var name;
-name = ('ooo');
-prompt(name);]]></content>
   </entry>
 </search>

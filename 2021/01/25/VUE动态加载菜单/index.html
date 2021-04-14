@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  
+    <meta name="keywords" content="帅">
+  
+  
+    <meta name="description" content="Hello 每一天都要开心哦！">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    VUE动态加载菜单 |
+    
+    悠悠鱼儿游</title>
+  
+    <link rel="shortcut icon" href="favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/technology.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <section class="outer">
+  <article id="post-VUE动态加载菜单" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      VUE动态加载菜单
+    </h1>
+  
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2021/01/25/VUE%E5%8A%A8%E6%80%81%E5%8A%A0%E8%BD%BD%E8%8F%9C%E5%8D%95/" class="article-date">
+  <time datetime="2021-01-25T08:56:05.192Z" itemprop="datePublished">2021-01-25</time>
+</a>
+        
+      </div>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+      
+
+      
+        <h2 id="VUE动态加载菜单"><a href="#VUE动态加载菜单" class="headerlink" title="VUE动态加载菜单"></a>VUE动态加载菜单</h2><h3 id="1—数据准备"><a href="#1—数据准备" class="headerlink" title="1—数据准备"></a>1—数据准备</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br></pre></td><td class="code"><pre><span class="line">MenuList: [</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;id&quot;: 1,</span><br><span class="line">        &quot;parentId&quot;: 0,</span><br><span class="line">        &quot;menuName&quot;: &quot;我的主页&quot;,</span><br><span class="line">        &quot;url&quot;: &quot;&quot;,</span><br><span class="line">        &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">        &quot;orderNum&quot;: 1,</span><br><span class="line">        &quot;open&quot;:1,</span><br><span class="line">        &quot;disabled&quot;: false,</span><br><span class="line">        &quot;perms&quot;: null,</span><br><span class="line">        &quot;type&quot;: 0,</span><br><span class="line">        &quot;children&quot;:[</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 11,</span><br><span class="line">                &quot;parentId&quot;: 1,</span><br><span class="line">                &quot;menuName&quot;: &quot;我的项目&quot;,</span><br><span class="line">                &quot;url&quot;: &quot;&#x2F;myPro&quot;,</span><br><span class="line">                &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">                &quot;orderNum&quot;: 1,</span><br><span class="line">                &quot;open&quot;:0,</span><br><span class="line">                &quot;disabled&quot;: false,</span><br><span class="line">                &quot;perms&quot;: &quot;&quot;,</span><br><span class="line">                &quot;type&quot;: 0,</span><br><span class="line">                &quot;children&quot;:[],</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 12,</span><br><span class="line">                &quot;parentId&quot;: 1,</span><br><span class="line">                &quot;menuName&quot;: &quot;我的任务&quot;,</span><br><span class="line">                &quot;url&quot;: &quot;&#x2F;myTask&quot;,</span><br><span class="line">                &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">                &quot;orderNum&quot;: 2,</span><br><span class="line">                &quot;open&quot;:0,</span><br><span class="line">                &quot;disabled&quot;: false,</span><br><span class="line">                &quot;perms&quot;: null,</span><br><span class="line">                &quot;type&quot;: 0,</span><br><span class="line">                &quot;children&quot;:[]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 13,</span><br><span class="line">                &quot;parentId&quot;: 1,</span><br><span class="line">                &quot;menuName&quot;: &quot;我的周报&quot;,</span><br><span class="line">                &quot;url&quot;: &quot;&#x2F;myWeekly&quot;,</span><br><span class="line">                &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">                &quot;orderNum&quot;: 3,</span><br><span class="line">                &quot;open&quot;:0,</span><br><span class="line">                &quot;disabled&quot;: false,</span><br><span class="line">                &quot;perms&quot;: null,</span><br><span class="line">                &quot;type&quot;: 0,</span><br><span class="line">                &quot;children&quot;:[]</span><br><span class="line">            &#125;,</span><br><span class="line">        ]</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;id&quot;: 2,</span><br><span class="line">        &quot;parentId&quot;: 0,</span><br><span class="line">        &quot;menuName&quot;: &quot;项目管理&quot;,</span><br><span class="line">        &quot;url&quot;: &quot;&quot;,</span><br><span class="line">        &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">        &quot;orderNum&quot;: 2,</span><br><span class="line">        &quot;open&quot;:0,</span><br><span class="line">        &quot;disabled&quot;: false,</span><br><span class="line">        &quot;perms&quot;: null,</span><br><span class="line">        &quot;type&quot;: 0,</span><br><span class="line">        &quot;children&quot;:[</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 21,</span><br><span class="line">                &quot;parentId&quot;: 2,</span><br><span class="line">                &quot;menuName&quot;: &quot;项目及任务&quot;,</span><br><span class="line">                &quot;url&quot;: &quot;&#x2F;pro&quot;,</span><br><span class="line">                &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">                &quot;orderNum&quot;: 1,</span><br><span class="line">                &quot;open&quot;:0,</span><br><span class="line">                &quot;disabled&quot;: false,</span><br><span class="line">                &quot;perms&quot;: null,</span><br><span class="line">                &quot;type&quot;: 0,</span><br><span class="line">                &quot;children&quot;:[]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 22,</span><br><span class="line">                &quot;parentId&quot;: 2,</span><br><span class="line">                &quot;menuName&quot;: &quot;周报管理&quot;,</span><br><span class="line">                &quot;url&quot;: &quot;&#x2F;weekly&quot;,</span><br><span class="line">                &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">                &quot;orderNum&quot;: 2,</span><br><span class="line">                &quot;open&quot;:0,</span><br><span class="line">                &quot;disabled&quot;: false,</span><br><span class="line">                &quot;perms&quot;: null,</span><br><span class="line">                &quot;type&quot;: 0,</span><br><span class="line">                &quot;children&quot;:[]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 23,</span><br><span class="line">                &quot;parentId&quot;: 2,</span><br><span class="line">                &quot;menuName&quot;: &quot;里程碑&quot;,</span><br><span class="line">                &quot;url&quot;: &quot;&#x2F;milestone&quot;,</span><br><span class="line">                &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">                &quot;orderNum&quot;: 3,</span><br><span class="line">                &quot;open&quot;:0,</span><br><span class="line">                &quot;disabled&quot;: false,</span><br><span class="line">                &quot;perms&quot;: null,</span><br><span class="line">                &quot;type&quot;: 0,</span><br><span class="line">                &quot;children&quot;:[]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 24,</span><br><span class="line">                &quot;parentId&quot;: 2,</span><br><span class="line">                &quot;menuName&quot;: &quot;声学部周报&quot;,</span><br><span class="line">                &quot;url&quot;: &quot;&#x2F;acousticsWeekly&quot;,</span><br><span class="line">                &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">                &quot;orderNum&quot;: 3,</span><br><span class="line">                &quot;open&quot;:0,</span><br><span class="line">                &quot;disabled&quot;: false,</span><br><span class="line">                &quot;perms&quot;: null,</span><br><span class="line">                &quot;type&quot;: 0,</span><br><span class="line">                &quot;children&quot;:[]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 25,</span><br><span class="line">                &quot;parentId&quot;: 2,</span><br><span class="line">                &quot;menuName&quot;: &quot;显控部周报&quot;,</span><br><span class="line">                &quot;url&quot;: &quot;&#x2F;displayControllerWeekly&quot;,</span><br><span class="line">                &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">                &quot;orderNum&quot;: 3,</span><br><span class="line">                &quot;open&quot;:0,</span><br><span class="line">                &quot;disabled&quot;: false,</span><br><span class="line">                &quot;perms&quot;: null,</span><br><span class="line">                &quot;type&quot;: 0,</span><br><span class="line">                &quot;children&quot;:[]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 26,</span><br><span class="line">                &quot;parentId&quot;: 2,</span><br><span class="line">                &quot;menuName&quot;: &quot;图形图像部周报&quot;,</span><br><span class="line">                &quot;url&quot;: &quot;&#x2F;imageWeekly&quot;,</span><br><span class="line">                &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">                &quot;orderNum&quot;: 3,</span><br><span class="line">                &quot;open&quot;:0,</span><br><span class="line">                &quot;disabled&quot;: false,</span><br><span class="line">                &quot;perms&quot;: null,</span><br><span class="line">                &quot;type&quot;: 0,</span><br><span class="line">                &quot;children&quot;:[]</span><br><span class="line">            &#125;,</span><br><span class="line">        ]</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;id&quot;: 3,</span><br><span class="line">        &quot;parentId&quot;: 0,</span><br><span class="line">        &quot;menuName&quot;: &quot;用户管理&quot;,</span><br><span class="line">        &quot;url&quot;: &quot;&#x2F;user&quot;,</span><br><span class="line">        &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">        &quot;orderNum&quot;: 3,</span><br><span class="line">        &quot;open&quot;:0,</span><br><span class="line">        &quot;disabled&quot;: false,</span><br><span class="line">        &quot;perms&quot;: null,</span><br><span class="line">        &quot;type&quot;: 0,</span><br><span class="line">        &quot;children&quot;:[]</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;id&quot;: 4,</span><br><span class="line">        &quot;parentId&quot;: 0,</span><br><span class="line">        &quot;menuName&quot;: &quot;权限管理&quot;,</span><br><span class="line">        &quot;url&quot;: &quot;&#x2F;auth&quot;,</span><br><span class="line">        &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">        &quot;orderNum&quot;: 4,</span><br><span class="line">        &quot;open&quot;:0,</span><br><span class="line">        &quot;disabled&quot;: false,</span><br><span class="line">        &quot;perms&quot;: null,</span><br><span class="line">        &quot;type&quot;: 0,</span><br><span class="line">        &quot;children&quot;:[]</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;id&quot;: 5,</span><br><span class="line">        &quot;parentId&quot;: 0,</span><br><span class="line">        &quot;menuName&quot;: &quot;文件管理&quot;,</span><br><span class="line">        &quot;url&quot;: &quot;&#x2F;document&quot;,</span><br><span class="line">        &quot;icon&quot;: &quot;el-icon-user-solid&quot;,</span><br><span class="line">        &quot;orderNum&quot;: 5,</span><br><span class="line">        &quot;open&quot;:0,</span><br><span class="line">        &quot;disabled&quot;: false,</span><br><span class="line">        &quot;perms&quot;: null,</span><br><span class="line">        &quot;type&quot;: 0,</span><br><span class="line">        &quot;children&quot;:[]</span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2021/01/25/VUE%E5%8A%A8%E6%80%81%E5%8A%A0%E8%BD%BD%E8%8F%9C%E5%8D%95/" data-id="cknhg1os4001axcucaqejfcr0"
+         class="article-share-link">分享</a>
+      
+    </footer>
+
+  </div>
+
+  
+    
+  <nav class="article-nav">
+    
+      <a href="/2021/01/26/POI/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            POI
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2021/01/24/2021-01-24/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">2021-01-24</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+    
+  
+
+</article>
+
+
+
+</section>
+    </div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+
+<script src="/js/technology.js"></script>
+
+
+  </div>
+</body>
+</html>

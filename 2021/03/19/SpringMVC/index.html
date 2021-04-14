@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  
+    <meta name="keywords" content="帅">
+  
+  
+    <meta name="description" content="Hello 每一天都要开心哦！">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    SpringMVC |
+    
+    悠悠鱼儿游</title>
+  
+    <link rel="shortcut icon" href="favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/technology.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <section class="outer">
+  <article id="post-SpringMVC" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      SpringMVC
+    </h1>
+  
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2021/03/19/SpringMVC/" class="article-date">
+  <time datetime="2021-03-19T01:46:52.780Z" itemprop="datePublished">2021-03-19</time>
+</a>
+        
+      </div>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+      
+
+      
+        <h1 id="SpringMVC"><a href="#SpringMVC" class="headerlink" title="SpringMVC"></a>SpringMVC</h1><p>Spring Web MVC 是一种基于 Java 的实现了 Web MVC 设计模式的请求驱动类型的轻量级 Web 框架，即使用了 MVC 架构模式的思想，将 web 层进行职责解耦，基于请求驱动指的就是使用请求-响应模型，框架的目的就是帮助我们简化开发，Spring Web MVC 也是要简化我们日常 Web 开发的。在 传统的 Jsp/Servlet 技术体系中，如果要开发接口，一个接口对应一个 Servlet，会导致我们开发出许多 Servlet，使用 SpringMVC 可以有效的简化这一步骤。</p>
+<p>Spring Web MVC 也是服务到工作者模式的实现，但进行可优化。前端控制器是 DispatcherServlet；应用控制器可以拆为处理器映射器(Handler Mapping)进行处理器管理和视图解析器(View Resolver)进行视图管理；页面控制器/动作/处理器为 Controller 接口（仅包含 ModelAndView handleRequest(request, response) 方法，也有人称作 Handler）的实现（也可以是任何的 POJO 类）；支持本地化（Locale）解析、主题（Theme）解析及文件上传等；提供了非常灵活的数据验证、格式化和数据绑定机制；提供了强大的约定大于配置（惯例优先原则）的契约式编程支持。</p>
+<h2 id="SpringMVC-能够做什么"><a href="#SpringMVC-能够做什么" class="headerlink" title="SpringMVC 能够做什么"></a>SpringMVC 能够做什么</h2><ul>
+<li>让我们能非常简单的设计出干净的 Web 层和薄薄的 Web 层；</li>
+<li>进行更简洁的 Web 层的开发；</li>
+<li>天生与 Spring 框架集成（如 IoC 容器、AOP 等）；</li>
+<li>提供强大的约定大于配置的契约式编程支持；</li>
+<li>能简单的进行 Web 层的单元测试；</li>
+<li>支持灵活的 URL 到页面控制器的映射；</li>
+<li>非常容易与其他视图技术集成，如 Velocity、FreeMarker 等等，因为模型数据不放在特定的 API 里，而是放在一个 Model 里（Map 数据结构实现，因此很容易被其他框架使用）；</li>
+<li>非常灵活的数据验证、格式化和数据绑定机制，能使用任何对象进行数据绑定，不必实现特定框架的 API；</li>
+<li>提供一套强大的 JSP 标签库，简化 JSP 开发；</li>
+<li>支持灵活的本地化、主题等解析；</li>
+<li>更加简单的异常处理；</li>
+<li>对静态资源的支持；</li>
+<li>支持 RESTful 风格</li>
+</ul>
+<h2 id="SpringMVC组件"><a href="#SpringMVC组件" class="headerlink" title="SpringMVC组件"></a>SpringMVC组件</h2><p>DispatcherServlet:前端控制器</p>
+<p>HandlerMapping:处理器映射器</p>
+<p>Handler:处理器</p>
+<p>HandlerAdapter:处理器适配器</p>
+<p>ViewResolvere:视图解析器</p>
+<h2 id="SpringMVC工作流程"><a href="#SpringMVC工作流程" class="headerlink" title="SpringMVC工作流程"></a>SpringMVC工作流程</h2><p><img src="/2021/03/19/SpringMVC/image-20210319132933147.png" alt="image-20210319132933147"></p>
+<h2 id="SpringMVC容器是Spring容器的子容器"><a href="#SpringMVC容器是Spring容器的子容器" class="headerlink" title="SpringMVC容器是Spring容器的子容器"></a>SpringMVC容器是Spring容器的子容器</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2021/03/19/SpringMVC/" data-id="cknhg1orx0011xcuc4ms606ii"
+         class="article-share-link">分享</a>
+      
+    </footer>
+
+  </div>
+
+  
+    
+  <nav class="article-nav">
+    
+    
+      <a href="/2021/03/09/shell/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">shell</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+    
+  
+
+</article>
+
+
+
+</section>
+    </div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+
+<script src="/js/technology.js"></script>
+
+
+  </div>
+</body>
+</html>

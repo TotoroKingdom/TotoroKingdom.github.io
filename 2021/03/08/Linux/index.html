@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  
+    <meta name="keywords" content="帅">
+  
+  
+    <meta name="description" content="Hello 每一天都要开心哦！">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    Linux |
+    
+    悠悠鱼儿游</title>
+  
+    <link rel="shortcut icon" href="favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/technology.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <section class="outer">
+  <article id="post-Linux" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Linux
+    </h1>
+  
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2021/03/08/Linux/" class="article-date">
+  <time datetime="2021-03-08T01:40:21.432Z" itemprop="datePublished">2021-03-08</time>
+</a>
+        
+      </div>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+      
+
+      
+        <h2 id="Linux（一切皆文件）"><a href="#Linux（一切皆文件）" class="headerlink" title="Linux（一切皆文件）"></a>Linux（一切皆文件）</h2><p>xshell（远程连接工具）</p>
+<p>xftp（文件上传工具）</p>
+<h2 id="linux基本命令（命令可以组合使用）"><a href="#linux基本命令（命令可以组合使用）" class="headerlink" title="linux基本命令（命令可以组合使用）"></a>linux基本命令（命令可以组合使用）</h2><p>sync # 将数据从内存同步到硬盘</p>
+<p>shutdown #关机</p>
+<p>reboot       #重启</p>
+<p>halt            # 关闭系统</p>
+<p>ls                # 查看当前目录</p>
+<p>ls -a           #查看所有目录，包括隐藏目录</p>
+<p>ls -l           #查看所有文件，包含文件的属性和权限，不包括隐藏文件</p>
+<p>cd               # 切换目录</p>
+<p>cd..             # 返回上一级目录</p>
+<p>cd~             #回到当前用户目录</p>
+<p>pwd            #显示当前用户所在的目录</p>
+<p>mkdir         #创建目录</p>
+<p>mkdir -p    #创建多级目录</p>
+<p>rmdir         #删除目录</p>
+<p>rmdir -p     #删除多级目录</p>
+<p>rm               #删除文件</p>
+<p>rm -f            #忽略不存在的文件，强制删除</p>
+<p>rm -r            #递归删除目录</p>
+<p>rm -i            #互动，询问是否删除</p>
+<p>rm -rf /       #删除系统中所有的文件</p>
+<p>cp                #复制文件或者目录</p>
+<p>mv              #移动文件或者目录</p>
+<p>mv -f         #强制</p>
+<p>mv -u        #只更换已经更新过的文件</p>
+<p>chgrp         #更改文件属组</p>
+<p>chown        #更改文件属主，也可同时更改文件属组</p>
+<p>==chmod        #更改文件9个属性==</p>
+<p>r=4    w=2    x=1</p>
+<p>ln                 #创建硬链接</p>
+<p>ln -s            #创建软链接</p>
+<p>touch          #创建文件</p>
+<p>echo            #输入字符串</p>
+<h2 id="查看文件中的内容的命令"><a href="#查看文件中的内容的命令" class="headerlink" title="查看文件中的内容的命令"></a>查看文件中的内容的命令</h2><p>cat    由第一行开始显示文件内容</p>
+<p>tac    从最后一行开始显示</p>
+<p>nl    显示的时候，顺道输出行号</p>
+<p>more    一页一页的显示文件内容</p>
+<p>less    与more类似，可以往前翻页</p>
+<p>head    只看头几行</p>
+<p>tail    只看尾部几行</p>
+<h2 id="主要文件的功能"><a href="#主要文件的功能" class="headerlink" title="主要文件的功能"></a>主要文件的功能</h2><p><img src="/2021/03/08/Linux/image-20210308102439953.png" alt="image-20210308102439953"></p>
+<p><img src="/2021/03/08/Linux/image-20210308102807265.png" alt="image-20210308102807265"></p>
+<h2 id="vim"><a href="#vim" class="headerlink" title="vim"></a>vim</h2><h5 id="命令模式"><a href="#命令模式" class="headerlink" title="命令模式"></a>命令模式</h5><p>i    切换到输入模式</p>
+<p>x    删除当前光标所在处的字符</p>
+<p>:    切换到底线命令模式，以在最底一行输入命令。（如果在输入模式，需要按esc退出）</p>
+<h5 id="输入模式"><a href="#输入模式" class="headerlink" title="输入模式"></a>输入模式</h5><h5 id="底线命令模式"><a href="#底线命令模式" class="headerlink" title="底线命令模式"></a>底线命令模式</h5><p>w    保存文件</p>
+<p>q    退出程序</p>
+<p>:set nu    显示行号</p>
+<p>:set nonu    取消行号</p>
+<p>/word        word=要搜索的字符</p>
+<p>u            撤销</p>
+<h2 id="linux用户管理"><a href="#linux用户管理" class="headerlink" title="linux用户管理"></a>linux用户管理</h2><p>useradd        添加用户</p>
+<p>useradd -m        自动添加主目录</p>
+<p>userdel        删除用户</p>
+<p>userdel -r        删除用户的时候将目录一并删掉</p>
+<p>usermod        修改用户</p>
+<h2 id="linux用户组管理"><a href="#linux用户组管理" class="headerlink" title="linux用户组管理"></a>linux用户组管理</h2><p>groupadd        添加用户组</p>
+<p>groupadd -g    添加用户组并指定端口号</p>
+<p>groupdel        删除用户组</p>
+<p>groupmod        修改用户组</p>
+<h2 id="linux磁盘管理"><a href="#linux磁盘管理" class="headerlink" title="linux磁盘管理"></a>linux磁盘管理</h2><p>df                 列出文件系统整体的磁盘使用量</p>
+<p>du                检查磁盘空间使用量</p>
+<p>mount         挂载</p>
+<p>umount       卸载</p>
+<h2 id="linux进程管理"><a href="#linux进程管理" class="headerlink" title="linux进程管理"></a>linux进程管理</h2><p>ps                查看当前系统中正在执行的各种进程的信息</p>
+<p>ps -a            显示当前终端运行的所有的进程信息</p>
+<p>ps -u            以用户的信息显示进程</p>
+<p>ps -x            显示后台运行进程的参数</p>
+<p>grep             查找文件中符合条件的字符串</p>
+<p>|                    管道符</p>
+<p>ps -aux|grep    mysql        查看所有与mysql相关的进程</p>
+<p>ps -ef            查看父进程的信息</p>
+<p>pstree -pu    显示父id和显示用户组</p>
+<h2 id="环境安装-rpm，解压缩，yum在线安装"><a href="#环境安装-rpm，解压缩，yum在线安装" class="headerlink" title="环境安装(rpm，解压缩，yum在线安装)"></a>环境安装(rpm，解压缩，yum在线安装)</h2><p>1—安装jdk</p>
+<p>2—安装java环境</p>
+<p>java -version                      检查当前系统是否存在java环境</p>
+<p>rpm -e —nodeps  jdk_        强制卸载jdk</p>
+<p>rpm -ivh jdk文件名            安装jdk</p>
+<p>rpm -qa|grep jdk                检测jdk版本信息</p>
+<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><p>vim /etc/profile</p>
+<p>JAVA_HOME=/user/java/jdk1.8….-amd64</p>
+<p>CLASSPATH=%JAVA_HOME%/lib;%JAVA_HOME%/jre/lib</p>
+<p>PATH=$JAVA_HOME/bin;$JAVA_HOME/jre/bin</p>
+<p>export PATH CLASSPTH JAVA_HOME</p>
+<p><img src="/2021/03/08/Linux/image-20210308155412819.png" alt="image-20210308155412819"></p>
+<p><img src="/2021/03/08/Linux/image-20210308160435266.png" alt="image-20210308160435266"></p>
+<h2 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a>防火墙</h2><p><img src="/2021/03/08/Linux/image-20210308160228815.png" alt="image-20210308160228815"></p>
+<h2 id="tomcat安装"><a href="#tomcat安装" class="headerlink" title="tomcat安装"></a>tomcat安装</h2><p>tar    -zxvf    apache-tomcat…..            解压</p>
+<p>./xxx.sh                                                     测试tomcat</p>
+<p>./startup.sh                                执行</p>
+<p>./shutdown.sh                            停止</p>
+<h2 id="docker安装"><a href="#docker安装" class="headerlink" title="docker安装"></a>docker安装</h2><p><img src="/2021/03/08/Linux/image-20210308164228630.png" alt="image-20210308164228630"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2021/03/08/Linux/" data-id="cknhg1ort000rxcucd9ux0ylx"
+         class="article-share-link">分享</a>
+      
+    </footer>
+
+  </div>
+
+  
+    
+  <nav class="article-nav">
+    
+      <a href="/2021/03/09/shell/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            shell
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2021/02/01/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">阿里云服务器</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+    
+  
+
+</article>
+
+
+
+</section>
+    </div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+
+<script src="/js/technology.js"></script>
+
+
+  </div>
+</body>
+</html>
