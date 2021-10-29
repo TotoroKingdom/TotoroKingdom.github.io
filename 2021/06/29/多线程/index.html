@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  
+    <meta name="keywords" content="帅">
+  
+  
+    <meta name="description" content="Hello 每一天都要开心哦！">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    多线程 |
+    
+    悠悠鱼儿游</title>
+  
+    <link rel="shortcut icon" href="favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/technology.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <section class="outer">
+  <article id="post-多线程" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      多线程
+    </h1>
+  
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2021/06/29/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="article-date">
+  <time datetime="2021-06-29T06:16:24.941Z" itemprop="datePublished">2021-06-29</time>
+</a>
+        
+      </div>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+      
+
+      
+        <h2 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h2><h4 id="线程创建"><a href="#线程创建" class="headerlink" title="线程创建"></a>线程创建</h4><h5 id="Thread-class"><a href="#Thread-class" class="headerlink" title="Thread class"></a>Thread class</h5><p>1、自定义线程类继承Thread类</p>
+<p>2、重写run()方法，编写线程执行体</p>
+<p>3、创建线程对象，调用start()方法启动线程</p>
+<p>run:同步</p>
+<p>start:调用run(异步)</p>
+<h5 id="Runnable-interface"><a href="#Runnable-interface" class="headerlink" title="Runnable interface"></a>Runnable interface</h5><p>1、自定义类实现Runnable接口</p>
+<p>2、实现run()方法，编写线程执行体</p>
+<p>3、创建线程对象，调用start()方法启动线程</p>
+<h5 id="Callable-interface"><a href="#Callable-interface" class="headerlink" title="Callable interface"></a>Callable interface</h5><p>1、实现Callable接口，需要返回值类型</p>
+<p>2、重写call方法，需要抛出异常</p>
+<p>3、创建目标对象</p>
+<p>4、创建执行服务:（ExecutorServices ser = Executors.newFixedThreadPool(1)）</p>
+<p>5、提交执行： Future<Boolean> result = ser.submit(t1);</Boolean></p>
+<p>6、获取结果：boolean r1 = result.get()</p>
+<p>7、关闭服务：ser.shutdownNow();</p>
+<h4 id="线程状态"><a href="#线程状态" class="headerlink" title="线程状态"></a>线程状态</h4><p><img src="/2021/06/29/%E5%A4%9A%E7%BA%BF%E7%A8%8B/image-20210630103705438.png" alt="image-20210630103705438"></p>
+<p><img src="/2021/06/29/%E5%A4%9A%E7%BA%BF%E7%A8%8B/image-20210630103746620.png" alt="image-20210630103746620"></p>
+<h5 id="停止线程"><a href="#停止线程" class="headerlink" title="停止线程"></a>停止线程</h5><p>1、线程中定义线程体使用的标识</p>
+<p>2、线程体使用该标识</p>
+<p>3、对外提供方法改变标识</p>
+<h5 id="线程休眠"><a href="#线程休眠" class="headerlink" title="线程休眠"></a>线程休眠</h5><p>sleep(time) 指定当前线程阻塞的毫秒数；</p>
+<p>sleep存在异常InterruptedException;</p>
+<p>sleep时间到达后线程进入就绪状态</p>
+<p>sleep可以模拟网络延时、倒计时等。</p>
+<p>每一个对象都有一个锁，sleep不会释放锁。</p>
+<h5 id="线程礼让"><a href="#线程礼让" class="headerlink" title="线程礼让"></a>线程礼让</h5><p>让当前正在执行的线程暂停，但不阻塞</p>
+<p>将线程从运行状态转为就绪状态</p>
+<p>让cpu重新调度，礼让不一定成功！</p>
+<h5 id="Join"><a href="#Join" class="headerlink" title="Join"></a>Join</h5><p>Join合并线程，等待线程执行完成后，再执行其他线程，其他线程阻塞。</p>
+<p>可以看作插队。</p>
+<h5 id="State"><a href="#State" class="headerlink" title="State"></a>State</h5><p>new:    尚未启动的线程状态</p>
+<p>runnable:    在Java虚拟机中执行的线程状态</p>
+<p>blocked:    被阻塞等待监视器锁定的线程状态。</p>
+<p>waiting:    正在等待另一个线程执行特定动作的线程。</p>
+<p>timed_waiting:    正在等待另一个线程执行动作达到指定等待时间的线程状态。</p>
+<p>terminated:    已退出的线程状态。</p>
+<h5 id="线程优先级-Priority"><a href="#线程优先级-Priority" class="headerlink" title="线程优先级(Priority)"></a>线程优先级(Priority)</h5><p>java提供一个线程调度器来监控程序中启动后进入就绪状态的所有线程，线程调度器按照优先级来决定调度线程执行。</p>
+<p>线程的优先级用数字1—10来表示</p>
+<p>获取和设置优先级</p>
+<p>getPriority()      setPriority(int x)</p>
+<h5 id="守护线程（daemon）"><a href="#守护线程（daemon）" class="headerlink" title="守护线程（daemon）"></a>守护线程（daemon）</h5><p>线程分为用户线程和守护线程</p>
+<p>虚拟机必须确保用户线程执行完毕</p>
+<p>虚拟机不用等待守护线程执行完毕</p>
+<h4 id="线程同步"><a href="#线程同步" class="headerlink" title="线程同步"></a>线程同步</h4><p>多个线程操作同一个对象，需要进入这个对象的等待池，形成队列。</p>
+<h5 id="并发"><a href="#并发" class="headerlink" title="并发"></a>并发</h5><p>同一个对象被多个线程同时操作</p>
+<h5 id="锁机制（synchronized）"><a href="#锁机制（synchronized）" class="headerlink" title="锁机制（synchronized）"></a>锁机制（synchronized）</h5><p>当一个线程获得对象的排他锁，独占资源，其他线程必须等待，使用后释放锁即可。</p>
+<h5 id="同步方法（synchronized）"><a href="#同步方法（synchronized）" class="headerlink" title="同步方法（synchronized）"></a>同步方法（synchronized）</h5><p>public synchronized void method(int args){}</p>
+<h5 id="同步块-synchronized"><a href="#同步块-synchronized" class="headerlink" title="同步块(synchronized)"></a>同步块(synchronized)</h5><p>synchronized (Obj){}</p>
+<h5 id="死锁"><a href="#死锁" class="headerlink" title="死锁"></a>死锁</h5><p>互斥条件</p>
+<p>请求与保持条件</p>
+<p>不剥夺条件</p>
+<p>循环等待条件</p>
+<h5 id="Lock"><a href="#Lock" class="headerlink" title="Lock"></a>Lock</h5><h4 id="线程通信"><a href="#线程通信" class="headerlink" title="线程通信"></a>线程通信</h4><p>wait():表示线程一直等待，知道其他的线程通知，会释放锁。</p>
+<p>wait(long timeout)：指定等待的毫秒数量</p>
+<p>notify：唤醒一个处于等待状态的线程</p>
+<p>notifyAll：唤醒同一个对象上所有调用wait()方法的线程，优先级高的线程有限调度</p>
+<h5 id="生产者消费者模式"><a href="#生产者消费者模式" class="headerlink" title="生产者消费者模式"></a>生产者消费者模式</h5><p>解决方法：管程法、信号灯法</p>
+<h5 id="线程池"><a href="#线程池" class="headerlink" title="线程池"></a>线程池</h5><p>提高响应速度</p>
+<p>降低资源消耗</p>
+<p>便于线程管理</p>
+<p>corePoolSize:    核心池大小</p>
+<p>maximumPoolSize：最大线程数</p>
+<p>keepAliveTime：线程没有任务</p>
+<p>ExecutorService：线程池接口。</p>
+<p>Executors：工具类、线程池的工厂类，用于创建并返回不同类型的线程池。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2021/06/29/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" data-id="ckvbrkoh6002bywuc89ct876k"
+         class="article-share-link">分享</a>
+      
+    </footer>
+
+  </div>
+
+  
+    
+  <nav class="article-nav">
+    
+      <a href="/2021/06/30/Lambda/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            Lambda
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2021/06/28/Servlet/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Servlet</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+    
+  
+
+</article>
+
+
+
+</section>
+    </div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+
+<script src="/js/technology.js"></script>
+
+
+  </div>
+</body>
+</html>

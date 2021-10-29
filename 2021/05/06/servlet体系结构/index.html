@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  
+    <meta name="keywords" content="帅">
+  
+  
+    <meta name="description" content="Hello 每一天都要开心哦！">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    servlet体系结构 |
+    
+    悠悠鱼儿游</title>
+  
+    <link rel="shortcut icon" href="favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/technology.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <section class="outer">
+  <article id="post-servlet体系结构" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      servlet体系结构
+    </h1>
+  
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2021/05/06/servlet%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" class="article-date">
+  <time datetime="2021-05-06T14:36:34.253Z" itemprop="datePublished">2021-05-06</time>
+</a>
+        
+      </div>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+      
+
+      
+        <p>servlet执行流程</p>
+<ol>
+<li>客户端(浏览器)向服务端发起HTTP请求；</li>
+<li>Tomcat服务器通过解析请求地址(URL)，找到对应的web应用</li>
+</ol>
+<p><img src="https://pic4.zhimg.com/v2-d33d29d577126b596b2a7e86853c84c3_b.png" alt="img"></p>
+<ol>
+<li>找到web应用的web.xml，解析出客户端想访问的web资源；</li>
+<li>如果发现Servlet是第一次访问,服务器就会加载servlet，创建servlet对象；</li>
+<li>调用servlet的init()方法；</li>
+<li>再调用servlet的service()方法;</li>
+<li>service()方法执行完，服务器会响应数据给客户端浏览器；</li>
+</ol>
+<h2 id="servlet体系结构"><a href="#servlet体系结构" class="headerlink" title="servlet体系结构"></a>servlet体系结构</h2><p><img src="/2021/05/06/servlet%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/1562929_1495091266467_AA89EDF1B0D43CAA9A893C73A1615398.png" alt="img"></p>
+<h2 id="tomcat目录层次结构"><a href="#tomcat目录层次结构" class="headerlink" title="tomcat目录层次结构"></a>tomcat目录层次结构</h2><p><img src="/2021/05/06/servlet%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/v2-d3ecce3722bb00063eb8a5166a158569_r.jpg" alt="preview"></p>
+<p>javaWeb标准目录结构</p>
+<p><img src="/2021/05/06/servlet%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/v2-69c020936dcbb926164b6e16f37b1b56_r.jpg" alt="preview"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2021/05/06/servlet%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" data-id="ckvbrkogy001uywuch0uu5it1"
+         class="article-share-link">分享</a>
+      
+    </footer>
+
+  </div>
+
+  
+    
+  <nav class="article-nav">
+    
+      <a href="/2021/05/11/%E6%AF%8F%E6%97%A5%E6%84%9F%E6%82%9F/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            每日感悟
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2021/05/05/%E9%9D%99%E6%80%81%E6%B5%8B%E8%AF%95%E5%92%8C%E5%8A%A8%E6%80%81%E6%B5%8B%E8%AF%95/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">静态测试和动态测试</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+    
+  
+
+</article>
+
+
+
+</section>
+    </div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+
+<script src="/js/technology.js"></script>
+
+
+  </div>
+</body>
+</html>
